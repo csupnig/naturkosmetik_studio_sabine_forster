@@ -81,7 +81,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 .width3C { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.5rem; }
 .width3C > *:not(.item) { grid-column:1/4; }
 .width3C .item:nth-of-type(3n) { margin-right:0; }
-.width3C .item.square, .width3C .item .square { height:25.66rem; }
+.width3C .item.square, .width3C .item .square {  }
 .carousel .width3C .item:nth-of-type(3n) { margin-right:1.5rem; }
 
 .padding { padding:5rem 10rem 4rem; }
@@ -154,14 +154,13 @@ span, select { font:400 1.3rem/1.8rem "Geomanist-Regular", sans-serif; letter-sp
 button { font:400 1.3rem/2.1rem "new-spirit", sans-serif; letter-spacing:0.02rem; }
 h1 { font:500 7.5rem/8rem "new-spirit", sans-serif; }
 h2, nav, nav span { font:400 1rem/1.5rem "Geomanist-Book", sans-serif; text-transform:uppercase; letter-spacing:0.05rem; }
-h3 { font:400 2.2rem/2.88rem "new-spirit", sans-serif; }
+h3, span.large, p.large { font:400 2.2rem/2.88rem "new-spirit", sans-serif; }
 
 /*Text styles*/
 .black, .black a { color:#000; }
 .white, .white a { color:#fff; }
 .darkGreen, .darkGreen a { color:#1c3f41; }
 .italic { font-style:italic !important; }
-.elevated { margin-left:1.6rem; top:-1.6rem; position:relative; }
 
 /*Link styles*/
 .alwaysUnderline a, button { text-decoration:underline !important; }

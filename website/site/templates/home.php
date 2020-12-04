@@ -45,10 +45,10 @@ else $backgroundStyle = ""; ?>
 				}
 				$i++ ?>
 				<div class="item">
-					<div class="width100 square smallPadding relative <?= $textClass ?> <?= $backgroundClass ?>">
-						<h3 class="width75"><a href="<?= $treatment->url() ?>"><?= $treatment->name()->html() ?></a></h3>
+					<div class="width100 flex square smallPadding relative <?= $textClass ?> <?= $backgroundClass ?>">
+						<h3 class="width75 flexGrow"><a href="<?= $treatment->url() ?>"><?= $treatment->name()->html() ?></a></h3>
 						<span class="footnote top right"><?= $treatment->duration()->html() ?></span>
-						<span class="large flexEnd">€<?= $treatment->price()->html() ?></span>
+						<span class="large alignFlexEnd">€<?= $treatment->price()->html() ?></span>
 					</div>
 					<div class="details width100 smallTopMargin hoverFlip">
 						<span class="small darkGreen"><?= $treatment->shortDescription()->html() ?></span>
