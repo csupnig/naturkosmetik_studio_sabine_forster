@@ -2,7 +2,7 @@
 .idea/*
 .sass-cache/
 dploy.yaml
-
+phpdocker/logs/*
 config.codekit
 
 node_modules
