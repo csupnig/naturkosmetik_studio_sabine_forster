@@ -1,8 +1,8 @@
-Title: About
+Title: Articles
 
 ----
 
-Name: Über mich
+Name: Aktuelles
 
 ----
 

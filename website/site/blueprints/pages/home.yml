@@ -125,7 +125,7 @@ columns:
           productHighlights:
             label: Product highlights
             type: pages
-            query: site.find("shop").children().filterBy("intendedTemplate", "product")
+            query: site.find("shop").index.filterBy("intendedTemplate", "product")
             min: 2
             max: 2
             required: true
@@ -137,7 +137,7 @@ columns:
           eventHighlight:
             label: Event highlight
             type: pages
-            query: site.find("about").children().filterBy("intendedTemplate", "event")
+            query: site.find("about").find("events").children().filterBy("intendedTemplate", "event")
             multiple: false
             required: true
 

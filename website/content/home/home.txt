@@ -85,7 +85,8 @@ Producthighlights:
 
 Eventhighlight:
 
-- about/fuhlen-sie-sich-wohl-in-ihrer-haut
+- >
+  about/events/fuhlen-sie-sich-wohl-in-ihrer-haut
 
 ----
 

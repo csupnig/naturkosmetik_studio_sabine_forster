@@ -1,8 +1,8 @@
-Title: About
+Title: Events
 
 ----
 
-Name: Über mich
+Name: Events
 
 ----
 

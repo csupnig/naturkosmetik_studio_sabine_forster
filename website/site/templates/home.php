@@ -39,7 +39,7 @@ else $backgroundStyle = ""; ?>
 				} else if ($i == 2) {
 					$textClass = "darkGreen";
 					$backgroundClass = "lightGreenBackground";
-				} else if ($i == 2)
+				} else if ($i == 2) {
 					$textClass = "darkGreen";
 					$backgroundClass = "brownBackground";
 				}
@@ -57,8 +57,8 @@ else $backgroundStyle = ""; ?>
 				</div>
 			<?php } ?>
 		</div>
-		<?php $treatmentsPage = $site->children()->find("treatments"); ?>
-		<a href="<?= $treatmentsPage()->url() ?>"><button class="arrow topMargin floatRight darkGreen">Alle Behandlungen</button></a>
+		<?php $treatmentsPage = $site->find("treatments"); ?>
+		<a href="<?= $treatmentsPage->url() ?>"><button class="arrow topMargin floatRight darkGreen">Alle Behandlungen</button></a>
 	</section>
 	<section class="products width100 padding">
 		<h2 class="darkGreen">Produkt-<br/>Highlights</h2>
@@ -119,7 +119,7 @@ else $backgroundStyle = ""; ?>
 			</div>
 		</section>
 	<?php } ?>
-	<?php $reviews = $page->children()->filterBy("intendedTemplate", "review")->published()
+	<?php $reviews = $page->children()->filterBy("intendedTemplate", "review")->published();
 	if (count($reviews) > 0) { ?>
 		<section class="reviews padding centeredText">
 			<h2 class="darkGreen">Rewviews meiner<br/>KundInnen</h2>

@@ -9,6 +9,12 @@ columns:
         template: article
         sortable: true
 
+      files:
+        headline: Media
+        type: files
+        template: media
+        sortable: true
+
   - width: 2/3
     sections:
       general:

@@ -6,7 +6,7 @@ columns:
       reviews:
         headline: Events
         type: pages
-        template: event
+        template: events
         sortable: true
 
       files:

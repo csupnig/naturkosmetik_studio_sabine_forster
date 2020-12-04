@@ -11,7 +11,7 @@ columns:
           - treatments
           - brands
           - about
-          - news
+          - articles
           - shop
         sortable: true
 

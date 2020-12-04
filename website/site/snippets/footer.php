@@ -12,7 +12,7 @@
 			<?php } 
 			$aboutPage = $site->children()->find("about")->toPage() ?>
 			<span class="small"><a href="<?= $aboutPage->url() ?>"><?= $aboutPage->name()->html() ?></a></span><br/>
-			<span class="small"><a href="<?= $aboutPage->url() ?>#contact"><?= $contactPage->name()->html() ?></a></span><br/>
+			<span class="small"><a href="<?= $aboutPage->url() ?>#contact"><?= $aboutPage->name()->html() ?></a></span><br/>
 			<span class="small"><a href="<?= $site->designLink()->html() ?>" target="_blank">Design: <?= $site->design()->html() ?></a></span><br/>
 		</div>
 	</div>
