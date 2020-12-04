@@ -1,0 +1,16 @@
+Name: Rücken Reinigungs-Behandlung
+
+----
+
+Duration: 30 Minuten
+
+----
+
+Price: 40
+
+----
+
+Shortdescription:
+
+Eine tiefgehende Reinigung, die 
+Feuchtigkeit spendet

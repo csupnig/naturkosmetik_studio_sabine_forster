@@ -1,0 +1,15 @@
+Name: Iris Creme, 250ml
+
+----
+
+Price: 43
+
+----
+
+Shortdescription: Reinigt & beruhigt sensible Haut
+
+----
+
+Image:
+
+- product-01.jpg

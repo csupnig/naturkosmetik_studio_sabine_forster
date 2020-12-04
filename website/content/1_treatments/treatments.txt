@@ -1,0 +1,9 @@
+Title: Treatments
+
+----
+
+Name: Behandlungen
+
+----
+
+Backgroundimage: - background-1.png

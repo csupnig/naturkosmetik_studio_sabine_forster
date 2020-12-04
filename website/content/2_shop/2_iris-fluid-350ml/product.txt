@@ -1,0 +1,15 @@
+Name: Iris Fluid, 350ml
+
+----
+
+Price: 43
+
+----
+
+Shortdescription: Spendet Feutigkeit für sensible Haut
+
+----
+
+Image:
+
+- product-02.jpg

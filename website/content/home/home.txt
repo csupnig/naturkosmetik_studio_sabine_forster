@@ -1,0 +1,119 @@
+Name: Home
+
+----
+
+Backgroundimage:
+
+- background-1.png
+
+----
+
+Headlineheadline:
+
+Natürlich.
+Schön.
+
+----
+
+Headlinesubline: Naturkosmetik und Behandlungen für jede Lebensphase
+
+----
+
+Headlineimage:
+
+- home-01.jpg
+
+----
+
+Headlinelinktarget:
+
+- treatments
+
+----
+
+Headlinelinktext: Zu den Behandlungen
+
+----
+
+Introintro:
+
+Schön, dass Sie mich besuchen. Tauchen Sie mit mir ein ein die 
+Welt reiner Natuskosmetik. 
+Ganzheitliche Behandlungen mit hochwertigen und natürlichen 
+Produkten warten auf Sie.
+
+----
+
+Introtext:
+
+Meine Philosophie lautet: von innen nach außen. 
+Loreium ilit ut molore vent earum volo quas alis ut eos et is am, quodios doloreptium expeles sime re renim explibus doluptatur sitatis volores modit quam.
+
+----
+
+Introimage:
+
+- home-02.jpg
+
+----
+
+Introlinktarget:
+
+- about
+
+----
+
+Introlinktext: Mehr über mich & meine Philosophie
+
+----
+
+Treatmenthighlights:
+
+- >
+  treatments/kosmetik-wohlfuhlbehandlung-im-herbst
+- treatments/beautiful-aging-behandlung
+- treatments/rucken-reinigungs-behandlung
+
+----
+
+Producthighlights:
+
+- shop/iris-creme-250ml
+- shop/iris-fluid-350ml
+
+----
+
+Eventhighlight:
+
+- about/fuhlen-sie-sich-wohl-in-ihrer-haut
+
+----
+
+Eventsimage:
+
+- home-03.jpg
+
+----
+
+Newslettertext: Wollen Sie immer auf dem Laufenden bleiben? Melden Sie sich für meinen Newsletter an.
+
+----
+
+Ctaheadline:
+
+Natürlich.
+Individuell.
+
+----
+
+Ctatext: Unsere Haut ist einzigartig und wartvoll. Meine Behandlungen gehen ganz auf Ihre Bedürfnisse ein,und  dabei  verwende ich hochwertige, 100% natürliche Produkte. Ich freue mich auf Sie.
+
+----
+
+Ctalinktarget:
+
+- treatments
+
+----
+
+Ctalinktext: Buchen Sie die die Behandlung, die zu perfekt Ihnen passt
