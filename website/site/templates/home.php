@@ -1,30 +1,30 @@
 <?php snippet('header');
 //Set background image
-if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->url().")"; 
+if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")"; 
 else $backgroundStyle = ""; ?>
 <body class="home beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('head'); ?>
-	<section class="intro">
+	<section class="intro largeTopPadding">
 		<div class="width100 alignRight padding">
 			<h1 class="darkGreen"><?= $page->headlineHeadline()->kirbyText() ?></h1>
 			<span class="darkGreen"><?= $page->headlineSubline()->html() ?></span>
 		</div>
-		<div class="width100 leftAlign hPadding">
+		<div class="width100 alignLeft hPadding relative">
 			<?php if ($image = $page->headlineImage()->toFile()) { ?>
 				<img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $page->headlineHeadline()->html() ?>"/>
 			<?php } ?>
 			<button class="sticker top right darkGreen lightGreenBackground"><a href="<?= $page->headlineLinkTarget()->url() ?>"><?= $page->headlineLinkText()->html() ?></a></button>
 		</div>
 	</section>
-	<section class="intro width2C paddingbottomMargin">
+	<section class="intro width2C padding bottomMargin">
 		<div class="item">
 			<h3 class="darkGreen"><?= $page->introIntro()->kirbyText() ?></h3>
-			<span class="darkGreen"><?= $page->introText()->kirbyText() ?></span>
+			<span class="darkGreen smallTopMargin"><?= $page->introText()->kirbyText() ?></span>
 			<a href="<?= $page->introLinkTarget()->url() ?>"><button class="rectangle darkGreen"><?= $page->introLinkText()->html() ?></button></a>
 		</div>
 		<div class="item vEnd">
 			<?php if ($image = $page->introImage()->toFile()) { ?>
-				<img class="width50 cover circle" src="<?= $image->url() ?>" alt="<?= $site->name()->html() ?>"/>
+				<img class="width50 cover circle alignFlexEnd" src="<?= $image->url() ?>" alt="<?= $site->name()->html() ?>"/>
 			<?php } ?>
 		</div>
 	</section>
@@ -39,14 +39,14 @@ else $backgroundStyle = ""; ?>
 				} else if ($i == 2) {
 					$textClass = "darkGreen";
 					$backgroundClass = "lightGreenBackground";
-				} else if ($i == 2) {
+				} else if ($i == 3) {
 					$textClass = "darkGreen";
 					$backgroundClass = "brownBackground";
 				}
 				$i++ ?>
 				<div class="item">
-					<div class="width100 square relative <?= $textClass ?> <?= $backgroundClass ?>">
-						<h3><a href="<?= $treatment->url() ?>"><?= $treatment->name()->html() ?></a></h3>
+					<div class="width100 square smallPadding relative <?= $textClass ?> <?= $backgroundClass ?>">
+						<h3 class="width75"><a href="<?= $treatment->url() ?>"><?= $treatment->name()->html() ?></a></h3>
 						<span class="footnote top right"><?= $treatment->duration()->html() ?></span>
 						<span class="large flexEnd">€<?= $treatment->price()->html() ?></span>
 					</div>
