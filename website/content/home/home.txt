@@ -118,3 +118,9 @@ Ctalinktarget:
 ----
 
 Ctalinktext: Buchen Sie die die Behandlung, die zu perfekt Ihnen passt
+
+----
+
+Ctaimage:
+
+- home-04.jpg

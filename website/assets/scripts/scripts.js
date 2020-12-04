@@ -34,13 +34,46 @@ $(document).ready(function () {
 		$(this).closest(".carousel").find(".items .item:last-of-type").insertBefore($(this).closest(".carousel").find(".items .item:first-of-type"));
 	});
 
-	//Carousel (Direct access)
-	$(".carousel.directAccess .navigation button").click(function() {
+	//Carousel (Direct access) - navigation via direct link buttons
+	$(".carousel.directAccess button.direct").click(function() {
 		//Manage button appearance
-		$(".carousel.directAccess .navigation button").removeClass("active");
+		$(".carousel.directAccess button.direct.active").removeClass("active");
 		$(this).addClass("active");
 		//Show selected element
 		selection = $(this).attr("data-selection");
+		$(this).parent().parent().find(".item").hide();
+		$(this).parent().parent().find(".item."+selection).show();
+	});
+	//Carousel (Direct access) - navigation via next/previous buttons
+	$(".carousel.directAccess button.next").click(function() {
+		if ($(".carousel.directAccess button.direct.active").next().length) {
+			//Manage button appearance
+			$(".carousel.directAccess button.direct.active").removeClass("active").next().addClass("active");
+			//Show selected element
+			selection = $(".carousel.directAccess button.direct.active").attr("data-selection");		
+		} else {
+			//Manage button appearance
+			$(".carousel.directAccess button.direct.active").removeClass("active")
+			$(".carousel.directAccess button.direct:first").addClass("active");
+			//Show selected element
+			selection = $(".carousel.directAccess button.direct:first").attr("data-selection");
+		}
+		$(this).parent().parent().find(".item").hide();
+		$(this).parent().parent().find(".item."+selection).show();
+	});
+	$(".carousel.directAccess button.previous").click(function() {
+		if ($(".carousel.directAccess button.direct.active").prev().length) {
+			//Manage button appearance
+			$(".carousel.directAccess button.direct.active").removeClass("active").prev().addClass("active");
+			//Show selected element
+			selection = $(".carousel.directAccess button.direct.active").attr("data-selection");
+		} else {
+			//Manage button appearance
+			$(".carousel.directAccess button.direct.active").removeClass("active")
+			$(".carousel.directAccess button.direct:last").addClass("active");
+			//Show selected element
+			selection = $(".carousel.directAccess button.direct:last").attr("data-selection");
+		}
 		$(this).parent().parent().find(".item").hide();
 		$(this).parent().parent().find(".item."+selection).show();
 	});

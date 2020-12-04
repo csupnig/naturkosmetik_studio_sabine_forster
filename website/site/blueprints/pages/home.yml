@@ -184,3 +184,9 @@ columns:
             type: text
             width: 1/2
             required: true
+
+          ctaImage:
+            label: Call to action image
+            type: files
+            multiple: false
+            required: true

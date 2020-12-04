@@ -5,7 +5,7 @@ else $backgroundStyle = ""; ?>
 <body class="home beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
 	<section class="intro largeTopPadding">
-		<div class="width100 alignRight padding">
+		<div class="width100 alignFarRight padding">
 			<h1 class="darkGreen"><?= $page->headlineHeadline()->kirbyText() ?></h1>
 			<span class="darkGreen"><?= $page->headlineSubline()->html() ?></span>
 		</div>
@@ -64,17 +64,19 @@ else $backgroundStyle = ""; ?>
 		<h2 class="darkGreen">Produkt-<br/>Highlights</h2>
 		<div class="width2C topMargin">
 			<?php foreach ($page->productHighlights()->toPages() as $product) { ?>
-				<div class="item">
-					<?php if ($image = $product->productImage()->toFile()) { ?>
-						<img class="width100 height85 cover" src="<?= $image->url() ?>" alt="<?= $product->name()->html() ?>"/>
-					<?php } ?>
+				<div class="item hoverFlip">
+					<a href="<?= $treatment->url() ?>">
+						<?php if ($image = $product->productImage()->toFile()) { ?>
+							<img class="width100 height85 cover" src="<?= $image->url() ?>" alt="<?= $product->name()->html() ?>"/>
+						<?php } ?>
+					</a>
 					<div class="details width100 smallTopMargin hoverFlip">
-						<div class="width100">
-							<h3 class="darkGreen floatLeft"><?= $product->name()->html() ?></h3>
-							<span class="small darkGreen floatLeft"><?= $product->shortDescription()->html() ?></span>
+						<div class="width100 flip">
+							<h3 class="width75 small darkGreen floatLeft"><?= $product->name()->html() ?><?php if ($product->size()->isNotEmpty()) echo ", ".$product->size()->html() ?></h3>
+							<span class="width75 small darkGreen floatLeft"><?= $product->shortDescription()->html() ?></span>
 							<span class="darkGreen floatRight">€<?= $product->price()->html() ?></span>
 						</div>
-						<a href="<?= $treatment->url() ?>"><button class="width100 next large darkGreen">Details</button></a>
+						<a class="flip" href="<?= $treatment->url() ?>"><button class="width100 next large darkGreen">Details</button></a>
 					</div>
 				</div>
 			<?php } ?>
@@ -84,64 +86,69 @@ else $backgroundStyle = ""; ?>
 	</section>
 	<?php if ($page->eventHighlight()->isNotEmpty()) { 
 		$event = $page->eventHighlight()->toPage(); ?>
-		<section class="events width2C alignRight padding">
+		<section class="events width100 alignRight padding">
 			<h2 class="darkGreen">Events</h2>
-			<div class="hFlex">
-				<div class="item darkGreen topBorder rightPadding vFlex">
-					<h2 class="darkGreen"><?= $event->category()->html().":<br/>".$event->name()->html() ?></h2>
-					<span class="small darkGreen topMargin flexGrow"><?= $event->shortDescription()->kirbyText() ?></span>
+			<div class="width2C topMargin">
+				<div class="item rightPadding vFlex">
+					<div class="width100 darkGreen topBorder"></div>
+					<h3 class="width75 darkGreen smallTopMargin"><?= $event->category()->html().":<br/>".$event->name()->html() ?></h3>
+					<span class="width75 small darkGreen topMargin flexGrow"><?= $event->shortDescription()->kirbyText() ?></span>
 					<div class="width75 doubleColumns">
-						<div class="darkGreen topBorder vSmallPadding">
+						<div class="data darkGreen vSmallPadding">
 							<h4>Zeit</h4>
 							<span class="small"><?= $event->date()->toDate("d.m.Y").", ".$event->time()->html() ?></span>
 						</div>
-						<div class="darkGreen topBorder vSmallPadding">
+						<div class="data darkGreen vSmallPadding">
 							<h4>Dauer</h4>
 							<span class="small"><?= $event->duration()->html() ?></span>
 						</div>
-						<div class="darkGreen topBorder vSmallPadding">
-							<h4>Dauer</h4>
+						<div class="data darkGreen vSmallPadding">
+							<h4>Ort</h4>
 							<span class="small"><?= $event->location()->html() ?></span>
 						</div>
-						<div class="darkGreen topBorder vSmallPadding">
-							<h4>Dauer</h4>
+						<div class="data darkGreen vSmallPadding">
+							<h4>Kosten</h4>
 							<span class="small">€<?= $event->price()->html() ?></span>
 						</div>
 					</div>
-					<a href="<?= $event->url() ?>"><button class="rectangle darkGreen">Mehr zu diesem Event</button></a>
+					<a href="<?= $event->url() ?>"><button class="width100 rectangle darkGreen topMargin">Mehr zu diesem Event</button></a>
 				</div>
-				<div class="item">
+				<div class="item relative">
 					<?php if ($image = $page->eventsImage()->toFile()) { ?>
 						<img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $page->eventsHeadline()->html() ?>"/>
 					<?php } ?>
-					<button class="sticker top right white greenBackground"><a href="<?= $site->find("about")->find("events")->toPage()->url() ?>">Zu allen Events</a></button>
+					<button class="sticker top left white greenBackground"><a href="<?= $site->find("about")->find("events")->toPage()->url() ?>">Zu allen Events</a></button>
 				</div>
 			</div>
 		</section>
 	<?php } ?>
 	<?php $reviews = $page->children()->filterBy("intendedTemplate", "review")->published();
 	if (count($reviews) > 0) { ?>
-		<section class="reviews padding centeredText">
-			<h2 class="darkGreen">Rewviews meiner<br/>KundInnen</h2>
-			<div class="carousel directAccess">
-				<div class="navigation">
-					<?php $itemNumber = 0;
-					foreach($reviews as $review) {
-						$itemNumber++; ?>
-						<button class="direct line lightGreenBackground" data-selection="review<?=$itemNumber?>"></button>
-					<?php } ?>
-				</div>
-				<?php $itemNumber = 0;
-				foreach ($reviews as $review) {
-					$itemNumber++; ?>
-					<div class="item width50 inlineBlock review<?=$itemNumber?>">
-						<span class="darkGreen"><?= $review->text()->kirbyText() ?></span>
-						<h4 class="darkGreen topMargin"><?= $review->name()->html() ?></h4>
-						<span class="small darkGreen"><?= $review->location()->html() ?></span>
+		<section class="reviews padding centeredText topMargin">
+			<div class="width75 inlineBlock">
+				<h2 class="darkGreen">Reviews meiner<br/>KundInnen</h2>
+				<div class="carousel directAccess">
+					<div class="navigation topMargin bottomMargin">
+						<?php $itemNumber = 0;
+						foreach($reviews as $review) {
+							$itemNumber++; ?>
+							<button class="direct line lightGreenBackground <?php if ($itemNumber == 1) echo 'active'; ?>" data-selection="review<?=$itemNumber?>"></button>
+						<?php } ?>
 					</div>
-				<?php } ?>
-				<button class="previous floatLeft"></button>
-				<button class="next floatRight"></button>
+					<div class="width66 items inlineBlock">
+						<?php $itemNumber = 0;
+						foreach ($reviews as $review) {
+							$itemNumber++; ?>
+							<div class="item review<?=$itemNumber?>">
+								<span class="darkGreen"><?= $review->text()->kirbyText() ?></span>
+								<h4 class="darkGreen topMargin"><?= $review->name()->html() ?></h4>
+								<span class="small darkGreen"><?= $review->location()->html() ?></span>
+							</div>
+						<?php } ?>
+					</div>
+					<button class="previous floatLeft darkGreen topMargin"></button>
+					<button class="next floatRight darkGreen topMargin"></button>
+				</div>
 			</div>
 		</section>
 	<?php } ?>
@@ -151,18 +158,20 @@ else $backgroundStyle = ""; ?>
 			<h2 class="darkGreen">Aktuelle<br/>Artikel</h2>
 			<div class="width3C topMargin">
 				<?php foreach ($articles as $article) { ?>
-					<div class="item">
-						<div class="width100 square">
-							<?php if ($image = $article->previewImage()->toFile()) { ?>
-								<img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $article->name()->html() ?>"/>
-							<?php } ?>
-							<div class="overlay darkGreenCutOut relative">
-								<span class="footnote top right"><?= $article->category()->html() ?></span>
+					<div class="item hoverFlip">
+						<a href="<?= $article->url() ?>">
+							<div class="width100 square relative">
+								<?php if ($image = $article->previewImage()->toFile()) { ?>
+									<img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $article->name()->html() ?>"/>
+								<?php } ?>
+								<div class="cutout darkGreen">
+									<span class="footnote top right white"><?= $article->category()->html() ?></span>
+								</div>
 							</div>
-						</div>
-						<div class="details width100 smallTopMargin hoverFlip">
-							<span class="darkGreen"><?= $article->name()->html() ?></span>
-							<a href="<?= $article->url() ?>"><button class="width100 next large darkGreen">Zum Artikel</button></a>
+						</a>
+						<div class="details width100 smallTopMargin">
+							<span class="flip darkGreen"><?= $article->name()->html() ?></span>
+							<a class="flip" href="<?= $article->url() ?>"><button class="width100 next large darkGreen">Zum Artikel</button></a>
 						</div>
 					</div>
 				<?php } ?>
@@ -171,13 +180,13 @@ else $backgroundStyle = ""; ?>
 		</section>
 	<?php } ?>
 	<section class="newsletter width100 padding centeredText">
-		<h2 class="darkGreen"><?= $page->newsletterText()->kirbyText() ?></h2>
-		<button class="newsletter"></button>
+		<h3 class="width50 darkGreen inlineBlock"><?= $page->newsletterText()->kirbyText() ?></h3><br/>
+		<button class="newsletter topMargin"></button>
 	</section>
-	<section class="callToAction width100 padding">
-		<h2 class="large white"><?= $page->ctaHeadline()->kirbyText() ?></h2>
-		<span class="width33 small white topMargin"><?= $page->ctaText()->kirbyText() ?></span>
-		<a href="<?= $page->ctaLinkTarget()->url() ?>"><button class="rectangle white"><?= $page->ctaLinkText()->url() ?></button></a>
+	<section class="callToAction width100 padding" style="<?php if ($image = $page->ctaImage()->toFile()) echo 'background-image:url('.$image->url().');' ?>">
+		<h1 class="large white bottomMargin"><?= $page->ctaHeadline()->kirbyText() ?></h1>
+		<span class="width33 inlineBlock small white topMargin"><?= $page->ctaText()->kirbyText() ?></span><br/>
+		<a href="<?= $page->ctaLinkTarget()->toPage()->url() ?>"><button class="width100 rectangle white topMargin"><?= $page->ctaLinkText()->url() ?></button></a>
 	</section>
 	<?php snippet('footer'); ?>
 </body>
