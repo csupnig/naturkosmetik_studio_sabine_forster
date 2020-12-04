@@ -17,4 +17,13 @@
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/scripts.js"></script>
+
+    <?php if ($page->template() == "product") {
+      ?>
+      <link rel="preconnect" href="https://app.snipcart.com">
+      <link rel="preconnect" href="https://cdn.snipcart.com">
+      <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.css" />
+      <script async src="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.js"></script>
+      <?php
+    } ?>
   </head>
