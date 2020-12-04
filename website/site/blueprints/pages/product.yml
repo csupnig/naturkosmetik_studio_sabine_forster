@@ -33,7 +33,7 @@ columns:
             type: text
             width: 1/2
             required: true
-            
+
           shortDescription:
             label: Short description
             type: textarea
@@ -45,4 +45,33 @@ columns:
             template: media
             width: 1/2
             multiple: false
+            required: true
+
+          detailsHeadline:
+            label: Product Details
+            type: headline
+
+          description:
+            label: Description
+            type: textarea
+            required: true
+
+          brand:
+            label: Brand
+            type: text
+            required: true
+
+          size:
+            label: Size (optional)
+            type: text
+            required: false
+
+          ingredients:
+            label: Ingredients (optional)
+            type: textarea
+            required: false
+
+          application:
+            label: Application
+            type: textarea
             required: true

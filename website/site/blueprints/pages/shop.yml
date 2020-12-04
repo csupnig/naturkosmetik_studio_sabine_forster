@@ -3,7 +3,12 @@ title: Shop
 columns:
   - width: 1/3
     sections:
-      reviews:
+      categories:
+        headline: Categories
+        type: pages
+        template: products
+        sortable: true
+      products:
         headline: Products
         type: pages
         template: product
