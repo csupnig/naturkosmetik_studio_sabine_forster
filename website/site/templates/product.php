@@ -2,7 +2,7 @@
 //Set background image
 if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->url().")"; 
 else $backgroundStyle = ""; ?>
-<div id="snipcart" data-api-key="MGUyMjU1NDQtNTE3Ni00ODUxLTgzNzgtZWRmY2NjOTVhZDZjNjM3MzgxODMyMzYwNDQwODA1" data-config-add-product-behavior="none"></div>
+<div id="snipcart" data-api-key="MGUyMjU1NDQtNTE3Ni00ODUxLTgzNzgtZWRmY2NjOTVhZDZjNjM3MzgxODMyMzYwNDQwODA1" data-config-modal-style="side"></div>
 <body class="product beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
   <section class="product width100 largeTopPadding padding">
@@ -26,6 +26,7 @@ else $backgroundStyle = ""; ?>
             <div class="">Menge <div class="amount-input"><button>-</button><input type="number" name="amount"><button>+</button></div></div><div class="price"><?= $page->price()->html() ?>€</div>
             <button class="rectangle white darkGreenBackground snipcart-add-item"
                     data-item-id="<?= $page->id() ?>"
+                    data-item-name="<?= $page->name()->text() ?>"
                     data-item-price="<?= $page->price()->html() ?>"
                     data-item-url="<?= $page->url() ?>"
                     data-item-description="<?= $page->description()->text() ?>"
