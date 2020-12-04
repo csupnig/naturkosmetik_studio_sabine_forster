@@ -1,0 +1,18 @@
+###############################################################################
+#                          Generated on phpdocker.io                          #
+###############################################################################
+version: "3.1"
+services:
+
+    webserver:
+      build:
+        context: ./phpdocker/php-apache
+      container_name: webserver
+      working_dir: /application
+      volumes:
+          - ./website:/var/www/html
+          - ./phpdocker/php-apache:/etc/apache2/sites-available/
+          - ./phpdocker/logs:/var/log/httpd/
+      ports:
+       - "80:80"
+

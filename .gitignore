@@ -1,0 +1,11 @@
+.idea
+.idea/*
+.sass-cache/
+dploy.yaml
+
+config.codekit
+
+node_modules
+
+# Kirby stuff
+
