@@ -1,9 +1,9 @@
-<?php snippet('header');
+<?php snippet('head');
 //Set background image
 if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")"; 
 else $backgroundStyle = ""; ?>
 <body class="home beigeBackground" style="<?= $backgroundStyle ?>">
-	<?php snippet('head'); ?>
+	<?php snippet('header'); ?>
 	<section class="intro largeTopPadding">
 		<div class="width100 alignRight padding">
 			<h1 class="darkGreen"><?= $page->headlineHeadline()->kirbyText() ?></h1>
@@ -65,7 +65,7 @@ else $backgroundStyle = ""; ?>
 		<div class="width2C topMargin">
 			<?php foreach ($page->productHighlights()->toPages() as $product) { ?>
 				<div class="item">
-					<?php if ($image = $product->image()->toFile()) { ?>
+					<?php if ($image = $product->productImage()->toFile()) { ?>
 						<img class="width100 height85 cover" src="<?= $image->url() ?>" alt="<?= $product->name()->html() ?>"/>
 					<?php } ?>
 					<div class="details width100 smallTopMargin hoverFlip">
