@@ -1,9 +1,9 @@
-<?php snippet('header');
+<?php snippet('head');
 //Set background image
 if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")"; 
 else $backgroundStyle = ""; ?>
 <body class="home beigeBackground" style="<?= $backgroundStyle ?>">
-	<?php snippet('head'); ?>
+	<?php snippet('header'); ?>
 	<section class="intro largeTopPadding">
 		<div class="width100 alignRight padding">
 			<h1 class="darkGreen"><?= $page->headlineHeadline()->kirbyText() ?></h1>
@@ -45,10 +45,10 @@ else $backgroundStyle = ""; ?>
 				}
 				$i++ ?>
 				<div class="item">
-					<div class="width100 square smallPadding relative <?= $textClass ?> <?= $backgroundClass ?>">
-						<h3 class="width75"><a href="<?= $treatment->url() ?>"><?= $treatment->name()->html() ?></a></h3>
+					<div class="width100 flex square smallPadding relative <?= $textClass ?> <?= $backgroundClass ?>">
+						<h3 class="width75 flexGrow"><a href="<?= $treatment->url() ?>"><?= $treatment->name()->html() ?></a></h3>
 						<span class="footnote top right"><?= $treatment->duration()->html() ?></span>
-						<span class="large flexEnd">€<?= $treatment->price()->html() ?></span>
+						<span class="large alignFlexEnd">€<?= $treatment->price()->html() ?></span>
 					</div>
 					<div class="details width100 smallTopMargin hoverFlip">
 						<span class="small darkGreen"><?= $treatment->shortDescription()->html() ?></span>
@@ -65,7 +65,7 @@ else $backgroundStyle = ""; ?>
 		<div class="width2C topMargin">
 			<?php foreach ($page->productHighlights()->toPages() as $product) { ?>
 				<div class="item">
-					<?php if ($image = $product->image()->toFile()) { ?>
+					<?php if ($image = $product->productImage()->toFile()) { ?>
 						<img class="width100 height85 cover" src="<?= $image->url() ?>" alt="<?= $product->name()->html() ?>"/>
 					<?php } ?>
 					<div class="details width100 smallTopMargin hoverFlip">

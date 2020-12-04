@@ -47,7 +47,7 @@ columns:
             multiple: false
             required: true
 
-          detailsHeadline:
+          detailsSectionHeadline:
             label: Product Details
             type: headline
 
