@@ -39,7 +39,7 @@ columns:
             type: textarea
             required: true
 
-          image:
+          productImage:
             label: Image
             type: files
             template: media

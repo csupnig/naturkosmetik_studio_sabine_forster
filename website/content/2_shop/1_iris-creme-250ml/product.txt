@@ -10,7 +10,7 @@ Shortdescription: Reinigt & beruhigt sensible Haut
 
 ----
 
-Image:
+Productimage:
 
 - product-01.jpg
 
@@ -36,3 +36,7 @@ in Sonnenblumenöl*, Rosmarin*, Algen, Blasentang, Haselnussöl*, Lindenblüte*,
 ----
 
 Application: Morgens und abends auf das gereinigte Gesicht auftragen und einmassieren. Gründlich abspülen und trocknen.
+
+----
+
+Image: - product-01.jpg

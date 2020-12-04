@@ -170,6 +170,11 @@ h3 { font:400 2.2rem/2.88rem "new-spirit", sans-serif; }
 .hoverBold a:hover, .hoverBold a:active, button:hover { font-weight:bold; }
 .hoverItalic a:hover, .hoverItalic a:active, button:hover { font-style:italic; }
 
+/*=================================== Christenscheiss ===================================*/
+
+h1.small {font:500 3.5rem/3rem "new-spirit", sans-serif;}
+.description {font: 200 2rem "new-spirit", sans-serif;}
+
 /*=================================== Mobile Styles ===================================*/
 
 @media all and (max-width:600px) {
