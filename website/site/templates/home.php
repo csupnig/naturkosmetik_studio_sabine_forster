@@ -44,21 +44,21 @@ else $backgroundStyle = ""; ?>
 					$backgroundClass = "brownBackground";
 				}
 				$i++ ?>
-				<div class="item">
+				<div class="item hoverFlip">
 					<div class="width100 flex square smallPadding relative <?= $textClass ?> <?= $backgroundClass ?>">
 						<h3 class="width75 flexGrow"><a href="<?= $treatment->url() ?>"><?= $treatment->name()->html() ?></a></h3>
 						<span class="footnote top right"><?= $treatment->duration()->html() ?></span>
 						<span class="large alignFlexEnd">€<?= $treatment->price()->html() ?></span>
 					</div>
-					<div class="details width100 smallTopMargin hoverFlip">
-						<span class="small darkGreen"><?= $treatment->shortDescription()->html() ?></span>
-						<a href="<?= $treatment->url() ?>"><button class="width100 arrow large darkGreen">Details</button></a>
+					<div class="details width100 smallTopMargin">
+						<span class="flip small darkGreen"><?= $treatment->shortDescription()->html() ?></span>
+						<a class="flip" href="<?= $treatment->url() ?>"><button class="width100 next large darkGreen">Details</button></a>
 					</div>
 				</div>
 			<?php } ?>
 		</div>
 		<?php $treatmentsPage = $site->find("treatments"); ?>
-		<a href="<?= $treatmentsPage->url() ?>"><button class="arrow topMargin floatRight darkGreen">Alle Behandlungen</button></a>
+		<a href="<?= $treatmentsPage->url() ?>"><button class="circledNext topMargin floatRight darkGreen">Alle Behandlungen</button></a>
 	</section>
 	<section class="products width100 padding">
 		<h2 class="darkGreen">Produkt-<br/>Highlights</h2>
@@ -74,13 +74,13 @@ else $backgroundStyle = ""; ?>
 							<span class="small darkGreen floatLeft"><?= $product->shortDescription()->html() ?></span>
 							<span class="darkGreen floatRight">€<?= $product->price()->html() ?></span>
 						</div>
-						<a href="<?= $treatment->url() ?>"><button class="width100 arrow large darkGreen">Details</button></a>
+						<a href="<?= $treatment->url() ?>"><button class="width100 next large darkGreen">Details</button></a>
 					</div>
 				</div>
 			<?php } ?>
 		</div>
 		<?php $shopPage = $site->children()->find("shop"); ?>
-		<a href="<?= $shopPage->url() ?>"><button class="arrow topMargin floatRight darkGreen">Zum Shop</button></a>
+		<a href="<?= $shopPage->url() ?>"><button class="circledNext topMargin floatRight darkGreen">Zum Shop</button></a>
 	</section>
 	<?php if ($page->eventHighlight()->isNotEmpty()) { 
 		$event = $page->eventHighlight()->toPage(); ?>
@@ -162,12 +162,12 @@ else $backgroundStyle = ""; ?>
 						</div>
 						<div class="details width100 smallTopMargin hoverFlip">
 							<span class="darkGreen"><?= $article->name()->html() ?></span>
-							<a href="<?= $article->url() ?>"><button class="width100 arrow large darkGreen">Zum Artikel</button></a>
+							<a href="<?= $article->url() ?>"><button class="width100 next large darkGreen">Zum Artikel</button></a>
 						</div>
 					</div>
 				<?php } ?>
 			</div>
-			<a href="<?= $site->children()->find("articles")->url() ?>"><button class="arrow topMargin floatRight darkGreen"><?= $site->children()->find("articles")->name() ?></button></a>
+			<a href="<?= $site->children()->find("articles")->url() ?>"><button class="circledNext topMargin floatRight darkGreen"><?= $site->children()->find("articles")->name() ?></button></a>
 		</section>
 	<?php } ?>
 	<section class="newsletter width100 padding centeredText">
