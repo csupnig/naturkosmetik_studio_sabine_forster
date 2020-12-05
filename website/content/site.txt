@@ -68,6 +68,16 @@ Newsletter:
 
 ----
 
+Snipcartkey: MGUyMjU1NDQtNTE3Ni00ODUxLTgzNzgtZWRmY2NjOTVhZDZjNjM3MzgxODMyMzYwNDQwODA1
+
+----
+
+Deliverypage:
+
+- about
+
+----
+
 Footertext: 
 
 ----

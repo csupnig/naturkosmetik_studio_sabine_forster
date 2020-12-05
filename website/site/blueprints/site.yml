@@ -58,7 +58,7 @@ columns:
             label: Keywords
             type:  text
             help: Use comma-seperated keywords to aid search engines in finding your site.
-      
+
       contact:
         type: fields
         fields:
@@ -88,7 +88,7 @@ columns:
         fields:
           socialheadline:
             label: Social networks
-            type: headline  
+            type: headline
 
           facebook:
             label: Facebook URL
@@ -135,6 +135,26 @@ columns:
             width: 1/2
             translate: false
             help: If you're using a newsletter service which features an external dedicated signup page, this link can be configured here.
+      shop:
+        type: fields
+        fields:
+          shopheadline:
+            label: Shop
+            type: headline
+
+          snipcartkey:
+            label: Ship Cart Api Key
+            type: text
+            help: Copy the public Snip Cart API KEY here
+
+          deliveryPage:
+            label: Delivery information (page)
+            type: pages
+            query: site.pages
+            multiple: false
+            translate: false
+            width: 1/2
+            help: Link the page about delivery information here.
 
       footer:
         type: fields

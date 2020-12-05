@@ -75,3 +75,11 @@ columns:
             label: Application
             type: textarea
             required: true
+
+          similarProducts:
+            label: Similar products
+            type: pages
+            query: site.find("shop").index.filterBy("intendedTemplate", "product")
+            min: 2
+            max: 2
+            required: true

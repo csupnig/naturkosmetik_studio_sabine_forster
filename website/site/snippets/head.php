@@ -24,6 +24,7 @@
       <link rel="preconnect" href="https://cdn.snipcart.com">
       <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.css" />
       <script async src="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.js"></script>
+      <script type="text/javascript" src="/assets/scripts/shop.js"></script>
       <?php
     } ?>
   </head>

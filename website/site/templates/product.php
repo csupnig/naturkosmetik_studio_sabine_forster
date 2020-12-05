@@ -2,7 +2,7 @@
 //Set background image
 if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->url().")"; 
 else $backgroundStyle = ""; ?>
-<div id="snipcart" data-api-key="MGUyMjU1NDQtNTE3Ni00ODUxLTgzNzgtZWRmY2NjOTVhZDZjNjM3MzgxODMyMzYwNDQwODA1" data-config-modal-style="side"></div>
+<div id="snipcart" data-api-key="<?= $site->snipcartkey()->text() ?>" data-config-modal-style="side"></div>
 <body class="product beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
   <section class="product width100 largeTopPadding padding">
@@ -15,30 +15,99 @@ else $backgroundStyle = ""; ?>
             <?php } ?>
           </div>
         </div>
-        <div class="item">
+        <div class="item leftPadding">
           <div class="width100">
             <h1 class="small darkGreen"><?= $page->name()->text() ?></h1>
-            <span class="darkGreen">
-              <?= $page->description()->kirbyText() ?>
-            </span>
+            <div class="topMargin">
+              <span class="darkGreen ">
+                <?= $page->description()->kirbyText() ?>
+              </span>
+            </div>
           </div>
-          <form class="width100">
-            <div class="">Menge <div class="amount-input"><button>-</button><input type="number" name="amount"><button>+</button></div></div><div class="price"><?= $page->price()->html() ?>€</div>
-            <button class="rectangle white darkGreenBackground snipcart-add-item"
+          <?php
+          $productPrice = floatval(str_replace(',', '.', str_replace('.', '', $page->price()->html())));
+          ?>
+          <form class="width100 shopForm largeTopPadding">
+            <div class="width2C smallBottomMargin">
+              <div class="item darkGreen width2C amount-input">
+                <div class="item"><span>Menge</span></div>
+                <div class="item controls">
+                  <button class="amount-minus">-</button>
+                  <div class="amount-number centeredText"><span>1</span></div>
+                  <button class="amount-plus">+</button></div>
+              </div>
+              <div class="item price rightText"><span class="large darkGreen"><?= number_format($productPrice, 2, ",", "") ?> €</span></div>
+            </div>
+            <button class="rectangle white darkGreenBackground snipcart-add-item width100"
                     data-item-id="<?= $page->id() ?>"
                     data-item-name="<?= $page->name()->text() ?>"
-                    data-item-price="<?= $page->price()->html() ?>"
+                    data-item-price="<?= number_format($productPrice, 2) ?>"
                     data-item-url="<?= $page->url() ?>"
+                    data-item-quantity="1"
                     data-item-description="<?= $page->description()->text() ?>"
                   <?php if ($image = $page->productImage()->toFile()) { ?>
                     data-item-image="<?= $image->url() ?>"
                   <?php } ?>
 
                     data-item-name="$page->name()->text()">Zum Warenkorb hinzufügen</button>
-            <div>Preis inkl. MwSt., zzgl. Versand</div>
+            <div class="darkGreen smallTopMargin"><span class="small">Preis inkl. MwSt., zzgl. <a href="<?= $site->deliveryPage()->url() ?>">Versand</a></span></div>
           </form>
         </div>
 
+    </div>
+  </section>
+  <section class="productDetails width100 padding">
+    <div class="width2C topMargin">
+      <div class="item rightPadding vFlex">
+        <h2 class="darkGreen">Mehr Details</h2>
+        <div class="width100 darkGreen topMargin topBorder smallTopPadding">
+          <h4>Marke</h4>
+          <span><?=$page->brand()->html() ?></span>
+        </div>
+        <div class="width100 darkGreen smallTopMargin topBorder smallTopPadding lightBorder">
+          <h4>Menge</h4>
+          <span><?=$page->size()->html() ?></span>
+        </div>
+        <div class="width100 darkGreen smallTopMargin topBorder smallTopPadding lightBorder">
+          <h4>Inhalt</h4>
+          <span><?=$page->ingredients()->html() ?></span>
+        </div>
+
+      </div>
+      <div class="item leftPadding relative leftBorder darkGreen lightBorder">
+        <h2 class="darkGreen">Anwendung</h2>
+        <div class="width100 darkGreen topMargin">
+              <h3 class="small darkGreen">
+                <?= $page->application()->kirbyText() ?>
+              </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="question width100 padding centeredText">
+    <h3 class="width50 darkGreen inlineBlock">Haben Sie noch Fragen zu diesem Product?<br/>Ich berate Sie gerne.</h3><br/>
+    <button class="question topMargin"></button>
+  </section>
+  <section class="products width100 padding">
+    <h2 class="darkGreen">Ähnliche<br/>Produkte für Sie</h2>
+    <div class="width2C topMargin">
+      <?php foreach ($page->similarProducts()->toPages() as $product) { ?>
+        <div class="item hoverFlip">
+          <a href="<?= $product->url() ?>">
+            <?php if ($image = $product->productImage()->toFile()) { ?>
+              <img class="width100 height85 cover" src="<?= $image->url() ?>" alt="<?= $product->name()->html() ?>"/>
+            <?php } ?>
+          </a>
+          <div class="details width100 smallTopMargin hoverFlip">
+            <div class="width100 flip">
+              <h3 class="width75 small darkGreen floatLeft"><?= $product->name()->html() ?><?php if ($product->size()->isNotEmpty()) echo ", ".$product->size()->html() ?></h3>
+              <span class="width75 small darkGreen floatLeft"><?= $product->shortDescription()->html() ?></span>
+              <span class="darkGreen floatRight">€<?= $product->price()->html() ?></span>
+            </div>
+            <a class="flip" href="<?= $product->url() ?>"><button class="width100 next large darkGreen">Details</button></a>
+          </div>
+        </div>
+      <?php } ?>
     </div>
   </section>
 	<?php snippet('footer'); ?>

@@ -39,4 +39,11 @@ Application: Morgens und abends auf das gereinigte Gesicht auftragen und einmass
 
 ----
 
+Similarproducts:
+
+- shop/iris-creme-250ml
+- shop/iris-fluid-350ml
+
+----
+
 Image: - product-01.jpg
