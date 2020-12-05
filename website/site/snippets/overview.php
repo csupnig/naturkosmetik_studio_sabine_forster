@@ -1,4 +1,4 @@
-<?php if ($content == "treatments") $items = $site->find("treatments")->children()->filterBy("intendedTemplate", "treatmentCategory")->published();
+<?php if ($content == "treatments") $items = $site->find("treatments")->children()->filterBy("intendedTemplate", "treatmentcategory")->published();
 else if ($content == "product") $items = $page->children()->filterBy("intendedTemplate", "product")->published();
 else if ($content == "productcategory") $items = $page->children()->filterBy("intendedTemplate", "productcategory")->published();
 
