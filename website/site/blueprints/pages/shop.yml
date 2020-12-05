@@ -6,7 +6,7 @@ columns:
       categories:
         headline: Categories
         type: pages
-        template: productCategory
+        template: productcategory
         sortable: true
 
       files:

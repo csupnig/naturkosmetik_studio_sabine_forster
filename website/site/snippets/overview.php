@@ -1,4 +1,7 @@
-<?php if ($content == "treatments") $items = $site->find("treatments")->children()->filterBy("intendedTemplate", "treatmentCategory")->published();
+<?php
+if ($content == "treatments") $items = $site->find("treatments")->children()->filterBy("intendedTemplate", "treatmentCategory")->published();
+if ($content == "products") $items = $page->children()->filterBy("intendedTemplate", "products")->published();
+if ($content == "productcategory") $items = $page->children()->filterBy("intendedTemplate", "productcategory")->published();
 if (count($items) > 0) { ?>
 	<section class="overview width100 hPadding">
 		<h2 class="darkGreen">
@@ -26,7 +29,7 @@ if (count($items) > 0) { ?>
 					</a>
 					<div class="details width100 smallTopMargin">
 						<span class="flip width75 inlineBlock small darkGreen"><?= $item->shortDescription()->html() ?></span>
-						<a class="flip" href="<?= $treatment->url() ?>"><button class="width100 next large darkGreen">Mehr</button></a>
+						<a class="flip" href="<?= $item->url() ?>"><button class="width100 next large darkGreen">Mehr</button></a>
 					</div>
 				</div>
 			<?php } ?>

@@ -20,6 +20,7 @@ else $backgroundStyle = ""; ?>
       </div>
     </div>
   </section>
+  <?php snippet('overview', ["content" => "productcategory", "filter" => "off"]); ?>
   <?php snippet('productHighlights', ['filter' => 'manual']); ?>
   <?php snippet('callToAction', ['content' => 'newsletter']); ?>
 	<?php snippet('footer'); ?>
