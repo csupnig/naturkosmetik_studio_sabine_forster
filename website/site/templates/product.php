@@ -7,7 +7,7 @@ else $backgroundStyle = ""; ?>
 	<?php snippet('header'); ?>
   <section class="product width100 largeTopPadding padding">
     <?php snippet('breadcrumb'); ?>
-    <div class="width2C smallTopPadding">
+    <div class="width2C extraSmallTopPadding">
 
         <div class="item">
           <div class="width100 square">
@@ -61,15 +61,15 @@ else $backgroundStyle = ""; ?>
     <div class="width2C topMargin">
       <div class="item rightPadding vFlex">
         <h2 class="darkGreen">Mehr Details</h2>
-        <div class="width100 darkGreen topMargin strongTopBorder smallTopPadding">
+        <div class="width100 darkGreen topMargin strongTopBorder extraSmallTopPadding">
           <h4>Marke</h4>
           <span class="small"><?=$page->brand()->html() ?></span>
         </div>
-        <div class="width100 darkGreen smallTopMargin topBorder smallTopPadding lightBorder">
+        <div class="width100 darkGreen smallTopMargin topBorder extraSmallTopPadding lightBorder">
           <h4>Menge</h4>
           <span class="small"><?=$page->size()->html() ?></span>
         </div>
-        <div class="width100 darkGreen smallTopMargin topBorder smallTopPadding lightBorder">
+        <div class="width100 darkGreen smallTopMargin topBorder extraSmallTopPadding lightBorder">
           <h4>Inhalt</h4>
           <span class="small"><?=$page->ingredients()->html() ?></span>
         </div>

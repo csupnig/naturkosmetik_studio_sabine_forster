@@ -5,9 +5,6 @@ else $backgroundStyle = ""; ?>
 <div id="snipcart" data-api-key="<?= $site->snipcartkey()->text() ?>" data-config-modal-style="side"></div>
 <body class="product beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
-  <section class="product width100 largeTopPadding padding">
-    <!--?php snippet('breadcrumb'); ?-->
-  </section>
   <?php snippet('intro', ['link' => false, 'signature' => true]); ?>
   <section class="products width100 padding">
     <h2 class="darkGreen">

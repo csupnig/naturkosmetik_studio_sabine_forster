@@ -121,11 +121,13 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 .width2C .item.leftPadding { padding-left:6.5rem; }
 header.padding { padding:3rem 10rem 0; }
 footer.padding { padding:3rem 10rem 3rem 3rem; }
-.smallPadding { padding:1.5rem; }
-.largeTopPadding { padding-top:12rem; }
+.topPadding { padding-top: 5rem; }
+.bottomPadding { padding-bottom:4rem; }
+.largeTopPadding, section:first-of-type { padding-top:20rem; }
 .largeBottomPadding { padding-bottom: 12rem; }
-.topPadding { padding-top: 3rem; }
-.smallTopPadding { padding-top: 1.5rem; }
+.smallPadding { padding:6rem; }
+.extraSmallPadding { padding:1.5rem; }
+.extraSmallTopPadding { padding-top: 1.5rem; }
 
 .topMargin { margin-top:3rem; }
 .bottomMargin { margin-bottom:3rem; }
@@ -163,6 +165,8 @@ button.line { width:2rem; height:0.15rem; margin-left:-0.2rem; margin-right:-0.2
 button.line.lightGreenBackground:hover, button.line.lightGreenBackground.active { background-color:#1c3f41; }
 button.newsletter { width:8rem; height:8rem; background-image:url("/assets/images/icon-newsletter-green.png"); background-repeat:no-repeat; background-size:cover; }
 button.newsletter:hover { background-image:url("/assets/images/icon-newsletter-darkGreen.png"); }
+button.newsletter.white { background-image:url("/assets/images/icon-newsletter-white.png"); }
+button.newsletter.white:hover { background-image:url("/assets/images/icon-newsletter-lightGreen.png"); }
 button.cancellation { width:8rem; height:8rem; background-image:url("/assets/images/icon-cancellation-green.png"); background-repeat:no-repeat; background-size:cover; }
 button.cancellation:hover { background-image:url("/assets/images/icon-cancellation-darkGreen.png"); }
 button.question { width:8rem; height:8rem; background-image:url("/assets/images/icon-question-green.png"); background-repeat:no-repeat; background-size:cover; }
@@ -186,7 +190,7 @@ span.footnote.top.right { top:0; right:1.5rem; }
 .hoverFlip:hover .flip:first-child { display:none; }
 .hoverFlip:hover .flip:nth-child(2) { visibility:visible; }
 div.data.darkGreen { padding:0.5rem 0; border-top:0.08rem solid #1c3f41; }
-.item .cutout { width:100%; height:100%; top:0; left:0; position:absolute; display:none; }
+.item .cutout { width:100%; height:100%; top:0; left:0; z-index:100; position:absolute; display:none; }
 .item .cutout.darkGreen { background:url("/assets/images/cutOut-darkGreen.png") no-repeat; background-size:cover; }
 .item:hover .cutout { display:block; }
 
@@ -196,6 +200,10 @@ div.data.darkGreen { padding:0.5rem 0; border-top:0.08rem solid #1c3f41; }
 body { background-repeat:no-repeat; background-size:50%; }
 footer { height:25rem; }
 
+section.overview .item img { z-index:5; display:none; }
+section.overview .item:hover img { display:block; }
+
+section.studio {}
 
 /*=================================== Texts ===================================*/
 
@@ -221,7 +229,7 @@ button.next { font:400 2.2rem/2.2rem "Geomanist-Regular", sans-serif; }
 
 /*Link styles*/
 .alwaysUnderline a, button.next, button.circledNext { text-decoration:underline; }
-a .noUnderline, .noUnderline a:link, .noUnderline a:visited, .noUnderline a:hover, .noUnderline a:active, span a:hover, span a:active, h1 a:link, h1:visited, h2 a:link, h2:visited, h3 a:link, h3:visited, button:hover { text-decoration:none !important; }
+.noUnderline, .noUnderline a:link, .noUnderline a:visited, .noUnderline a:hover, .noUnderline a:active, span a:hover, span a:active, h1 a:link, h1:visited, h2 a:link, h2:visited, h3 a:link, h3:visited, button:hover { text-decoration:none !important; }
 
 
 /*=================================== Christenscheiss ===================================*/

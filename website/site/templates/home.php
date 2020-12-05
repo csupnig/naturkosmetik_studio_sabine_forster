@@ -5,7 +5,7 @@ else $backgroundStyle = ""; ?>
 <body class="home beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
 	<section class="headline largeTopPadding">
-		<div class="width100 alignFarRight padding">
+		<div class="width100 alignFarRight hPadding bottomPadding">
 			<h1 class="darkGreen"><?= $page->headlineHeadline()->kirbyText() ?></h1>
 			<span class="darkGreen"><?= $page->headlineSubline()->html() ?></span>
 		</div>
@@ -34,7 +34,7 @@ else $backgroundStyle = ""; ?>
 				}
 				$i++ ?>
 				<div class="item hoverFlip">
-					<div class="width100 flex square smallPadding relative <?= $textClass ?> <?= $backgroundClass ?>">
+					<div class="width100 flex square extraSmallPadding relative <?= $textClass ?> <?= $backgroundClass ?>">
 						<h3 class="width75 flexGrow"><a href="<?= $treatment->url() ?>"><?= $treatment->name()->html() ?></a></h3>
 						<span class="footnote top right"><?= $treatment->duration()->html() ?></span>
 						<span class="large alignFlexEnd">€<?= $treatment->price()->html() ?></span>
