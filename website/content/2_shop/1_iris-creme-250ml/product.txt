@@ -2,6 +2,12 @@ Name: Iris Creme, 250ml
 
 ----
 
+Backgroundimage:
+
+- img_background_treatments.png
+
+----
+
 Price: 43
 
 ----
