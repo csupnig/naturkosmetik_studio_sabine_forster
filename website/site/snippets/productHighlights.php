@@ -30,7 +30,7 @@ if (count($products) >= 1) { ?>
 		<?php } ?>
 	</div>
 	<?php //Display link to shop only if element isn't displayed on a shop page already
-	if (!in_array($page->template(), ["shop", "category", "products", "product"], true)) {
+	if (!in_array($page->template(), ["shop", "productCategory", "products", "product"], true)) {
 		$shopPage = $site->children()->find("shop"); ?>
 		<a href="<?= $shopPage->url() ?>"><button class="circledNext topMargin floatRight darkGreen">Zum Shop</button></a>
 	<?php } ?>
