@@ -96,31 +96,31 @@ Eventsimage:
 
 ----
 
-Newslettertext: Wollen Sie immer auf dem Laufenden bleiben? Melden Sie sich für meinen Newsletter an.
+Ctatext: Wollen Sie immer auf dem Laufenden bleiben? Melden Sie sich für meinen Newsletter an.
 
 ----
 
-Ctaheadline:
+Footerextensionheadline:
 
 Natürlich.
 Individuell.
 
 ----
 
-Ctatext: Unsere Haut ist einzigartig und wartvoll. Meine Behandlungen gehen ganz auf Ihre Bedürfnisse ein,und  dabei  verwende ich hochwertige, 100% natürliche Produkte. Ich freue mich auf Sie.
+Footerextensiontext: Unsere Haut ist einzigartig und wartvoll. Meine Behandlungen gehen ganz auf Ihre Bedürfnisse ein,und  dabei  verwende ich hochwertige, 100% natürliche Produkte. Ich freue mich auf Sie.
 
 ----
 
-Ctalinktarget:
+Footerextensionlinktarget:
 
 - treatments
 
 ----
 
-Ctalinktext: Buchen Sie die die Behandlung, die zu perfekt Ihnen passt
+Footerextensionlinktext: Buchen Sie die die Behandlung, die zu perfekt Ihnen passt
 
 ----
 
-Ctaimage:
+Footerextensionimage:
 
 - home-04.jpg

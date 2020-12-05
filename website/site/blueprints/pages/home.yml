@@ -148,45 +148,45 @@ columns:
             required: true
 
           newsletterSectionHeadline:
-            label: Newsletter
-            type: headline
-
-          newsletterText:
-            label: Newsletter text
-            type: textarea
-            required: true
-
-          ctaSectionHeadline:
             label: Call to action
             type: headline
 
-          ctaHeadline:
-            label: Call to action headline
-            type: textarea
-            width: 1/2
-            required: true
-
-          ctaText:
+          newsletterText:
             label: Call to action text
             type: textarea
+            required: true
+
+          footerExtensionSectionHeadline:
+            label: Footer extension
+            type: headline
+
+          footerExtensionHeadline:
+            label: Footer extension headline
+            type: textarea
             width: 1/2
             required: true
 
-          ctaLinkTarget:
-            label: Call to action button target
+          footerExtensionText:
+            label: Footer extension text
+            type: textarea
+            width: 1/2
+            required: true
+
+          footerExtensionLinkTarget:
+            label: Footer extension button target
             type: pages
             width: 1/2
             multiple: false
             required: true
 
-          ctaLinkText:
-            label: Call to action button text
+          footerExtensionLinkText:
+            label: Footer extension button text
             type: text
             width: 1/2
             required: true
 
-          ctaImage:
-            label: Call to action image
+          footerExtensionImage:
+            label: Footer extension image
             type: files
             multiple: false
             required: true
