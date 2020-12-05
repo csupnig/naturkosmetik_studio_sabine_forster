@@ -31,7 +31,7 @@ else $backgroundStyle = ""; ?>
           <div class="width100">
             <h1 class="small darkGreen"><?= $page->name()->text() ?></h1>
             <div class="topMargin">
-              <span class="darkGreen ">
+              <span class="darkGreen">
                 <?= $page->description()->kirbyText() ?>
               </span>
             </div>
@@ -62,7 +62,7 @@ else $backgroundStyle = ""; ?>
                   <?php } ?>
 
                     data-item-name="$page->name()->text()">Zum Warenkorb hinzufügen</button>
-            <div class="darkGreen smallTopMargin"><span class="small">Preis inkl. MwSt., zzgl. <a href="<?= $site->deliveryPage()->url() ?>">Versand</a></span></div>
+            <div class="darkGreen smallTopMargin"><span class="small">Preis inkl. MwSt., zzgl. <a class="uppercase" href="<?= $site->deliveryPage()->url() ?>">Versand</a></span></div>
           </form>
         </div>
 
@@ -72,17 +72,17 @@ else $backgroundStyle = ""; ?>
     <div class="width2C topMargin">
       <div class="item rightPadding vFlex">
         <h2 class="darkGreen">Mehr Details</h2>
-        <div class="width100 darkGreen topMargin topBorder smallTopPadding">
+        <div class="width100 darkGreen topMargin strongTopBorder smallTopPadding">
           <h4>Marke</h4>
-          <span><?=$page->brand()->html() ?></span>
+          <span class="small"><?=$page->brand()->html() ?></span>
         </div>
         <div class="width100 darkGreen smallTopMargin topBorder smallTopPadding lightBorder">
           <h4>Menge</h4>
-          <span><?=$page->size()->html() ?></span>
+          <span class="small"><?=$page->size()->html() ?></span>
         </div>
         <div class="width100 darkGreen smallTopMargin topBorder smallTopPadding lightBorder">
           <h4>Inhalt</h4>
-          <span><?=$page->ingredients()->html() ?></span>
+          <span class="small"><?=$page->ingredients()->html() ?></span>
         </div>
 
       </div>

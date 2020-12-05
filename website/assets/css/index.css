@@ -140,6 +140,7 @@ footer.padding { padding:3rem 10rem 3rem 3rem; }
 /*Site-specific framework: Borders*/
 .border.darkGreen { border:0.08rem solid #1c3f41; }
 .topBorder.darkGreen { border-top:0.08rem solid #1c3f41; }
+.strongTopBorder.darkGreen { border-top:0.16rem solid #1c3f41; }
 .leftBorder.darkGreen { border-left:0.08rem solid #1c3f41; }
 
 /*Site-specific framework: Buttons & icons*/
@@ -221,7 +222,7 @@ button.next { font:400 2.2rem/2.2rem "Geomanist-Regular", sans-serif; }
 .amount-input .amount-number { height: 2.88rem; width: 2.88rem;}
 .amount-input span {font:200 1.3rem/2.88rem "new-spirit", sans-serif; letter-spacing:0.02rem;}
 
-span.small a { text-transform:uppercase; letter-spacing:0.05rem;}
+span.small a.uppercase { text-transform:uppercase; letter-spacing:0.05rem;}
 
 nav.breadcrumb ol { list-style: none;}
 nav.breadcrumb .clear { clear: both; }
@@ -231,6 +232,7 @@ nav.breadcrumb ol li:first-child {padding-left: 0rem; margin-left: 0rem;}
 nav.breadcrumb ol li:first-child::before {content:none;}
 nav.breadcrumb ol li a { text-decoration: none;}
 nav.breadcrumb { text-transform: none; }
+
 
 /*=================================== Mobile Styles ===================================*/
 
