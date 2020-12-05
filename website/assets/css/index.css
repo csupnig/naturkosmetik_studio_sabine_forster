@@ -140,6 +140,7 @@ footer.padding { padding:3rem 10rem 3rem 3rem; }
 /*Site-specific framework: Borders*/
 .border.darkGreen { border:0.08rem solid #1c3f41; }
 .topBorder.darkGreen { border-top:0.08rem solid #1c3f41; }
+.strongTopBorder.darkGreen { border-top:0.16rem solid #1c3f41; }
 .leftBorder.darkGreen { border-left:0.08rem solid #1c3f41; }
 
 /*Site-specific framework: Buttons & icons*/
@@ -220,7 +221,7 @@ button.next { font:400 2.2rem/2.2rem "Geomanist-Regular", sans-serif; }
 .amount-input .amount-number { height: 2.88rem; width: 2.88rem;}
 .amount-input span {font:200 1.3rem/2.88rem "new-spirit", sans-serif; letter-spacing:0.02rem;}
 
-span.small a { text-transform:uppercase; letter-spacing:0.05rem;}
+span.small a.uppercase { text-transform:uppercase; letter-spacing:0.05rem;}
 
 nav.breadcrumb ol { list-style: none;}
 nav.breadcrumb .clear { clear: both; }
@@ -230,6 +231,27 @@ nav.breadcrumb ol li:first-child {padding-left: 0rem; margin-left: 0rem;}
 nav.breadcrumb ol li:first-child::before {content:none;}
 nav.breadcrumb ol li a { text-decoration: none;}
 nav.breadcrumb { text-transform: none; }
+
+/*=================================== Snipcart Styles ===================================*/
+
+.snipcart * { font-family: "Geomanist-Book", sans-serif !important; }
+.snipcart .snipcart-cart__secondary-header { background-color: #1c3f41; color: #fff;}
+.snipcart .snipcart__actions--link { color: #1c3f41; }
+
+button.snipcart-cart-button { height:4rem; padding:1rem 4rem 1rem 1rem; text-align:left; background-repeat:no-repeat; background-position:center right 1rem; background-size:2.3rem; }
+button.snipcart-cart-button:hover { border:0.08rem solid #1c3f41; background-color:#fff; color:#1c3f41; }
+button.snipcart-cart-button { background-color:#1c3f41; border:0.08rem solid #1c3f41; background-image: none;}
+button.snipcart-cart-button svg { transition: transform 0.5s ease-in-out; }
+button.snipcart-cart-button svg path { fill: #fff !important; }
+button.snipcart-cart-button:hover svg path { fill: #1c3f41 !important; }
+button.snipcart-cart-button:hover svg { transform: translateX(3rem); stroke: #1c3f41; }
+.snipcart .snipcart__icon--blue-dark path { fill: #1c3f41; }
+.snipcart .snipcart__icon--blue-light path { fill: #637950; }
+.snipcart .snipcart__box--badge-highlight, .snipcart .snipcart-form-radio:checked+label:before { background: linear-gradient(90deg,#637950,#bed295); }
+.snipcart .snipcart-discount-box__form { border: 1px solid #637950; }
+.snipcart .snipcart-discount-box__submit { color: #637950; }
+.snipcart .snipcart-cart__footer-col div.snipcart__actions--link { position:relative; }
+.snipcart .snipcart-cart__footer-col div.snipcart__actions--link::after {content:'Detaillierter Warenkorb'; display:block; position: absolute; top:0px; left:0px; width: 100%; background: #fff;}
 
 /*=================================== Mobile Styles ===================================*/
 
