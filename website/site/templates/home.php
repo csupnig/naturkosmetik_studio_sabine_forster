@@ -51,7 +51,7 @@ else $backgroundStyle = ""; ?>
 						<span class="large alignFlexEnd">€<?= $treatment->price()->html() ?></span>
 					</div>
 					<div class="details width100 smallTopMargin">
-						<span class="flip small darkGreen"><?= $treatment->shortDescription()->html() ?></span>
+						<span class="flip width75 inlineBlock small darkGreen"><?= $treatment->shortDescription()->html() ?></span>
 						<a class="flip" href="<?= $treatment->url() ?>"><button class="width100 next large darkGreen">Details</button></a>
 					</div>
 				</div>
@@ -60,30 +60,7 @@ else $backgroundStyle = ""; ?>
 		<?php $treatmentsPage = $site->find("treatments"); ?>
 		<a href="<?= $treatmentsPage->url() ?>"><button class="circledNext topMargin floatRight darkGreen">Alle Behandlungen</button></a>
 	</section>
-	<section class="products width100 padding">
-		<h2 class="darkGreen">Produkt-<br/>Highlights</h2>
-		<div class="width2C topMargin">
-			<?php foreach ($page->productHighlights()->toPages() as $product) { ?>
-				<div class="item hoverFlip">
-					<a href="<?= $treatment->url() ?>">
-						<?php if ($image = $product->productImage()->toFile()) { ?>
-							<img class="width100 height85 cover" src="<?= $image->url() ?>" alt="<?= $product->name()->html() ?>"/>
-						<?php } ?>
-					</a>
-					<div class="details width100 smallTopMargin hoverFlip">
-						<div class="width100 flip">
-							<h3 class="width75 small darkGreen floatLeft"><?= $product->name()->html() ?><?php if ($product->size()->isNotEmpty()) echo ", ".$product->size()->html() ?></h3>
-							<span class="width75 small darkGreen floatLeft"><?= $product->shortDescription()->html() ?></span>
-							<span class="darkGreen floatRight">€<?= $product->price()->html() ?></span>
-						</div>
-						<a class="flip" href="<?= $treatment->url() ?>"><button class="width100 next large darkGreen">Details</button></a>
-					</div>
-				</div>
-			<?php } ?>
-		</div>
-		<?php $shopPage = $site->children()->find("shop"); ?>
-		<a href="<?= $shopPage->url() ?>"><button class="circledNext topMargin floatRight darkGreen">Zum Shop</button></a>
-	</section>
+	<?php snippet('productHighlights', ['filter' => 'manual']); ?>
 	<?php if ($page->eventHighlight()->isNotEmpty()) { 
 		$event = $page->eventHighlight()->toPage(); ?>
 		<section class="events width100 alignRight padding">

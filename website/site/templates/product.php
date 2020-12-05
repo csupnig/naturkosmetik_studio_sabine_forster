@@ -100,27 +100,6 @@ else $backgroundStyle = ""; ?>
     <h3 class="width50 darkGreen inlineBlock">Haben Sie noch Fragen zu diesem Product?<br/>Ich berate Sie gerne.</h3><br/>
     <button class="question topMargin"></button>
   </section>
-  <section class="products width100 padding">
-    <h2 class="darkGreen">Ähnliche<br/>Produkte für Sie</h2>
-    <div class="width2C topMargin">
-      <?php foreach ($page->similarProducts()->toPages() as $product) { ?>
-        <div class="item hoverFlip">
-          <a href="<?= $product->url() ?>">
-            <?php if ($image = $product->productImage()->toFile()) { ?>
-              <img class="width100 height85 cover" src="<?= $image->url() ?>" alt="<?= $product->name()->html() ?>"/>
-            <?php } ?>
-          </a>
-          <div class="details width100 smallTopMargin hoverFlip">
-            <div class="width100 flip">
-              <h3 class="width75 small darkGreen floatLeft"><?= $product->name()->html() ?><?php if ($product->size()->isNotEmpty()) echo ", ".$product->size()->html() ?></h3>
-              <span class="width75 small darkGreen floatLeft"><?= $product->shortDescription()->html() ?></span>
-              <span class="darkGreen floatRight">€<?= $product->price()->html() ?></span>
-            </div>
-            <a class="flip" href="<?= $product->url() ?>"><button class="width100 next large darkGreen">Details</button></a>
-          </div>
-        </div>
-      <?php } ?>
-    </div>
-  </section>
+  <?php snippet('productHighlights', ['filter' => 'category']); ?>
 	<?php snippet('footer'); ?>
 </body>
