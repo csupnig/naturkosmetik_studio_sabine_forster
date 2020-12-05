@@ -239,7 +239,7 @@ nav.breadcrumb { text-transform: none; }
 .snipcart .snipcart-cart__secondary-header { background-color: #1c3f41; color: #fff;}
 .snipcart .snipcart__actions--link { color: #1c3f41; }
 
-button.snipcart-cart-button { height:4rem; padding:1rem 4rem 1rem 1rem; text-align:left; background-repeat:no-repeat; background-position:center right 1rem; background-size:2.3rem; }
+button.snipcart-cart-button { line-height: 2.2rem; height:4rem; padding:1rem 4rem 1rem 1rem; text-align:left; background-repeat:no-repeat; background-position:center right 1rem; background-size:2.3rem; }
 button.snipcart-cart-button:hover { border:0.08rem solid #1c3f41; background-color:#fff; color:#1c3f41; }
 button.snipcart-cart-button { background-color:#1c3f41; border:0.08rem solid #1c3f41; background-image: none;}
 button.snipcart-cart-button svg { transition: transform 0.5s ease-in-out; }
