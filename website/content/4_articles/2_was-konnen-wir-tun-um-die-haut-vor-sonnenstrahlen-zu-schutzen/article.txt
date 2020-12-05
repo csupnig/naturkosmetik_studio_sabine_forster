@@ -6,6 +6,26 @@ Category: Gesundheit
 
 ----
 
+Articledate: 2020-12-05
+
+----
+
+Readingtime: 10 Jahre
+
+----
+
 Previewimage:
 
 - article-02.jpg
+
+----
+
+Shortdescription: Oribus rerum, od itat que as simus trunter extperfe rovi dis mod enihi ert ulibus dis pore sequi re parum hariosa dit quam voluptur, architius aut aspe voluptasped quia cum acernam harum fuga.
+
+----
+
+Articleimages: 
+
+----
+
+Articletext: Oribus rerum, od itat que as simus trunter extperfe rovi dis mod enihi ert ulibus dis pore sequi re parum hariosa dit quam voluptur, architius aut aspe voluptasped quia cum acernam harum fuga.

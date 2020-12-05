@@ -39,3 +39,9 @@ columns:
             type: files
             multiple: false
             required: true
+
+          highlight:
+            headline: Highlighted article
+            type: pages
+            template: article
+            multiple: false
