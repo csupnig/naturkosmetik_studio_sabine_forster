@@ -13,7 +13,7 @@ if (count($items) > 0) { ?>
 		<div class="width3C topMargin">
 			<?php foreach ($items as $item) { ?>
 				<div class="item hoverFlip">
-					<a href="<?= $item->url() ?>">
+					<a class="noUnderline" href="<?= $item->url() ?>">
 						<div class="width100 square relative whiteBackground">
 							<div class="cutout darkGreen">
 								<span class="footnote top right white"><?= $item->name()->html() ?></span>
@@ -21,8 +21,8 @@ if (count($items) > 0) { ?>
 							<?php if ($image = $item->previewImage()->toFile()) { ?>
 								<img class="absolute width100 cover" src="<?= $image->url() ?>" alt="<?= $item->name()->html() ?>"/>
 							<?php } ?>
-							<div class="width100 flex square smallPadding relative darkGreen">
-								<h3 class="width75 flexGrow noUnderline"><?= $item->name()->html() ?></h3>
+							<div class="text width100 flex square extraSmallPadding relative darkGreen">
+								<h3 class="width75 flexGrow"><?= $item->name()->html() ?></h3>
 								<span class="large alignFlexEnd">(<?= count($item->children()->published()); ?>)</span>
 							</div>
 						</div>

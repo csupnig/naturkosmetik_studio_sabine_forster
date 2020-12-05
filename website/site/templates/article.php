@@ -19,15 +19,15 @@ else $backgroundStyle = ""; ?>
     <div class="width2C bigGap oneToTwo topMargin">
       <div class="item rightPadding vFlex">
         <h2 class="white">Details</h2>
-        <div class="width100 white topMargin strongTopBorder smallTopPadding">
+        <div class="width100 white topMargin strongTopBorder extraSmallTopPadding">
           <h4>Datum</h4>
           <span class="small"><?=$page->articleDate()->toDate("d F Y") ?></span>
         </div>
-        <div class="width100 white smallTopMargin topBorder smallTopPadding lightBorder">
+        <div class="width100 white smallTopMargin topBorder extraSmallTopPadding lightBorder">
           <h4>Lesezeit</h4>
           <span class="small"><?=$page->readingTime()->text() ?></span>
         </div>
-        <div class="width100 white smallTopMargin topBorder smallTopPadding lightBorder">
+        <div class="width100 white smallTopMargin topBorder exstraSmallTopPadding lightBorder">
           <h4>Thema</h4>
           <span class="small"><?=$page->category()->html() ?></span>
         </div>
