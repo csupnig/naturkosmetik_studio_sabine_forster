@@ -1,13 +1,11 @@
-<?php
-  $color = "darkGreen";
-  $background = "";
-  if ($content == "newsletterwhite") {
-    $color = "white";
-    $background = " darkGreenBackground";
-  }
-?>
-<section class="callToAction width100 padding centeredText<?=$background ?>">
-	<h3 class="width50 <?=$color ?> inlineBlock">
+<?php $color = "darkGreen";
+$background = "";
+if ($content == "newsletterwhite") {
+	$color = "white";
+	$background = " darkGreenBackground";
+} ?>
+<section class="callToAction width100 padding largeTopMargin largeBottomMargin centeredText <?=$background ?>">
+	<h3 class="width50 <?= $color ?> inlineBlock">
 		<?php if ($content == "newsletter" || $content == "newsletterwhite") {
   			echo $site->newslettercall()->kirbyText();
   			$content = "newsletter white";
