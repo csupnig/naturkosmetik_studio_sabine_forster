@@ -208,6 +208,7 @@ button.next { font:400 2.2rem/2.2rem "Geomanist-Regular", sans-serif; }
 .darkGreen, .darkGreen a, button.rectangle.white:hover { color:#1c3f41; }
 .green { color:#637950; }
 .italic { font-style:italic !important; }
+.uppercase { text-transform:uppercase; }
 
 /*Link styles*/
 .alwaysUnderline a, button.next, button.circledNext { text-decoration:underline; }
