@@ -12,10 +12,15 @@ else $backgroundStyle = ""; ?>
     <section class="articles width100 padding darkGreenBackground">
       <h2 class="white">Aktuelle<br/>Artikel</h2>
       <div class="width2C topMargin">
-        <div class="item">
+        <div class="item relative">
           <div class="width75 topBorder white topPadding">
             <h3 class="white"><?= $highlight->name()->kirbyText() ?></h3>
             <span class="white smallTopMargin"><?= $highlight->shortDescription()->kirbyText() ?></span>
+          </div>
+          <div class="absolute bottom width75">
+            <a href="<?= $highlight->url(); ?>">
+              <button class="button next white width100">Mehr</button>
+            </a>
           </div>
         </div>
         <div class="item relative">
@@ -25,7 +30,7 @@ else $backgroundStyle = ""; ?>
           <button class="sticker top left white greenBackground"><a href="<?= $highlight->url(); ?>">Highlighted Article</a></button>
         </div>
       </div>
-      <div class="width3C topMargin">
+      <div class="width3C topMargin topPadding">
         <?php foreach ($articles as $article) { ?>
           <div class="item hoverFlip">
             <a href="<?= $article->url() ?>">

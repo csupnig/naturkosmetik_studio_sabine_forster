@@ -156,6 +156,7 @@ span.topMargin, span.bottomMargin, span.smallTopMargin, span.smallBottomMargin {
 /*Site-specific framework: Buttons & icons*/
 button.next { min-width:1.5rem; min-height:1.5rem; padding-right:3rem; text-align:left; }
 button.next.darkGreen { background:url("/assets/images/icon-next-darkGreen.png") no-repeat center right; background-size:1.5rem; }
+button.next.white { background:url("/assets/images/icon-next-white.png") no-repeat center right; background-size:1.5rem; }
 button.previous { min-width:1.5rem; min-height:1.5rem; padding-left:3rem; text-align:right; }
 button.previous.darkGreen { background:url("/assets/images/icon-previous-darkGreen.png") no-repeat center left; background-size:1.5rem; }
 button.circledNext { height:2.3rem; text-align:left; padding-right:4rem; }
