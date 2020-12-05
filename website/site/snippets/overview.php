@@ -1,6 +1,6 @@
 <?php
 if ($content == "treatments") $items = $site->find("treatments")->children()->filterBy("intendedTemplate", "treatmentCategory")->published();
-if ($content == "products") $items = $page->children()->filterBy("intendedTemplate", "products")->published();
+if ($content == "product") $items = $page->children()->filterBy("intendedTemplate", "product")->published();
 if ($content == "productcategory") $items = $page->children()->filterBy("intendedTemplate", "productcategory")->published();
 if (count($items) > 0) { ?>
 	<section class="overview width100 hPadding">
