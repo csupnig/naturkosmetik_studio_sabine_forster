@@ -163,11 +163,6 @@ columns:
             label: Footer texts & links
             type: headline
 
-          footertext:
-            label: Footer text
-            type: textarea
-            help: Place additional information (f.e. opening times) here.
-
           copyright:
             label: Copyright
             type:  text
@@ -188,6 +183,44 @@ columns:
             width: 1/3
             translate: false
             help: Help out your design studio by placing a link to their website here.
+
+          footerline:
+            type: line
+
+          footerExtensionSectionHeadline:
+            label: Footer extension
+            type: headline
+
+          footerExtensionHeadline:
+            label: Footer extension headline
+            type: textarea
+            width: 1/2
+            required: true
+
+          footerExtensionText:
+            label: Footer extension text
+            type: textarea
+            width: 1/2
+            required: true
+
+          footerExtensionLinkTarget:
+            label: Footer extension button target
+            type: pages
+            width: 1/2
+            multiple: false
+            required: true
+
+          footerExtensionLinkText:
+            label: Footer extension button text
+            type: text
+            width: 1/2
+            required: true
+
+          footerExtensionImage:
+            label: Footer extension image
+            type: files
+            multiple: false
+            required: true
 
       terms:
         type: fields
