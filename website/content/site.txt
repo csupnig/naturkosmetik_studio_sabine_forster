@@ -78,10 +78,6 @@ Deliverypage:
 
 ----
 
-Footertext: 
-
-----
-
 Copyright: Sabine Forster
 
 ----
@@ -91,6 +87,33 @@ Design: From Here On Studio
 ----
 
 Designlink: https://fromhereon.nl/
+
+----
+
+Footerextensionheadline:
+
+Natürlich.
+Individuell.
+
+----
+
+Footerextensiontext: Unsere Haut ist einzigartig und wartvoll. Meine Behandlungen gehen ganz auf Ihre Bedürfnisse ein,und  dabei  verwende ich hochwertige, 100% natürliche Produkte. Ich freue mich auf Sie.
+
+----
+
+Footerextensionlinktarget:
+
+- treatments
+
+----
+
+Footerextensionlinktext: Buchen Sie die die Behandlung, die zu perfekt Ihnen passt
+
+----
+
+Footerextensionimage:
+
+- home-04.jpg
 
 ----
 
@@ -123,3 +146,7 @@ Cookiepolicyfile:
 ----
 
 Cookiepolicypage: 
+
+----
+
+Footertext: 

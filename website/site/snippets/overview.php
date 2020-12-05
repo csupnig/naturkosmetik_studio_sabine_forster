@@ -26,7 +26,7 @@ if (count($items) > 0) { ?>
 					</a>
 					<div class="details width100 smallTopMargin">
 						<span class="flip width75 inlineBlock small darkGreen"><?= $item->shortDescription()->html() ?></span>
-						<a class="flip" href="<?= $treatment->url() ?>"><button class="width100 next large darkGreen">Mehr</button></a>
+						<a class="flip" href="<?= $item->url() ?>"><button class="width100 next large darkGreen">Mehr</button></a>
 					</div>
 				</div>
 			<?php } ?>
