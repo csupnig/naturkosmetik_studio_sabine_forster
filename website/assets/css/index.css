@@ -233,6 +233,24 @@ nav.breadcrumb ol li:first-child::before {content:none;}
 nav.breadcrumb ol li a { text-decoration: none;}
 nav.breadcrumb { text-transform: none; }
 
+/*=================================== Snipcart Styles ===================================*/
+
+.snipcart * { font-family: "Geomanist-Book", sans-serif !important; }
+.snipcart .snipcart-cart__secondary-header { background-color: #1c3f41; color: #fff;}
+.snipcart .snipcart__actions--link { color: #1c3f41; }
+
+button.snipcart-cart-button { height:4rem; padding:1rem 4rem 1rem 1rem; text-align:left; background-repeat:no-repeat; background-position:center right 1rem; background-size:2.3rem; }
+button.snipcart-cart-button:hover { border:0.08rem solid #1c3f41; background-color:#fff; color:#1c3f41; }
+button.snipcart-cart-button { background-color:#1c3f41; border:0.08rem solid #1c3f41; background-image: none;}
+button.snipcart-cart-button svg { transition: transform 0.5s ease-in-out; }
+button.snipcart-cart-button svg path { fill: #fff !important; }
+button.snipcart-cart-button:hover svg path { fill: #1c3f41 !important; }
+button.snipcart-cart-button:hover svg { transform: translateX(3rem); stroke: #1c3f41; }
+.snipcart .snipcart__icon--blue-dark path { fill: #1c3f41; }
+.snipcart .snipcart__icon--blue-light path { fill: #637950; }
+.snipcart .snipcart__box--badge-highlight, .snipcart .snipcart-form-radio:checked+label:before { background: linear-gradient(90deg,#637950,#bed295); }
+.snipcart .snipcart-discount-box__form { border: 1px solid #637950; }
+.snipcart .snipcart-discount-box__submit { color: #637950; }
 
 /*=================================== Mobile Styles ===================================*/
 
