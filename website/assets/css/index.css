@@ -187,7 +187,6 @@ div.data.darkGreen { padding:0.5rem 0; border-top:0.08rem solid #1c3f41; }
 .item:hover .cutout { display:block; }
 
 
-
 /*=================================== Templates ===================================*/
 
 body { background-repeat:no-repeat; background-size:50%; }
@@ -218,7 +217,7 @@ button.next { font:400 2.2rem/2.2rem "Geomanist-Regular", sans-serif; }
 
 /*Link styles*/
 .alwaysUnderline a, button.next, button.circledNext { text-decoration:underline; }
-.noUnderline a:link, .noUnderline a:visited, .noUnderline a:hover, .noUnderline a:active, span a:hover, span a:active, h3 a:link, h3:visited, button:hover { text-decoration:none !important; }
+a .noUnderline, .noUnderline a:link, .noUnderline a:visited, .noUnderline a:hover, .noUnderline a:active, span a:hover, span a:active, h1 a:link, h1:visited, h2 a:link, h2:visited, h3 a:link, h3:visited, button:hover { text-decoration:none !important; }
 
 
 /*=================================== Christenscheiss ===================================*/

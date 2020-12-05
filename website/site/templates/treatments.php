@@ -22,11 +22,11 @@ else $backgroundStyle = ""; ?>
 					</div>
 					<div class="data width100 darkGreen vSmallPadding">
 						<h4>Telefonnummer</h4>
-						<span class="small"><a href="tel:<?= $page->studioPhone1()->html() ?>"><?= $page->studioPhone1()->html() ?></a></span>
+						<span class="small"><a href="tel:<?= $site->phone()->html() ?>"><?= $site->phone()->html() ?></a></span>
 					</div>
 					<div class="data width100 darkGreen vSmallPadding">
 						<h4>E-Mail Adresse</h4>
-						<span class="small"><a href="mailto:<?= $page->studioEmail1()->html() ?>"><?= $page->studioEmail1()->html() ?></a></span>
+						<span class="small"><a href="mailto:<?= $site->email()->html() ?>"><?= $site->email()->html() ?></a></span>
 					</div>
 				</div>
 				<span class="small uppercase"><?= $page->studioRemark()->html() ?></span>
@@ -51,11 +51,11 @@ else $backgroundStyle = ""; ?>
 					</div>
 					<div class="data width100 darkGreen vSmallPadding">
 						<h4>Telefonnummer</h4>
-						<span class="small"><a href="tel:<?= $page->studioPhone2()->html() ?>"><?= $page->studioPhone2()->html() ?></a></span>
+						<span class="small"><a href="tel:<?= $site->phone()->html() ?>"><?= $site->phone()->html() ?></a></span>
 					</div>
 					<div class="data width100 darkGreen vSmallPadding">
 						<h4>E-Mail Adresse</h4>
-						<span class="small"><a href="mailto:<?= $page->studioEmail2()->html() ?>"><?= $page->studioEmail2()->html() ?></a></span>
+						<span class="small"><a href="mailto:<?= $site->email()->html() ?>"><?= $site->email()->html() ?></a></span>
 					</div>
 				</div>
 				<span class="small uppercase"><?= $page->studioRemark()->html() ?></span>

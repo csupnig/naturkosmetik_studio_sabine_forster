@@ -1,9 +1,69 @@
-Title: Treatments
-
-----
-
 Name: Behandlungen
 
 ----
 
-Backgroundimage: - background-1.png
+Backgroundimage:
+
+- background-1.png
+
+----
+
+Studioname1:
+
+Studio
+Lichtenberg
+
+----
+
+Studioname2:
+
+Studio
+Linz
+
+----
+
+Studioheadline1: Körperliches und seelisches Wohlbefinden mitten in der Stadt.
+
+----
+
+Studioheadline2: Körperliches und seelisches Wohlbefinden mitten in der Stadt.
+
+----
+
+Studiosubline1: Ganzheitliche naturkosmetik
+
+----
+
+Studiosubline2: Beauty,- & Vitalcenter
+
+----
+
+Studioaddress1: 4040 Lichtenberg, Lierzbergerweg 55
+
+----
+
+Studioaddress2: 4020 Linz, Unionstraße 3, 1. Stock
+
+----
+
+Studiodays1: Montag, Dienstag
+
+----
+
+Studiodays2: Mittwoch, Donnerstag, Freitag
+
+----
+
+Studioimage1:
+
+- studio1.jpg
+
+----
+
+Studioimage2:
+
+- studio-2.jpg
+
+----
+
+Studioremark: * Es ist zwingend erforderlich, einen Termin im Voraus zu vereinbaren. Dies ist per Telefon oder E-Mail möglich.

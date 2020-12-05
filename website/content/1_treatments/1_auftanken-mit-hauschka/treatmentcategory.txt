@@ -1,0 +1,11 @@
+Name: Auftanken mit Hauschka
+
+----
+
+Shortdescription: Reinigungen, Gesichtsbehandlungen & Straffungen mit Produkten von Dr. Hauschka.
+
+----
+
+Previewimage:
+
+- article-01.jpg

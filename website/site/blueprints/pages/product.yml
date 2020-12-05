@@ -35,8 +35,9 @@ columns:
             required: true
 
           shortDescription:
-            label: Short description
+            label: Short description (Max. 100 characters)
             type: textarea
+            maxlength: 100
             required: true
 
           productImage:

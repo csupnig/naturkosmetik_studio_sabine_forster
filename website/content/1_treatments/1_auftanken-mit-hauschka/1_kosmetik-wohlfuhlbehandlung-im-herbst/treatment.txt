@@ -1,0 +1,19 @@
+Name: Kosmetik  Wohlfühl-Behandlung im Herbst
+
+----
+
+Duration: 60 Minuten
+
+----
+
+Price: 75
+
+----
+
+Shortdescription: Eine tiefgehende Reinigung, die Feuchtigkeit spendet
+
+----
+
+Previewimage:
+
+- article-01.jpg

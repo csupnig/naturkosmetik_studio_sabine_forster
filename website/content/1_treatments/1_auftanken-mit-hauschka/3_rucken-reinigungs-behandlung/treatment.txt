@@ -14,3 +14,9 @@ Shortdescription:
 
 Eine tiefgehende Reinigung, die 
 Feuchtigkeit spendet
+
+----
+
+Previewimage:
+
+- article-03.jpg

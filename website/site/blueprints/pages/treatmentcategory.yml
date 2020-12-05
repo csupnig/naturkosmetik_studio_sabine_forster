@@ -1,8 +1,14 @@
-title: Treatment
+title: Treatment category
 
 columns:
   - width: 1/3
     sections:
+      treatmentCategories:
+        headline: Treatments
+        type: pages
+        template: treatment
+        sortable: true
+
       files:
         headline: Media
         type: files
@@ -28,25 +34,14 @@ columns:
             type: text
             required: true
 
-          duration:
-            label: Duration
-            type: text
-            width: 1/2
-            required: true
-
-          price:
-            label: Price (€)
-            type: text
-            width: 1/2
-            required: true
-
           previewSectionHeadline:
             label: Preview
             type: headline
             
           shortDescription:
-            label: Preview description
+            label: Preview description (Max. 100 characters)
             type: textarea
+            maxlength: 100
             required: true
 
           previewImage:
