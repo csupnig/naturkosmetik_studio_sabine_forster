@@ -1,6 +1,6 @@
 <?php snippet('head');
 //Set background image
-if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->url().")"; 
+if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")";
 else $backgroundStyle = ""; ?>
 <div id="snipcart" data-api-key="<?= $site->snipcartkey()->text() ?>" data-config-modal-style="side"></div>
 <body class="product beigeBackground" style="<?= $backgroundStyle ?>">
@@ -20,7 +20,8 @@ else $backgroundStyle = ""; ?>
       </div>
     </div>
   </section>
+  <?php snippet('overview', ["content" => "productcategory", "filter" => "off"]); ?>
   <?php snippet('productHighlights', ['filter' => 'manual']); ?>
-  <?php snippet('newsletterInline'); ?>
+  <?php snippet('callToAction', ['content' => 'newsletter']); ?>
 	<?php snippet('footer'); ?>
 </body>

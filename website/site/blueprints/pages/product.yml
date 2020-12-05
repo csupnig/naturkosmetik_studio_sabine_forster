@@ -28,6 +28,12 @@ columns:
             type: text
             required: true
 
+          backgroundImage:
+            label: Page background
+            type: files
+            multiple: false
+            required: true
+
           price:
             label: Price (€)
             type: text
