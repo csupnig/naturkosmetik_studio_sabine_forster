@@ -154,9 +154,8 @@ button.line { width:2rem; height:0.15rem; margin-left:-0.2rem; margin-right:-0.2
 button.line.lightGreenBackground:hover, button.line.lightGreenBackground.active { background-color:#1c3f41; }
 button.newsletter { width:8rem; height:8rem; background-image:url("/assets/images/icon-newsletter-green.png"); background-repeat:no-repeat; background-size:cover; }
 button.newsletter:hover { background-image:url("/assets/images/icon-newsletter-darkGreen.png"); }
-/* TODO Change button background for question*/
-button.question { width:8rem; height:8rem; background-image:url("/assets/images/icon-newsletter-green.png"); background-repeat:no-repeat; background-size:cover; }
-button.question:hover { background-image:url("/assets/images/icon-newsletter-darkGreen.png"); }
+button.question { width:8rem; height:8rem; background-image:url("/assets/images/icon-question-green.png"); background-repeat:no-repeat; background-size:cover; }
+button.question:hover { background-image:url("/assets/images/icon-question-darkGreen.png"); }
 button.rectangle { height:4rem; padding:1rem 4rem 1rem 1rem; text-align:left; background-repeat:no-repeat; background-position:center right 1rem; background-size:2.3rem; }
 button.rectangle.darkGreen { border:0.08rem solid #1c3f41; background-image:url("/assets/images/icon-next-circled-darkGreen.png"); }
 button.rectangle.darkGreen:hover { background-color:#1c3f41; background-image:url("/assets/images/icon-next-circled-white.png"); }
