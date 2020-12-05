@@ -4,7 +4,7 @@ if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image
 else $backgroundStyle = ""; ?>
 <body class="home beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
-	<section class="intro largeTopPadding">
+	<section class="headline largeTopPadding">
 		<div class="width100 alignFarRight padding">
 			<h1 class="darkGreen"><?= $page->headlineHeadline()->kirbyText() ?></h1>
 			<span class="darkGreen"><?= $page->headlineSubline()->html() ?></span>
@@ -16,18 +16,7 @@ else $backgroundStyle = ""; ?>
 			<button class="sticker top right darkGreen lightGreenBackground"><a href="<?= $page->headlineLinkTarget()->url() ?>"><?= $page->headlineLinkText()->html() ?></a></button>
 		</div>
 	</section>
-	<section class="intro width2C padding bottomMargin">
-		<div class="item">
-			<h3 class="darkGreen"><?= $page->introIntro()->kirbyText() ?></h3>
-			<span class="darkGreen smallTopMargin"><?= $page->introText()->kirbyText() ?></span>
-			<a href="<?= $page->introLinkTarget()->url() ?>"><button class="rectangle darkGreen"><?= $page->introLinkText()->html() ?></button></a>
-		</div>
-		<div class="item vEnd">
-			<?php if ($image = $page->introImage()->toFile()) { ?>
-				<img class="width50 cover circle alignFlexEnd" src="<?= $image->url() ?>" alt="<?= $site->name()->html() ?>"/>
-			<?php } ?>
-		</div>
-	</section>
+	<?php snippet('intro', ['link' => true, 'signature' => false]); ?>
 	<section class="treatments width100 hPadding">
 		<h2 class="darkGreen">Behandlungs-<br/>Highlights</h2>
 		<div class="width3C topMargin">
