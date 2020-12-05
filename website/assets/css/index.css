@@ -251,6 +251,8 @@ button.snipcart-cart-button:hover svg { transform: translateX(3rem); stroke: #1c
 .snipcart .snipcart__box--badge-highlight, .snipcart .snipcart-form-radio:checked+label:before { background: linear-gradient(90deg,#637950,#bed295); }
 .snipcart .snipcart-discount-box__form { border: 1px solid #637950; }
 .snipcart .snipcart-discount-box__submit { color: #637950; }
+.snipcart .snipcart-cart__footer-col div.snipcart__actions--link { position:relative; }
+.snipcart .snipcart-cart__footer-col div.snipcart__actions--link::after {content:'Detaillierter Warenkorb'; display:block; position: absolute; top:0px; left:0px; width: 100%; background: #fff;}
 
 /*=================================== Mobile Styles ===================================*/
 

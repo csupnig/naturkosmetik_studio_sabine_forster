@@ -11,7 +11,7 @@ else $backgroundStyle = ""; ?>
         <?php foreach($site->breadcrumb() as $crumb): ?>
           <li>
             <a class="<?= e($crumb->isActive(), 'green', 'darkGreen') ?>" href="<?= $crumb->url() ?>" <?= e($crumb->isActive(), 'aria-current="page"') ?>>
-              <?= html($crumb->title()) ?>
+              <?= html($crumb->name()) ?>
             </a>
           </li>
         <?php endforeach ?>
