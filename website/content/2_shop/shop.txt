@@ -1,9 +1,14 @@
-Title: Shop
-
-----
-
 Name: Shop
 
 ----
 
-Backgroundimage: - background-1.png
+Backgroundimage:
+
+- background-1.png
+
+----
+
+Producthighlights:
+
+- shop/iris-creme-250ml
+- shop/iris-fluid-350ml
