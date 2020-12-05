@@ -127,6 +127,7 @@ footer.padding { padding:3rem 10rem 3rem 3rem; }
 .smallTopMargin { margin-top:1.5rem; }
 .smallBottomMargin { margin-bottom:1.5rem; }
 .smallLeftMargin { margin-left:1.5rem; }
+span.topMargin, span.bottomMargin, span.smallTopMargin, span.smallBottomMargin { display:inline-block; }
 
 /*Site-specific framework: Backgrounds*/
 .whiteBackground { background-color:#fff; }
