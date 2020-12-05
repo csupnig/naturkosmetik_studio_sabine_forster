@@ -205,6 +205,7 @@ button.next { font:400 2.2rem/2.2rem "Geomanist-Regular", sans-serif; }
 .black, .black a { color:#000; }
 .white, .white a, button.rectangle.darkGreen:hover { color:#fff; }
 .darkGreen, .darkGreen a, button.rectangle.white:hover { color:#1c3f41; }
+.green { color:#637950; }
 .italic { font-style:italic !important; }
 
 /*Link styles*/
@@ -221,6 +222,15 @@ button.next { font:400 2.2rem/2.2rem "Geomanist-Regular", sans-serif; }
 .amount-input span {font:200 1.3rem/2.88rem "new-spirit", sans-serif; letter-spacing:0.02rem;}
 
 span.small a { text-transform:uppercase; letter-spacing:0.05rem;}
+
+nav.breadcrumb ol { list-style: none;}
+nav.breadcrumb .clear { clear: both; }
+nav.breadcrumb ol li { float: left; padding-left: 0.3rem; margin-left: 0.3rem;}
+nav.breadcrumb ol li::before {content:'·'; padding-right: 0.3rem;}
+nav.breadcrumb ol li:first-child {padding-left: 0rem; margin-left: 0rem;}
+nav.breadcrumb ol li:first-child::before {content:none;}
+nav.breadcrumb ol li a { text-decoration: none;}
+nav.breadcrumb { text-transform: none; }
 
 /*=================================== Mobile Styles ===================================*/
 

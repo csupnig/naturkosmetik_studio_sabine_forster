@@ -6,7 +6,19 @@ else $backgroundStyle = ""; ?>
 <body class="product beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
   <section class="product width100 largeTopPadding padding">
-    <div class="width2C topMargin">
+    <nav class="breadcrumb largeTopPadding" aria-label="breadcrumb">
+      <ol>
+        <?php foreach($site->breadcrumb() as $crumb): ?>
+          <li>
+            <a class="<?= e($crumb->isActive(), 'green', 'darkGreen') ?>" href="<?= $crumb->url() ?>" <?= e($crumb->isActive(), 'aria-current="page"') ?>>
+              <?= html($crumb->title()) ?>
+            </a>
+          </li>
+        <?php endforeach ?>
+      </ol>
+      <div class="clear"></div>
+    </nav>
+    <div class="width2C smallTopPadding">
 
         <div class="item">
           <div class="width100 square">
