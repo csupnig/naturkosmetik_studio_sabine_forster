@@ -4,7 +4,7 @@ columns:
   - width: 1/3
     sections:
       categories:
-        headline: Categories
+        headline: Product Overviews
         type: pages
         template: products
         sortable: true
@@ -46,5 +46,40 @@ columns:
 
           shortDescription:
             label: Short description
+            type: textarea
+            required: true
+
+          detailsSectionHeadline:
+            label: Category Details
+            type: headline
+
+          description:
+            label: Description
+            type: textarea
+            required: true
+
+          headerImage:
+            label: Header image
+            type: files
+            multiple: false
+            required: true
+
+          footerHeadline:
+            label: Category Footer
+            type: headline
+
+          footerImage:
+            label: Footer image
+            type: files
+            multiple: false
+            required: true
+
+          footerIntro:
+            label: Footer Headline
+            type: textarea
+            required: true
+
+          footerText:
+            label: Footer Text
             type: textarea
             required: true

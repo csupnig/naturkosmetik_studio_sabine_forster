@@ -6,7 +6,7 @@ columns:
       categories:
         headline: Categories
         type: pages
-        template: category
+        template: productCategory
         sortable: true
 
       files:
@@ -40,9 +40,39 @@ columns:
             multiple: false
             required: true
 
+          introSectionHeadline:
+            label: Introduction
+            type: headline
+
+          introIntro:
+            label: Introduction intro
+            type: textarea
+            required: true
+
+          introText:
+            label: Introduction text
+            type: textarea
+            required: true
+
+          introImage:
+            label: Introduction image
+            type: files
+            multiple: false
+            required: true
+
           productsSectionHeadline:
             label: Products
             type: headline
+
+          myProductsHeadline:
+            label: My Products Headline
+            type: textarea
+            required: true
+
+          myProductsText:
+            label: My Products Text
+            type: textarea
+            required: true
 
           productHighlights:
             label: Product highlights
