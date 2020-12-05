@@ -1,0 +1,36 @@
+Name: Gesicht
+
+----
+
+Backgroundimage:
+
+- img_background_treatments.png
+
+----
+
+Shortdescription: Reine Natur bringt die gesündeste Lösung. Gesichzg.
+
+----
+
+Description: Reine Natur bringt die gesündeste Lösung. Optatur, sum faccum ut officipsani aut ommossi ut ad mi, que quis quo vellaccum non eost faccatque earum quo que eatio qui aut ut officip suntiiscia.
+
+----
+
+Headerimage:
+
+- >
+  facephoto-1572262281472-20505d615a24.jpeg
+
+----
+
+Footerimage:
+
+- photo-1575407089895-2e477d1b702a.jpeg
+
+----
+
+Footerintro: Reine Natur bringt die gesündeste Lösung.
+
+----
+
+Footertext: Eine gute Naturkosmetik zeichnet sich dadurch aus, dass jeder Inhaltsstoff gleichzeitig ein Wirkstoff ist, welcher der Haut hilft, die natürlichen Rhythmen und Funktionen zu unterstützen und zu bewahren. Gerade das Gesicht reagiert sehr sensibel auf unterschiedliche Pflegeprodukte und bedarf besonderer Aufmerksamkeit. Finden Sie anhand der nachstehenden beschriebenen Hautbilder Ihre passenden Pflegeprodukte.

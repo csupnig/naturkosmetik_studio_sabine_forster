@@ -1,0 +1,16 @@
+Name: Reife Haut
+
+----
+
+Backgroundimage:
+
+- img_background_treatments.png
+
+----
+
+Shortdescription:
+
+STRAFFENDE PFLEGE. Erhält Ihre Haut gepflegt und vital.
+Sie vermindert die Entstehung von Falten und fördert eine gleichmäßige Hautfärbung. cus et, simossit velenda que dipsae.
+
+HAUTBILD. Nachlassende Regenerationsfähigkeit, fehlende Spannkraft und Elastizität, vermehrte Fältchen- oder Faltenbildung. Die Haut wirkt oft matt, neigt zu Schuppenbildung. Talg- und Schweißdrüsenproduktion nimmt ab, daher auch Neigung zu Trockenheit und Empfindlichkeit. Entstehung von sogenannten Altersflecken.

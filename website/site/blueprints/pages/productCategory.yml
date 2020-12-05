@@ -1,12 +1,12 @@
-title: Shop
+title: Category
 
 columns:
   - width: 1/3
     sections:
       categories:
-        headline: Categories
+        headline: Product Overviews
         type: pages
-        template: productCategory
+        template: products
         sortable: true
 
       files:
@@ -40,44 +40,46 @@ columns:
             multiple: false
             required: true
 
-          introSectionHeadline:
-            label: Introduction
+          previewSesctionHeadline:
+            label: Preview Content
             type: headline
 
-          introIntro:
-            label: Introduction intro
+          shortDescription:
+            label: Short description
             type: textarea
             required: true
 
-          introText:
-            label: Introduction text
+          detailsSectionHeadline:
+            label: Category Details
+            type: headline
+
+          description:
+            label: Description
             type: textarea
             required: true
 
-          introImage:
-            label: Introduction image
+          headerImage:
+            label: Header image
             type: files
             multiple: false
             required: true
 
-          productsSectionHeadline:
-            label: Products
+          footerHeadline:
+            label: Category Footer
             type: headline
 
-          myProductsHeadline:
-            label: My Products Headline
+          footerImage:
+            label: Footer image
+            type: files
+            multiple: false
+            required: true
+
+          footerIntro:
+            label: Footer Headline
             type: textarea
             required: true
 
-          myProductsText:
-            label: My Products Text
+          footerText:
+            label: Footer Text
             type: textarea
-            required: true
-
-          productHighlights:
-            label: Product highlights
-            type: pages
-            query: site.find("shop").index.filterBy("intendedTemplate", "product")
-            min: 2
-            max: 2
             required: true

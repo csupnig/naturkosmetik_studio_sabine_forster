@@ -98,6 +98,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 
 /*Site-specific framework: Widths, margins & paddings*/
 .width2C { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+.width2C.bigGap { gap: 6rem; }
 .alignRight > .width2C { grid-template-columns:0.88fr 1.12fr; }
 .width3C { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.5rem; }
 .width3C > *:not(.item) { grid-column:1/4; }
@@ -107,6 +108,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 
 .padding { padding:5rem 10rem 4rem; }
 .hPadding { padding-left:10rem; padding-right:10rem; }
+.alignRight { padding-right: 0; }
 .alignLeft.padding { padding:5rem 16rem 4rem 0; }
 .alignLeft.hPadding { padding-left:0; padding-right:16rem; }
 .alignRight.padding { padding:5rem 0 4rem 10rem; }
@@ -119,6 +121,7 @@ header.padding { padding:3rem 10rem 0; }
 footer.padding { padding:3rem 10rem 3rem 3rem; }
 .smallPadding { padding:1.5rem; }
 .largeTopPadding { padding-top:12rem; }
+.largeBottomPadding { padding-bottom: 12rem; }
 .topPadding { padding-top: 3rem; }
 .smallTopPadding { padding-top: 1.5rem; }
 
@@ -151,6 +154,7 @@ button.previous { min-width:1.5rem; min-height:1.5rem; padding-left:3rem; text-a
 button.previous.darkGreen { background:url("/assets/images/icon-previous-darkGreen.png") no-repeat center left; background-size:1.5rem; }
 button.circledNext { height:2.3rem; text-align:left; padding-right:4rem; }
 button.circledNext.darkGreen { background:url("/assets/images/icon-next-circled-darkGreen.png") no-repeat center right; background-size:2.3rem; }
+button.circledNext.circleOnly { padding-right: 2.3rem; }
 button.line { width:2rem; height:0.15rem; margin-left:-0.2rem; margin-right:-0.2rem; }
 button.line.lightGreenBackground:hover, button.line.lightGreenBackground.active { background-color:#1c3f41; }
 button.newsletter { width:8rem; height:8rem; background-image:url("/assets/images/icon-newsletter-green.png"); background-repeat:no-repeat; background-size:cover; }

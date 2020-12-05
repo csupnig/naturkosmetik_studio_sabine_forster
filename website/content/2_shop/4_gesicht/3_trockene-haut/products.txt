@@ -1,0 +1,17 @@
+Name: Trockene Haut
+
+----
+
+Backgroundimage:
+
+- img_background_treatments.png
+
+----
+
+Shortdescription:
+
+NACHHALTIGE PFLEGE. Stärkt den natürlichen Feuchtigkeitshaushalt Ihrer Haut. Sie fühlen sich angenehm und entspannt. Vorzeitige Hautalterung wird gestoppt.
+
+HAUTBILD. Feinporig und ebenmäßig. Ein oft starkes Spannungsgefühl bis hin zu leichtem Juckreiz. Kaum oder gar
+keine Mitesser. Trockene Haut ist oft rau, spröde, schuppig
+oder leicht rissig. Manchmal neigt die Haut zu Reaktionen auf Temperaturveränderung. Sie bindet zu wenig Fett und Feuchtigkeit, die Talgproduktion verringert sich mit zunehmendem Alter. Verliert oft vorzeitig an Elastizität und bildet frühzeitig Falten.
