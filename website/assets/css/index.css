@@ -132,6 +132,8 @@ footer.padding { padding:3rem 10rem 3rem 3rem; }
 .extraSmallPadding { padding:1.5rem; }
 .extraSmallTopPadding { padding-top: 1.5rem; }
 
+.largeTopMargin { margin-top:6rem; }
+.largeBottomMargin { margin-bottom:6rem; }
 .topMargin { margin-top:3rem; }
 .bottomMargin { margin-bottom:3rem; }
 .smallTopMargin { margin-top:1.5rem; }
@@ -236,7 +238,7 @@ button.next { font:400 2.2rem/2.2rem "Geomanist-Regular", sans-serif; }
 .uppercase { text-transform:uppercase; }
 
 /*Link styles*/
-.alwaysUnderline a, button.next, button.circledNext { text-decoration:underline; }
+.alwaysUnderline, .alwaysUnderline a, .hoverUnderline:hover, button.next, button.circledNext { text-decoration:underline; }
 .noUnderline, .noUnderline a:link, .noUnderline a:visited, .noUnderline a:hover, .noUnderline a:active, span a:hover, span a:active, h1 a:link, h1:visited, h2 a:link, h2:visited, h3 a:link, h3:visited, button:hover { text-decoration:none !important; }
 
 

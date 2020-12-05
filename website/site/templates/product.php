@@ -85,7 +85,7 @@ else $backgroundStyle = ""; ?>
       </div>
     </div>
   </section>
-  <?php snippet('callToAction', ['content' => 'question']); ?>
+  <?php snippet('callToAction', ['content' => 'question', 'color' => 'darkGreen']); ?>
   <?php snippet('productHighlights', ['filter' => 'category']); ?>
 	<?php snippet('footer'); ?>
 </body>

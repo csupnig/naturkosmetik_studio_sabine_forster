@@ -52,6 +52,6 @@ else $backgroundStyle = ""; ?>
       </div>
     </section>
   <?php } ?>
-  <?php snippet('callToAction', ['content' => 'newsletterwhite']); ?>
+  <?php snippet('callToAction', ['content' => 'newsletter', 'color' => 'white']); ?>
 	<?php snippet('footer'); ?>
 </body>

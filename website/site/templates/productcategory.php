@@ -46,6 +46,6 @@ else $backgroundStyle = ""; ?>
     <h3 class="small width33 largeTopPadding white inlineBlock"><?=$page->footerIntro()->kirbyText() ?></h3>
     <div class="largeBottomPadding"><span class="white inlineBlock width50"><?=$page->footerText()->kirbyText() ?></span></div>
   </section>
-  <?php snippet('callToAction', ['content' => 'newsletter']); ?>
+  <?php snippet('callToAction', ['content' => 'newsletter', 'color' => 'darkGreen']); ?>
 	<?php snippet('footer'); ?>
 </body>

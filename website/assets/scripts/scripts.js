@@ -117,4 +117,12 @@ $(document).ready(function () {
 	});
 
 	/*=================================== Site-specific Snippets ===================================*/
+
+	$("section.studios .studio").hover(function() {
+		$(this).find("h2").addClass("alwaysUnderline");
+		$(this).find("img").show();
+		$(this).siblings().find("img").hide();
+	}, function() {
+		$(this).find("h2").removeClass("alwaysUnderline");
+	});
 });

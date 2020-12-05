@@ -145,7 +145,7 @@ else $backgroundStyle = ""; ?>
 			<a href="<?= $site->children()->find("articles")->url() ?>"><button class="circledNext topMargin floatRight darkGreen"><?= $site->children()->find("articles")->name() ?></button></a>
 		</section>
 	<?php } ?>
-  	<?php snippet('callToAction', ["content" => "newsletter"]); ?>
+  	<?php snippet('callToAction', ["content" => "newsletter", 'color' => 'darkGreen']); ?>
 	<?php snippet('footerExtension'); ?>
 	<?php snippet('footer'); ?>
 </body>

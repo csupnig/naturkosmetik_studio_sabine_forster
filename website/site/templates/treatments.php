@@ -41,7 +41,7 @@ else $backgroundStyle = ""; ?>
 			</div>
 		<?php } ?>
 	</section>
-	<?php snippet('callToAction', ["content" => "cancellation"]); ?>
+	<?php snippet('callToAction', ["content" => "cancellation", "color" => 'darkGreen']); ?>
 	<?php snippet('footerExtension'); ?>
 	<?php snippet('footer'); ?>
 </body>

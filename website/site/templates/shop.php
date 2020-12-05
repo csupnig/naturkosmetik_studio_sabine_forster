@@ -19,6 +19,6 @@ else $backgroundStyle = ""; ?>
   </section>
   <?php snippet('overview', ["content" => "productcategory", "filter" => "off"]); ?>
   <?php snippet('productHighlights', ['filter' => 'manual']); ?>
-  <?php snippet('callToAction', ['content' => 'newsletter']); ?>
+  <?php snippet('callToAction', ['content' => 'newsletter', 'color' => 'darkGreen']); ?>
 	<?php snippet('footer'); ?>
 </body>
