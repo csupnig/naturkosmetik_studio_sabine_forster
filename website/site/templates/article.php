@@ -17,7 +17,7 @@ else $backgroundStyle = ""; ?>
       </div>
     </div>
     <div class="width2C bigGap oneToTwo topMargin">
-      <div class="item rightPadding vFlex">
+      <div class="item rightPadding vFlex relative">
         <h2 class="white">Details</h2>
         <div class="width100 white topMargin strongTopBorder extraSmallTopPadding">
           <h4>Datum</h4>
@@ -32,7 +32,9 @@ else $backgroundStyle = ""; ?>
           <span class="small"><?=$page->category()->html() ?></span>
         </div>
 
-
+        <div class="absolute bottom smallTopPadding white width100 topBorder">
+          <span class="white">Share this article</span>
+        </div>
       </div>
       <div class="item relative">
         <?php if ($page->articleImages()->isNotEmpty()) { ?>

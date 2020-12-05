@@ -1,7 +1,16 @@
-<section class="callToAction width100 padding centeredText">
-	<h3 class="width50 darkGreen inlineBlock">
-		<?php if ($content == "newsletter") {
+<?php
+  $color = "darkGreen";
+  $background = "";
+  if ($content == "newsletterwhite") {
+    $color = "white";
+    $background = " darkGreenBackground";
+  }
+?>
+<section class="callToAction width100 padding centeredText<?=$background ?>">
+	<h3 class="width50 <?=$color ?> inlineBlock">
+		<?php if ($content == "newsletter" || $content == "newsletterwhite") {
   			echo $site->newslettercall()->kirbyText();
+  			$content = "newsletter white";
   		} else if ($content == "cancellation") {
   			echo "Sie sind verhindert?<br/> Mehr Informationen zu den Stornobedinungen<br/>finden Sie in den AGBS";
 		} else if ($content == "question") {

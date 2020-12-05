@@ -42,6 +42,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 /*Position properties*/
 .relative { position:relative; }
 .absolute { position:absolute; }
+.absolute.bottom { bottom: 0; }
 .fixed { position:fixed; }
 /*Display properties*/
 .flex { display:flex; }
