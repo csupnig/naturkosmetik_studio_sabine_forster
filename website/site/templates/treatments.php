@@ -65,11 +65,7 @@ else $backgroundStyle = ""; ?>
 			</div>
 		</div>
 	</section>
-	<?php snippet('callToAction'); ?>
-	<section class="footerExtension width100 padding" style="<?php if ($image = $page->footerImage()->toFile()) echo 'background-image:url('.$image->url().');' ?>">
-		<h1 class="large white bottomMargin"><?= $page->footerHeadline()->kirbyText() ?></h1>
-		<span class="width33 inlineBlock small white topMargin"><?= $page->footerText()->kirbyText() ?></span><br/>
-		<a href="<?= $page->footerLinkTarget()->toPage()->url() ?>"><button class="width100 rectangle white topMargin"><?= $page->footerLinkText()->url() ?></button></a>
-	</section>
+	<?php snippet('callToAction', ["content" => "cancellation"]); ?>
+	<?php snippet('footerExtension'); ?>
 	<?php snippet('footer'); ?>
 </body>
