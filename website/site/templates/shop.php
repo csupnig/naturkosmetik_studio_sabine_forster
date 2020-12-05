@@ -8,7 +8,7 @@ else $backgroundStyle = ""; ?>
   <section class="product width100 largeTopPadding padding">
     <?php snippet('breadcrumb'); ?>
     <div class="width2C smallTopPadding">
-
+      <?php snippet('intro', ['link' => false, 'signature' => true]); ?>
 
 
     </div>
