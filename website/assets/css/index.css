@@ -99,6 +99,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 /*Site-specific framework: Widths, margins & paddings*/
 .width2C { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
 .width2C.bigGap { gap: 6rem; }
+.width2C.oneToTwo { grid-template-columns:1fr 2fr; }
 .alignRight > .width2C { grid-template-columns:0.88fr 1.12fr; }
 .width3C { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.5rem; }
 .width3C > *:not(.item) { grid-column:1/4; }
@@ -144,7 +145,9 @@ span.topMargin, span.bottomMargin, span.smallTopMargin, span.smallBottomMargin {
 /*Site-specific framework: Borders*/
 .border.darkGreen { border:0.08rem solid #1c3f41; }
 .topBorder.darkGreen { border-top:0.08rem solid #1c3f41; }
+.topBorder.white { border-top:0.08rem solid #fff; }
 .strongTopBorder.darkGreen { border-top:0.16rem solid #1c3f41; }
+.strongTopBorder.white { border-top:0.16rem solid #fff; }
 .leftBorder.darkGreen { border-left:0.08rem solid #1c3f41; }
 
 /*Site-specific framework: Buttons & icons*/
