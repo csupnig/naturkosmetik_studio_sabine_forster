@@ -1,9 +1,14 @@
-Title: Articles
-
-----
-
 Name: Aktuelles
 
 ----
 
-Backgroundimage: - background-1.png
+Backgroundimage:
+
+- background-1.png
+
+----
+
+Highlight:
+
+- >
+  articles/was-konnen-wir-tun-um-die-haut-vor-sonnenstrahlen-zu-schutzen

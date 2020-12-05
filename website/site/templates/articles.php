@@ -4,12 +4,27 @@ if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image
 else $backgroundStyle = ""; ?>
 <body class="articles lightGreenBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
-  <?php $articles = $page->children()->filterBy("intendedTemplate", "article")->published()->filter(function ($item) use ($page) {
-    return $item->id() !== $page->id();
+  <?php $highlight = $page->highlight()->toPage(); ?>
+  <?php $articles = $page->children()->filterBy("intendedTemplate", "article")->published()->filter(function ($item) use ($highlight) {
+    return $item->id() !== $highlight->id();
   });
   if (count($articles) > 0) { ?>
     <section class="articles width100 padding darkGreenBackground">
-      <h2 class="white">Weitere<br/>Artikel</h2>
+      <h2 class="white">Aktuelle<br/>Artikel</h2>
+      <div class="width2C topMargin">
+        <div class="item">
+          <div class="width75 topBorder white topPadding">
+            <h3 class="white"><?= $highlight->name()->kirbyText() ?></h3>
+            <span class="white smallTopMargin"><?= $highlight->shortDescription()->kirbyText() ?></span>
+          </div>
+        </div>
+        <div class="item relative">
+          <?php if ($image = $highlight->previewImage()->toFile()) { ?>
+            <img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $highlight->name()->html() ?>"/>
+          <?php } ?>
+          <button class="sticker top left white greenBackground"><a href="<?= $highlight->url(); ?>">Highlighted Article</a></button>
+        </div>
+      </div>
       <div class="width3C topMargin">
         <?php foreach ($articles as $article) { ?>
           <div class="item hoverFlip">
