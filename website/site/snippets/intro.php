@@ -4,7 +4,7 @@
 		<span class="darkGreen smallTopMargin"><?= $page->introText()->kirbyText() ?></span>
 		<?php //Display Signature if requested in snippet call
 		if ($signature == true) { ?>
-			<span class="small darkGreen topMargin">Mit freundlichen Grüßen</span><br/>
+			<span class="extraSmall darkGreen topMargin">Mit freundlichen Grüßen</span><br/>
 			<h3 class="small darkGreen">Ihre Sabine Forster</h3>
 		<?php }
 		//Display extra link if requested in snippet call

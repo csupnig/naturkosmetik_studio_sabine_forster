@@ -14,7 +14,7 @@ else $backgroundStyle = ""; ?>
 
       </div>
       <div class="item relative">
-        <span class="width75 small darkGreen topMargin flexGrow"><?= $page->shortDescription()->kirbyText() ?></span>
+        <span class="extraSmall width75 darkGreen topMargin flexGrow"><?= $page->shortDescription()->kirbyText() ?></span>
       </div>
     </div>
   </section>

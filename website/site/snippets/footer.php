@@ -6,14 +6,14 @@
 		</div>
 		<div class="floatRight noUnderline">
 			<?php if ($site->termsConditionsFile()->isNotempty()) { ?>
-				<span class="small"><a href="<?= $site->termsConditionsFile()->toFile()->url() ?>">Nutzungsbedinungen</a></span><br/>
+				<span class="extraSmall"><a href="<?= $site->termsConditionsFile()->toFile()->url() ?>">Nutzungsbedinungen</a></span><br/>
 			<?php } else if ($site->termsConditionsPage()->isNotEmpty()) { ?>
-				<span class="small"><a href="<?= $site->termsConditionsPage()->toPage()->url() ?>">Nutzungsbedinungen</a></span><br/>
+				<span class="extraSmall"><a href="<?= $site->termsConditionsPage()->toPage()->url() ?>">Nutzungsbedinungen</a></span><br/>
 			<?php } 
 			$aboutPage = $site->find("about"); ?>
-			<span class="small"><a href="<?= $aboutPage->url() ?>"><?= $aboutPage->name()->html() ?></a></span><br/>
-			<span class="small"><a href="<?= $aboutPage->url() ?>#contact">Kontakt</a></span><br/>
-			<span class="small"><a href="<?= $site->designLink()->html() ?>" target="_blank">Design: <?= $site->design()->html() ?></a></span><br/>
+			<span class="extraSmall"><a href="<?= $aboutPage->url() ?>"><?= $aboutPage->name()->html() ?></a></span><br/>
+			<span class="extraSmall"><a href="<?= $aboutPage->url() ?>#contact">Kontakt</a></span><br/>
+			<span class="extraSmall"><a href="<?= $site->designLink()->html() ?>" target="_blank">Design: <?= $site->design()->html() ?></a></span><br/>
 		</div>
 	</div>
 	<div class="width100 inlineBlock noUnderline">

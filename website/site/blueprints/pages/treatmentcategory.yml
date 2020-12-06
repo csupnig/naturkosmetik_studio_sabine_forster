@@ -65,6 +65,16 @@ columns:
             multiple: false
             required: true
 
+          highlightSectionHeadline:
+            label: Highlighted treatment
+            type: headline
+
+          treatmentHighlight:
+            label: Highlighted treatment (Optional)
+            type: pages
+            query: page.children.filterBy("intendedTemplate", "treatment")
+            multiple: false
+
           infoListSectionHeadline:
             label: Detailed information
             type: headline

@@ -40,6 +40,11 @@ columns:
             width: 1/2
             required: true
 
+          description:
+            label: Name
+            type: textarea
+            required: true
+
           previewSectionHeadline:
             label: Preview
             type: headline

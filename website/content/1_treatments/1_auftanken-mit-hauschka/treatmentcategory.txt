@@ -25,6 +25,13 @@ Headlineimage:
 
 ----
 
+Treatmenthighlight:
+
+- >
+  treatments/auftanken-mit-hauschka/kosmetik-wohlfuhlbehandlung-im-herbst
+
+----
+
 Infolistintro: Behandlungen mit Naturkosmetik von Ambient Living Cosmetics
 
 ----

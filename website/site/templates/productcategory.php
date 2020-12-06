@@ -10,7 +10,7 @@ else $backgroundStyle = ""; ?>
     <div class="grid2C">
       <div class="item smallRightPadding vFlex">
         <h1 class="small width75 darkGreen smallTopMargin"><?= $page->name()->html() ?></h1>
-        <span class="width75 small darkGreen topMargin flexGrow"><?= $page->description()->kirbyText() ?></span>
+        <span class="extraSmall width75 darkGreen topMargin flexGrow"><?= $page->description()->kirbyText() ?></span>
       </div>
       <div class="item relative">
         <?php if ($image = $page->headerImage()->toFile()) { ?>

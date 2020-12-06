@@ -51,7 +51,7 @@ else $backgroundStyle = ""; ?>
                   <?php } ?>
 
                     data-item-name="$page->name()->text()">Zum Warenkorb hinzufügen</button>
-            <div class="darkGreen smallTopMargin"><span class="small">Preis inkl. MwSt., zzgl. <a class="uppercase" href="<?= $site->deliveryPage()->url() ?>">Versand</a></span></div>
+            <div class="darkGreen smallTopMargin"><span class="extraSmall">Preis inkl. MwSt., zzgl. <a class="uppercase" href="<?= $site->deliveryPage()->url() ?>">Versand</a></span></div>
           </form>
         </div>
 
@@ -63,15 +63,15 @@ else $backgroundStyle = ""; ?>
         <h2 class="darkGreen">Mehr Details</h2>
         <div class="width100 darkGreen topMargin strongTopBorder extraSmallTopPadding">
           <h4>Marke</h4>
-          <span class="small"><?=$page->brand()->html() ?></span>
+          <span class="extraSmall"><?=$page->brand()->html() ?></span>
         </div>
         <div class="width100 darkGreen smallTopMargin topBorder extraSmallTopPadding lightBorder">
           <h4>Menge</h4>
-          <span class="small"><?=$page->size()->html() ?></span>
+          <span class="extraSmall"><?=$page->size()->html() ?></span>
         </div>
         <div class="width100 darkGreen smallTopMargin topBorder extraSmallTopPadding lightBorder">
           <h4>Inhalt</h4>
-          <span class="small"><?=$page->ingredients()->html() ?></span>
+          <span class="extraSmall"><?=$page->ingredients()->html() ?></span>
         </div>
 
       </div>
