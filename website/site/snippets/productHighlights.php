@@ -21,7 +21,7 @@ if (count($products) >= 1) { ?>
 				<div class="details width100 smallTopMargin hoverFlip">
 					<div class="width100 flip">
 						<h3 class="width75 small darkGreen floatLeft"><?= $product->name()->html() ?><?php if ($product->size()->isNotEmpty()) echo ", ".$product->size()->html() ?></h3>
-						<span class="width75 small darkGreen floatLeft"><?= $product->shortDescription()->html() ?></span>
+						<span class="small width75 darkGreen floatLeft"><?= $product->shortDescription()->html() ?></span>
 						<span class="darkGreen floatRight">€<?= $product->price()->html() ?></span>
 					</div>
 					<a class="flip" href="<?= $product->url() ?>"><button class="width100 next large darkGreen">Details</button></a>

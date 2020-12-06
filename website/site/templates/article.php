@@ -10,7 +10,7 @@ else $backgroundStyle = ""; ?>
       </div>
       <div class="item relative">
         <h1 class="small width75 white smallTopMargin"><?= $page->name()->html() ?></h1>
-        <span class="width100 small white topMargin flexGrow"><?= $page->shortDescription()->kirbyText() ?></span>
+        <span class="extraSmall width100 white topMargin flexGrow"><?= $page->shortDescription()->kirbyText() ?></span>
       </div>
     </div>
     <div class="grid2C ratio1-2 topMargin">
@@ -18,15 +18,15 @@ else $backgroundStyle = ""; ?>
         <h2 class="white">Details</h2>
         <div class="width100 white topMargin strongTopBorder extraSmallTopPadding">
           <h4>Datum</h4>
-          <span class="small"><?=$page->articleDate()->toDate("d F Y") ?></span>
+          <span class="extraSmall"><?=$page->articleDate()->toDate("d F Y") ?></span>
         </div>
         <div class="width100 white smallTopMargin topBorder extraSmallTopPadding lightBorder">
           <h4>Lesezeit</h4>
-          <span class="small"><?=$page->readingTime()->text() ?></span>
+          <span class="extraSmall"><?=$page->readingTime()->text() ?></span>
         </div>
         <div class="width100 white smallTopMargin topBorder exstraSmallTopPadding lightBorder">
           <h4>Thema</h4>
-          <span class="small"><?=$page->category()->html() ?></span>
+          <span class="extraSmall"><?=$page->category()->html() ?></span>
         </div>
 
         <div class="absolute bottom smallTopPadding white width100 topBorder">
@@ -49,7 +49,7 @@ else $backgroundStyle = ""; ?>
             </div>
           </div>
         <?php } ?>
-        <span class="width100 small white topMargin flexGrow"><?= $page->articleText()->kirbyText() ?></span>
+        <span class="extraSmall width100 white topMargin flexGrow"><?= $page->articleText()->kirbyText() ?></span>
       </div>
     </div>
   </section>

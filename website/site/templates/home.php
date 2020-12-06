@@ -40,7 +40,7 @@ else $backgroundStyle = ""; ?>
 						<span class="large alignFlexEnd">€<?= $treatment->price()->html() ?></span>
 					</div>
 					<div class="details width100 smallTopMargin">
-						<span class="flip width75 inlineBlock small darkGreen"><?= $treatment->shortDescription()->html() ?></span>
+						<span class="small flip width75 inlineBlock darkGreen"><?= $treatment->shortDescription()->html() ?></span>
 						<a class="flip" href="<?= $treatment->url() ?>"><button class="width100 next large darkGreen">Details</button></a>
 					</div>
 				</div>
@@ -58,23 +58,23 @@ else $backgroundStyle = ""; ?>
 				<div class="item hPadding vFlex">
 					<div class="width100 darkGreen topBorder"></div>
 					<h3 class="width75 darkGreen smallTopMargin"><?= $event->category()->html().":<br/>".$event->name()->html() ?></h3>
-					<span class="width75 small darkGreen topMargin flexGrow"><?= $event->shortDescription()->kirbyText() ?></span>
+					<span class="small width75 darkGreen topMargin flexGrow"><?= $event->shortDescription()->kirbyText() ?></span>
 					<div class="width75 doubleColumns">
 						<div class="data darkGreen vSmallPadding">
 							<h4>Zeit</h4>
-							<span class="small"><?= $event->date()->toDate("d.m.Y").", ".$event->time()->html() ?></span>
+							<span class="extraSmall"><?= $event->date()->toDate("d.m.Y").", ".$event->time()->html() ?></span>
 						</div>
 						<div class="data darkGreen vSmallPadding">
 							<h4>Dauer</h4>
-							<span class="small"><?= $event->duration()->html() ?></span>
+							<span class="extraSmall"><?= $event->duration()->html() ?></span>
 						</div>
 						<div class="data darkGreen vSmallPadding">
 							<h4>Ort</h4>
-							<span class="small"><?= $event->location()->html() ?></span>
+							<span class="extraSmall"><?= $event->location()->html() ?></span>
 						</div>
 						<div class="data darkGreen vSmallPadding">
 							<h4>Kosten</h4>
-							<span class="small">€<?= $event->price()->html() ?></span>
+							<span class="extraSmall">€<?= $event->price()->html() ?></span>
 						</div>
 					</div>
 					<a href="<?= $event->url() ?>"><button class="width100 rectangle darkGreen topMargin">Mehr zu diesem Event</button></a>
@@ -108,7 +108,7 @@ else $backgroundStyle = ""; ?>
 							<div class="item review<?=$itemNumber?>">
 								<span class="darkGreen"><?= $review->text()->kirbyText() ?></span>
 								<h4 class="darkGreen topMargin"><?= $review->name()->html() ?></h4>
-								<span class="small darkGreen"><?= $review->location()->html() ?></span>
+								<span class="extraSmall darkGreen"><?= $review->location()->html() ?></span>
 							</div>
 						<?php } ?>
 					</div>

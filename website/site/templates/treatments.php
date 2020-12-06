@@ -17,22 +17,22 @@ else $backgroundStyle = ""; ?>
 						<div class="flexGrow">
 							<div class="data width100 darkGreen strongTopBorder vSmallPadding">
 								<h4>Adresse</h4>
-								<span class="small"><?= $page->{"studioAddress".$i}()->html() ?></span>
+								<span class="extraSmall"><?= $page->{"studioAddress".$i}()->html() ?></span>
 							</div>
 							<div class="data width100 darkGreen vSmallPadding">
 								<h4>Praxistage</h4>
-								<span class="small"><?= $page->{"studioDays".$i}()->html() ?></span>
+								<span class="extraSmall"><?= $page->{"studioDays".$i}()->html() ?></span>
 							</div>
 							<div class="data width100 darkGreen vSmallPadding">
 								<h4>Telefonnummer</h4>
-								<span class="small"><a class="noUnderline" href="tel:<?= $site->phone()->html() ?>"><?= $site->phone()->html() ?></a></span>
+								<span class="extraSmall"><a class="noUnderline" href="tel:<?= $site->phone()->html() ?>"><?= $site->phone()->html() ?></a></span>
 							</div>
 							<div class="data width100 darkGreen vSmallPadding">
 								<h4>E-Mail Adresse</h4>
-								<span class="small"><a class="noUnderline" href="mailto:<?= $site->email()->html() ?>"><?= $site->email()->html() ?></a></span>
+								<span class="extraSmall"><a class="noUnderline" href="mailto:<?= $site->email()->html() ?>"><?= $site->email()->html() ?></a></span>
 							</div>
 						</div>
-						<span class="small uppercase"><?= $page->studioRemark()->html() ?></span>
+						<span class="extraSmall uppercase"><?= $page->studioRemark()->html() ?></span>
 					</div>
 					<?php if ($image = $page->{"studioImage".$i}()->toFile()) { ?>
 						<img class="absolute width100 cover top <?php if ($i == 1) echo 'right'; else echo 'left'; ?>" src="<?= $image->url() ?>" alt="<?= $page->{"studioName".$i}()->html() ?>"/>

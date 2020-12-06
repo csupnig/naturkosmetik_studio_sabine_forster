@@ -10,6 +10,10 @@ Price: 82
 
 ----
 
+Description: Diese klassische Behandlung ist ein perfekter Einstieg in die Welt der Naturkosmetik. Das Paket an Reinigung mit Elixieren, feinem Iriswurzel-Peeling, Reispuder, Ampulle, Lymphmassage mit Gesichtskuröl - nährt und stärkt Ihre Haut gleichzeitig.
+
+----
+
 Shortdescription: Eine tiefgehende Reinigung, die Feuchtigkeit spendet
 
 ----

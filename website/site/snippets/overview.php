@@ -28,7 +28,7 @@ if (count($items) > 0) { ?>
 						</div>
 					</a>
 					<div class="details width100 smallTopMargin">
-						<span class="flip inlineBlock small darkGreen"><?= $item->shortDescription()->html() ?></span>
+						<span class="small flip inlineBlock darkGreen"><?= $item->shortDescription()->html() ?></span>
 						<a class="flip" href="<?= $item->url() ?>"><button class="width100 next large darkGreen">Mehr</button></a>
 					</div>
 				</div>

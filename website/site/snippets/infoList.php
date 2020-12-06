@@ -1,6 +1,6 @@
 <section class="infoList width100 vPadding">
 	<h2 class="width20 darkGreen hPadding"><?= $page->name()->html() ?></h2>
-	<div class="grid2C ratio55-45 topMargin">
+	<div class="grid2C ratio3-2 topMargin">
 		<div class="item hPadding">
 			<h3 class="darkGreen"><?= $page->infoListIntro()->kirbyText() ?></h3>
 			<span class="darkGreen smallTopMargin"><?= $page->infoListText()->kirbyText() ?></span>
