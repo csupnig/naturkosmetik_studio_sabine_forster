@@ -15,13 +15,13 @@
 						if (!in_array($product->brand()->html(), $brands)) $brands[] = $product->brand()->html();
 					}
 					foreach ($brands as $brand) { ?>
-						<li class="width100"><a href="<?= $site->find("brandoverview")->url() ?>?brand=<?= $brand ?>"><?= $brand ?></a></li>
+						<li class="width100"><a href="<?= $site->find("shop")->find("brandoverview")->url() ?>?brand=<?= $brand ?>"><?= $brand ?></a></li>
 					<?php }
 				} else if ($page->template() == "treatmentspecial") { ?>
 					<li class="width100"><a href="#methods">Methoden</a></li>
 					<li class="width100"><a href="#usage">Verwendung</a></li>
 					<li class="width100"><a href="#treatments">Sitzungen</a></li>
-				<? } else {
+				<?php } else {
 					//In the treatment category template, this snippet lists all other treatment categories
 					if ($page->template() == "treatmentcategory") $items = $page->siblings()->filterBy("intendedTemplate", "treatmentcategory")->published();
 					//In all other instances, this snippet can list a manually selected collection of pages
