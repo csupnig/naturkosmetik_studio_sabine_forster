@@ -1,14 +1,15 @@
 <?php
 
-$sort = $_GET['sort'];
-if (!isset($sort)) {
+if (isset($_GET['sort'])) {
+  $sort = $_GET['sort'];
+} else {
   $sort = 'relevance';
 }
 
 if ($content == "treatments") $items = $site->find("treatments")->children()->filterBy("intendedTemplate", "treatmentcategory")->published();
 else if ($content == "product") {
-  $brand = $_GET['brand'];
-  if (isset($brand)) {
+  if (isset($_GET['brand'])) {
+    $brand = $_GET['brand'];
     $items = $site->index()->filterBy("intendedTemplate", "product")->published()->filter(function ($item) use ($brand) {
       return $item->brand()->html() == $brand;
     });

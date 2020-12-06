@@ -14,6 +14,7 @@
 					foreach ($products as $product) {
 						if (!in_array($product->brand()->html(), $brands)) $brands[] = $product->brand()->html();
 					}
+					var_dump($brands);
 					foreach ($brands as $brand) { ?>
 						<li class="width100"><a href="<?= $site->find("shop")->find("brandoverview")->url() ?>?brand=<?= $brand ?>"><?= $brand ?></a></li>
 					<?php }
