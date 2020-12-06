@@ -8,7 +8,7 @@
     <title><?= $site->name()->html() ?> | <?= $page->name()->html() ?></title>
 
     <!--Favicon-->
-    <link rel="icon" href="/assets/images/favicon.gif" type="image/gif"/>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png"/>
 
     <!--Styles-->
     <link rel="stylesheet" href="https://use.typekit.net/iuq0gym.css">

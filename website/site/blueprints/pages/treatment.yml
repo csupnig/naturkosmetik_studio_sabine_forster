@@ -24,9 +24,20 @@ columns:
             label: General
             type: headline
 
+          brand:
+            label: Brand (Optional)
+            type: select
+            options: query
+            query: 
+              fetch: site.find("brands").children().filterBy("intendedTemplate", "brand")
+              value: "{{ page.title }}"
+              text: "{{ page.name }}"
+            width: 1/3
+
           name:
             label: Name
             type: text
+            width: 1/2
             required: true
 
           duration:

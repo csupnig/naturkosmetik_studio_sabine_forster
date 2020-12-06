@@ -1,10 +1,8 @@
-Name: Iris Creme
+Brand: ambient
 
 ----
 
-Backgroundimage:
-
-- img_background_treatments.png
+Name: Iris Creme
 
 ----
 
@@ -12,7 +10,7 @@ Price: 43,5
 
 ----
 
-Shortdescription: Reinigt & beruhigt sensible Haut
+Size: 250ml
 
 ----
 
@@ -22,15 +20,11 @@ Productimage:
 
 ----
 
+Shortdescription: Reinigt & beruhigt sensible Haut
+
+----
+
 Description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-----
-
-Brand: Ambient
-
-----
-
-Size: 250ml
 
 ----
 
@@ -46,3 +40,7 @@ Similarproducts:
 
 - shop/iris-fluid-350ml
 - shop/iris-creme-250ml
+
+----
+
+Backgroundimage: - img_background_treatments.png
