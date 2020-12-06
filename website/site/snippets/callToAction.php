@@ -4,7 +4,7 @@ else $background = ""; ?>
 $modalTrigger = "";
 if ($content == "newsletter") {
   snippet('newsletterSignup');
-  $modalTrigger = "data-modal-trigger=\"newsletter\"";
+  $modalTrigger = " data-modal-trigger=\"newsletter\"";
 }?>
 <section class="callToAction width100 padding largeTopMargin largeBottomMargin centeredText <?=$background ?>">
 	<h3 class="width50 <?= $color ?> inlineBlock">
