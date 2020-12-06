@@ -1,0 +1,11 @@
+Name: Markenübersicht
+
+----
+
+Backgroundimage:
+
+- img_background_treatments.png
+
+----
+
+Shortdescription: Finde Produkte deiner Lieblingsmarke:
