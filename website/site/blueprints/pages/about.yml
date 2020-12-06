@@ -37,5 +37,7 @@ columns:
           backgroundImage:
             label: Page background
             type: files
+            uploads:
+              template: media
             multiple: false
             required: true

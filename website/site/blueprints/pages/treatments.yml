@@ -37,6 +37,8 @@ columns:
           backgroundImage:
             label: Page background
             type: files
+            uploads:
+              template: media
             multiple: false
             required: true
 
@@ -107,14 +109,16 @@ columns:
           studioImage1:
             label: Studio 1 image
             type: files
-            template: media
+            uploads:
+              template: media
             width: 1/2
             required: true
 
           studioImage2:
             label: Studio 2 image
             type: files
-            template: media
+            uploads:
+              template: media
             width: 1/2
             required: true
 

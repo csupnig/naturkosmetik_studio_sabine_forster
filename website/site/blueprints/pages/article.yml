@@ -50,6 +50,8 @@ columns:
           previewImage:
             label: Preview image
             type: files
+            uploads:
+              template: media
             multiple: false
             required: true
 
@@ -65,6 +67,8 @@ columns:
           articleImages:
             label: Article Images
             type: files
+            uploads:
+              template: media
             multiple: true
             required: false
 
