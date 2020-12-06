@@ -13,6 +13,7 @@ columns:
           - about
           - articles
           - shop
+          - newsletter
         sortable: true
 
       files:
