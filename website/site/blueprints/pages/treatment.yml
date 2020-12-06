@@ -3,11 +3,12 @@ title: Treatment
 columns:
   - width: 1/3
     sections:
-      files:
-        headline: Media
-        type: files
-        template: media
-        sortable: true
+      information:
+        type: fields
+        fields:
+          info:
+            type: info
+            text: This page cannot contain any further pages or files.
 
   - width: 2/3
     sections:
@@ -43,19 +44,4 @@ columns:
           description:
             label: Name
             type: textarea
-            required: true
-
-          previewSectionHeadline:
-            label: Preview
-            type: headline
-            
-          shortDescription:
-            label: Preview description
-            type: textarea
-            required: true
-
-          previewImage:
-            label: Preview image
-            type: files
-            template: media
             required: true

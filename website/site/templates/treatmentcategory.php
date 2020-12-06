@@ -80,6 +80,5 @@ else $backgroundStyle = ""; ?>
 		</section>
 	<?php } ?>
 	<?php snippet('callToAction', ["content" => "book", "color" => 'darkGreen']); ?>
-	<?php snippet('footerExtension'); ?>
 	<?php snippet('footer'); ?>
 </body>
