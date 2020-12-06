@@ -1,0 +1,45 @@
+Name: Iris Fluid
+
+----
+
+Backgroundimage:
+
+- img_background_treatments.png
+
+----
+
+Price: 42
+
+----
+
+Shortdescription: Spendet Feutigkeit für sensible Hau
+
+----
+
+Productimage:
+
+- ambient-iris-fluid_256x548.jpg
+
+----
+
+Description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+----
+
+Brand: Ambient
+
+----
+
+Size: 350
+
+----
+
+Ingredients: Blah
+
+----
+
+Application: Schmieren
+
+----
+
+Similarproducts: 

@@ -87,5 +87,4 @@ columns:
             label: Similar products
             type: pages
             query: site.find("shop").index.filterBy("intendedTemplate", "product")
-            min: 2
             max: 2
