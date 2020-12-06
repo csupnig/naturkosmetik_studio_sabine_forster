@@ -6,9 +6,9 @@ if (count($items) > 0) { ?>
 	<section class="overview width100 hPadding">
 		<h2 class="darkGreen">
 			<?php if ($page->template() == "treatments") echo "Meine<br/>Behandlungen";
-      else if ($page->template() == "shop") echo "Shop<br/>Kategorien";
-			else if (!in_array($page->template(), ["shop", "productCategory", "products", "product"], true)) echo "Produkte in<br/>dieser Kategorie";
-			else echo $page->overviewHeadline->kirbyText();	?>	
+			else if ($page->template() == "shop") echo "Shop<br/>Kategorien";
+			else if (in_array($page->template(), ["shop", "productCategory", "products", "product"])) echo "Produkte in<br/>dieser Kategorie";
+			else echo $page->overviewHeadline()->kirbyText();	?>	
 		</h2>
 		<div class="grid3C topMargin">
 			<?php foreach ($items as $item) { ?>

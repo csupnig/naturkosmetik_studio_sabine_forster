@@ -1,0 +1,185 @@
+title: Treatment category
+
+columns:
+  - width: 1/3
+    sections:
+      treatmentCategories:
+        headline: Treatments (Max. 2)
+        type: pages
+        template: treatment
+        min: 1
+        max: 2
+        sortable: true
+
+      files:
+        headline: Media
+        type: files
+        template: media
+        sortable: true
+
+  - width: 2/3
+    sections:
+      general:
+        type: fields
+        fields:
+          title:
+            label: Page title
+            type: title
+            translate: false
+
+          generalSectionHeadline:
+            label: General
+            type: headline
+
+          name:
+            label: Name
+            type: text
+            required: true
+
+          previewSectionHeadline:
+            label: Preview
+            type: headline
+            
+          shortDescription:
+            label: Preview description (Max. 100 characters)
+            type: textarea
+            maxlength: 100
+            required: true
+
+          previewImage:
+            label: Preview image
+            type: files
+            template: media
+            required: true
+
+          headlineSectionHeadline:
+            label: Headline
+            type: headline
+
+          headlineHeadline:
+            label: Headline
+            type: textarea
+            required: true
+
+          headlineText:
+            label: Headline text
+            type: textarea
+            required: true
+
+          headlineImage:
+            label: Headline image
+            type: files
+            multiple: false
+            required: true
+
+          infoListSectionHeadline:
+            label: Detailed information
+            type: headline
+
+          infoListIntro:
+            label: Detailed information intro
+            type: textarea
+            required: true
+
+          infoListText:
+            label: Detailed information text
+            type: textarea
+            required: true
+
+          methodsSectionHeadline:
+            label: Methods
+            type: headline
+
+          methodHeadline1:
+            label: Method headline 1 (Max. 30 ch.)
+            type: text
+            width: 1/3
+            maxlength: 30
+            required: true
+
+          methodHeadline2:
+            label: Method headline 2 (Max. 30 ch.)
+            type: text
+            width: 1/3
+            maxlength: 30
+            required: true
+
+          methodHeadline3:
+            label: Method headline 3 (Max. 30 ch.)
+            type: text
+            width: 1/3
+            maxlength: 30
+            required: true
+
+          methodText1:
+            label: Method text 1
+            type: textarea
+            width: 1/3
+            required: true
+
+          methodText2:
+            label: Method text 2
+            type: textarea
+            width: 1/3
+            required: true
+
+          methodText3:
+            label: Method text 3
+            type: textarea
+            width: 1/3
+            required: true
+
+          methodHeadline4:
+            label: Method headline 4 (Optional, max. 30 ch.)
+            type: text
+            width: 1/3
+            maxlength: 30
+
+          methodHeadline5:
+            label: Method headline 5 (Optional, max. 30 ch.)
+            type: text
+            width: 1/3
+            maxlength: 30
+
+          methodHeadline6:
+            label: Method headline 6 (Optional, max. 30 ch.)
+            type: text
+            width: 1/3
+            maxlength: 30
+
+          methodText4:
+            label: Method text 4 (Optional)
+            type: textarea
+            width: 1/3
+
+          methodText5:
+            label: Method text 5 (Optional)
+            type: textarea
+            width: 1/3
+
+          methodText6:
+            label: Method text 6 (Optional)
+            type: textarea
+            width: 1/3
+
+          usageSectionHeadline:
+            label: Usage
+            type: headline
+
+          usageText:
+            label: Usage text
+            type: textarea
+            info: Use list for desired appearance
+            required: true
+
+          usageRemark:
+            label: Usage remark
+            type: text
+            required: true
+
+          usageImage:
+            label: Usage image
+            type: files
+            template: media
+            multiple: false
+            required: true

@@ -17,7 +17,11 @@
 					foreach ($brands as $brand) { ?>
 						<li class="width100"><a href="placeholder&brand=<?= $brand ?>"><?= $brand ?></a></li>
 					<?php }
-				} else {
+				} else if ($page->template() == "treatmentspecial") { ?>
+					<li class="width100"><a href="#methods">Methoden</a></li>
+					<li class="width100"><a href="#usage">Verwendung</a></li>
+					<li class="width100"><a href="#treatments">Sitzungen</a></li>
+				<? } else {
 					//In the treatment category template, this snippet lists all other treatment categories
 					if ($page->template() == "treatmentcategory") $items = $page->siblings()->filterBy("intendedTemplate", "treatmentcategory")->published();
 					//In all other instances, this snippet can list a manually selected collection of pages
