@@ -5,9 +5,9 @@ else $backgroundStyle = ""; ?>
 <div id="snipcart" data-api-key="<?= $site->snipcartkey()->text() ?>" data-config-modal-style="side"></div>
 <body class="product beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
-  <section class="product width100 largeTopPadding padding">
-    <?php snippet('breadcrumb'); ?>
-    <div class="width2C extraSmallTopPadding">
+  <?php snippet('breadcrumb'); ?>
+  <section class="product width100 hPadding bottomMargin">
+    <div class="grid2C">
 
         <div class="item">
           <div class="width100 square">
@@ -16,7 +16,7 @@ else $backgroundStyle = ""; ?>
             <?php } ?>
           </div>
         </div>
-        <div class="item leftPadding">
+        <div class="item smallLeftPadding">
           <div class="width100">
             <h1 class="small darkGreen"><?= $page->name()->text() ?></h1>
             <div class="topMargin">
@@ -29,8 +29,8 @@ else $backgroundStyle = ""; ?>
           $productPrice = floatval(str_replace(',', '.', str_replace('.', '', $page->price()->html())));
           ?>
           <form class="width100 shopForm largeTopPadding">
-            <div class="width2C smallBottomMargin">
-              <div class="item darkGreen width2C amount-input">
+            <div class="grid2C smallBottomMargin">
+              <div class="item darkGreen grid2C amount-input">
                 <div class="item"><span>Menge</span></div>
                 <div class="item controls">
                   <button class="amount-minus">-</button>
@@ -58,8 +58,8 @@ else $backgroundStyle = ""; ?>
     </div>
   </section>
   <section class="productDetails width100 padding">
-    <div class="width2C topMargin">
-      <div class="item rightPadding vFlex">
+    <div class="grid2C topMargin">
+      <div class="item smallRightPadding vFlex">
         <h2 class="darkGreen">Mehr Details</h2>
         <div class="width100 darkGreen topMargin strongTopBorder extraSmallTopPadding">
           <h4>Marke</h4>
@@ -75,7 +75,7 @@ else $backgroundStyle = ""; ?>
         </div>
 
       </div>
-      <div class="item leftPadding relative leftBorder darkGreen lightBorder">
+      <div class="item smallLeftPadding relative leftBorder darkGreen lightBorder">
         <h2 class="darkGreen">Anwendung</h2>
         <div class="width100 darkGreen topMargin">
               <h3 class="small darkGreen">

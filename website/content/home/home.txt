@@ -70,9 +70,11 @@ Introlinktext: Mehr über mich & meine Philosophie
 Treatmenthighlights:
 
 - >
-  treatments/kosmetik-wohlfuhlbehandlung-im-herbst
-- treatments/beautiful-aging-behandlung
-- treatments/rucken-reinigungs-behandlung
+  treatments/auftanken-mit-hauschka/kosmetik-wohlfuhlbehandlung-im-herbst
+- >
+  treatments/auftanken-mit-hauschka/beautiful-aging-behandlung
+- >
+  treatments/auftanken-mit-hauschka/rucken-reinigungs-behandlung
 
 ----
 
@@ -111,9 +113,7 @@ Footerextensiontext: Unsere Haut ist einzigartig und wartvoll. Meine Behandlunge
 
 ----
 
-Footerextensionlinktarget:
-
-- treatments
+Footerextensionlinktarget: - treatments
 
 ----
 
@@ -121,6 +121,4 @@ Footerextensionlinktext: Buchen Sie die die Behandlung, die zu perfekt Ihnen pas
 
 ----
 
-Footerextensionimage:
-
-- home-04.jpg
+Footerextensionimage: - home-04.jpg

@@ -10,7 +10,7 @@ if (count($items) > 0) { ?>
 			else if (!in_array($page->template(), ["shop", "productCategory", "products", "product"], true)) echo "Produkte in<br/>dieser Kategorie";
 			else echo $page->overviewHeadline->kirbyText();	?>	
 		</h2>
-		<div class="width3C topMargin">
+		<div class="grid3C topMargin">
 			<?php foreach ($items as $item) { ?>
 				<div class="item hoverFlip">
 					<a class="noUnderline" href="<?= $item->url() ?>">

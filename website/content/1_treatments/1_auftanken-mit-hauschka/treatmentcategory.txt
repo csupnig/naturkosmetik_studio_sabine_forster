@@ -9,3 +9,24 @@ Shortdescription: Reinigungen, Gesichtsbehandlungen & Straffungen mit Produkten 
 Previewimage:
 
 - article-01.jpg
+
+----
+
+Headlineheadline:
+
+Wohlfühlen 
+mit Ambient
+
+----
+
+Headlineimage:
+
+- treatment-01.jpg
+
+----
+
+Infolistintro: Behandlungen mit Naturkosmetik von Ambient Living Cosmetics
+
+----
+
+Infolisttext: Ambient - Die absolut reine, lebendige Kosmetik mit Bio-Siegel hat eine besondere Philosophie: „100 % Natur -Essbare Naturkosmetik: Ich lasse nur Zutaten auf die Haut, die gesund zu essen wären!“ Handgemachte Pflanzenessenzen aus kontrolliert biologischem Anbau. Ein Cocktail an Natur, welcher der Haut hilft, in ihr Gleichgewicht zu kommen beziehungsweise in diesem zu bleiben.

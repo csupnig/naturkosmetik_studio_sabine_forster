@@ -11,7 +11,7 @@ else $background = ""; ?>
   			echo "Haben Sie noch Fragen?<br/>Ich berate Sie gerne";
   		} ?>
 	</h3><br/>
-	<button class="<?= $content ?> <?= $color ?> topMargin">
+	<button class="circle <?= $content ?> <?= $color ?> topMargin">
 		<?php if ($content == "cancellation") {
 			if ($site->termsConditionsFile()->isNotempty()) { ?>
 				<a href="<?= $site->termsConditionsFile()->toFile()->url() ?>">Nutzungsbedinungen</a>

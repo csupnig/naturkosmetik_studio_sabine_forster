@@ -19,7 +19,7 @@ else $backgroundStyle = ""; ?>
 	<?php snippet('intro', ['link' => true, 'signature' => false]); ?>
 	<section class="treatments width100 hPadding">
 		<h2 class="darkGreen">Behandlungs-<br/>Highlights</h2>
-		<div class="width3C topMargin">
+		<div class="grid3C topMargin">
 			<?php $i = 1;
 			foreach ($page->treatmentHighlights()->toPages() as $treatment) { 
 				if ($i == 1) { 
@@ -52,10 +52,10 @@ else $backgroundStyle = ""; ?>
 	<?php snippet('productHighlights', ['filter' => 'manual']); ?>
 	<?php if ($page->eventHighlight()->isNotEmpty()) { 
 		$event = $page->eventHighlight()->toPage(); ?>
-		<section class="events width100 alignRight padding">
-			<h2 class="darkGreen">Events</h2>
-			<div class="width2C topMargin">
-				<div class="item rightPadding vFlex">
+		<section class="events width100 vPadding">
+			<h2 class="darkGreen hPadding">Events</h2>
+			<div class="grid2C topMargin">
+				<div class="item hPadding vFlex">
 					<div class="width100 darkGreen topBorder"></div>
 					<h3 class="width75 darkGreen smallTopMargin"><?= $event->category()->html().":<br/>".$event->name()->html() ?></h3>
 					<span class="width75 small darkGreen topMargin flexGrow"><?= $event->shortDescription()->kirbyText() ?></span>
@@ -122,7 +122,7 @@ else $backgroundStyle = ""; ?>
 	if (count($articles) > 0) { ?>
 		<section class="articles width100 padding">
 			<h2 class="darkGreen">Aktuelle<br/>Artikel</h2>
-			<div class="width3C topMargin">
+			<div class="grid3C topMargin">
 				<?php foreach ($articles as $article) { ?>
 					<div class="item hoverFlip">
 						<a href="<?= $article->url() ?>">

@@ -10,7 +10,7 @@ if (count($products) >= 1) { ?>
 		if ($filter == "manual") echo "Produkt-<br/>Highlights";
 		else if ($filter == "category") echo "Ähnliche<br/>Produkte"; ?>
 	</h2>
-	<div class="width2C topMargin">
+	<div class="grid2C topMargin">
 		<?php foreach ($products as $product) { ?>
 			<div class="item hoverFlip">
 				<a href="<?= $product->url() ?>">

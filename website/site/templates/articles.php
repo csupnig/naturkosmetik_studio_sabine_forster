@@ -11,7 +11,7 @@ else $backgroundStyle = ""; ?>
   if (count($articles) > 0) { ?>
     <section class="articles width100 padding darkGreenBackground">
       <h2 class="white">Aktuelle<br/>Artikel</h2>
-      <div class="width2C topMargin">
+      <div class="grid2C topMargin">
         <div class="item relative">
           <div class="width75 topBorder white topPadding">
             <h3 class="white"><?= $highlight->name()->kirbyText() ?></h3>
@@ -30,7 +30,7 @@ else $backgroundStyle = ""; ?>
           <button class="sticker top left white greenBackground"><a href="<?= $highlight->url(); ?>">Highlighted Article</a></button>
         </div>
       </div>
-      <div class="width3C topMargin topPadding">
+      <div class="grid3C topMargin topPadding">
         <?php foreach ($articles as $article) { ?>
           <div class="item hoverFlip">
             <a href="<?= $article->url() ?>">

@@ -3,12 +3,12 @@
 if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")";
 else $backgroundStyle = ""; ?>
 <div id="snipcart" data-api-key="<?= $site->snipcartkey()->text() ?>" data-config-modal-style="side"></div>
-<body class="category beigeBackground" style="<?= $backgroundStyle ?>">
+<body class="products beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
-  <section class="product width100 padding">
-    <?php snippet('breadcrumb'); ?>
-    <div class="width2C topMargin">
-      <div class="item rightPadding vFlex">
+  <?php snippet('breadcrumb'); ?>
+  <section class="product width100 hPadding bottomMargin">
+    <div class="grid2C">
+      <div class="item smallRightPadding vFlex">
         <h1 class="small width75 darkGreen smallTopMargin"><?= $page->name()->html() ?></h1>
 
 
