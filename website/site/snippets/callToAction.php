@@ -1,6 +1,11 @@
 <?php if ($color == "white") $background = "darkGreenBackground"; 
 else $background = ""; ?>
-
+<?php
+$modalTrigger = "";
+if ($content == "newsletter") {
+  snippet('newsletterSignup');
+  $modalTrigger = " data-modal-trigger=\"newsletter\"";
+}?>
 <section class="callToAction width100 padding largeTopMargin largeBottomMargin centeredText <?=$background ?>">
 	<h3 class="width50 <?= $color ?> inlineBlock">
 		<?php if ($content == "newsletter") {
@@ -13,7 +18,7 @@ else $background = ""; ?>
   			echo "Möchten Sie einen Termin buchen? <br/>Bitte kontaktieren Sie mich per Email.";
   		} ?>
 	</h3><br/>
-	<button class="circle <?= $content ?> <?= $color ?> topMargin">
+	<button class="circle <?= $content ?> <?= $color ?> topMargin"<?= $modalTrigger ?>>
 		<?php if ($content == "cancellation") {
 			if ($site->termsConditionsFile()->isNotempty()) { ?>
 				<a href="<?= $site->termsConditionsFile()->toFile()->url() ?>">Nutzungsbedinungen</a>

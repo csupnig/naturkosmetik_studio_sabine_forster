@@ -60,11 +60,18 @@ Newslettercall: Wollen Sie immer auf dem Laufenden bleiben? Melden Sie sich für
 
 ----
 
-Newsletterintro: 
+Newsletterintro:
+
+Mit meiner Eintragung stimme ich zu, dass meine Angaben gespeichert werden.
+
+Meine Daten werden nicht weitergegeben und ich kann meine Zustimmung jederzeit per Abmeldungslink im Newsletter widerrufen.
+
+Vielen Dank!
+Ihre, Sabine Forster
 
 ----
 
-Newsletter: 
+Newsletterheader: Newsletter Anmeldung
 
 ----
 
@@ -146,6 +153,10 @@ Cookiepolicyfile:
 ----
 
 Cookiepolicypage: 
+
+----
+
+Newsletter: Newsletter Anmeldung
 
 ----
 
