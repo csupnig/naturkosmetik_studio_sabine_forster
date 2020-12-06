@@ -273,6 +273,34 @@ nav.breadcrumb ol li:first-child::before {content:none;}
 nav.breadcrumb ol li a { text-decoration: none;}
 nav.breadcrumb { text-transform: none; }
 
+/*=================================== Modal Dialog Styles ===================================*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: 0;
+  width: 33%;
+  height: 100%;
+  min-height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  background: #fff;
+}
+.modal.in { transform: translateX(0); }
+
+.modal .header {padding: 0 32px; background-color: #1c3f41; color: #fff; min-height: 96px; display: flex; flex: 1; flex-shrink: 0; justify-content: space-between; align-items: center; }
+.modal .header h1 {font-weight: 500;line-height: 20px; font-size: 18px; font-family: "Geomanist-Regular", sans-serif;}
+.modal .content {padding: 0 32px; }
+
+/*=================================== Newsletter form Styles ===================================*/
+.newsletter form input { border: 1px solid #637950 !important; font-weight: 500;
+  line-height: 0.8rem;
+  padding: 0.6rem 0.8rem !important; width:100%; border-radius: 0 !important;}
+.newsletter form td {font:400 1.6rem/1.8rem "Geomanist-Regular", sans-serif;}
+.newsletter form td button { border: 1px solid #1c3f41!important; border-radius: 0!important; background-color:#1c3f41 !important;font:400 1.1rem/1.8rem "Geomanist-Regular", sans-serif;}
+.newsletter form td button:hover { background-color:#fff !important; color:#1c3f41 !important;}
 /*=================================== Snipcart Styles ===================================*/
 
 .snipcart * { font-family: "Geomanist-Book", sans-serif !important; }

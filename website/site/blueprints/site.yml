@@ -130,12 +130,12 @@ columns:
             help: If your page uses an embedded newsletter signup form, its intro can be configured here.
             width: 1/2
 
-          newsletter:
-            label: Newsletter signup URL
+          newsletterHeader:
+            label: Newsletter signup header
             type: text
             width: 1/2
             translate: false
-            help: If you're using a newsletter service which features an external dedicated signup page, this link can be configured here.
+            help: Header on the newsletter entry form
       shop:
         type: fields
         fields:

@@ -125,4 +125,14 @@ $(document).ready(function () {
 	}, function() {
 		$(this).find("h2").removeClass("alwaysUnderline");
 	});
+
+  /*=================================== Modal Dialog Snippets ===================================*/
+  $('[data-modal-trigger]').on('click', function(){
+    $('.modal.'+$(this).attr('data-modal-trigger')).addClass('in');
+  });
+  $('body').on('click', function(e) {
+      if (!$(e.originalEvent.target).is('[data-modal-trigger]') && !$(e.originalEvent.target).is('.modal') && !$(e.originalEvent.target).parents('.modal').length) {
+        jQuery('.modal').removeClass('in');
+      }
+  });
 });
