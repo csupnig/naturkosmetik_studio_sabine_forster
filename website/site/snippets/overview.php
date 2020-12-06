@@ -7,7 +7,15 @@ if (!isset($sort)) {
 
 if ($content == "treatments") $items = $site->find("treatments")->children()->filterBy("intendedTemplate", "treatmentcategory")->published();
 else if ($content == "product") {
-  $items = $page->children()->filterBy("intendedTemplate", "product")->published();
+  $brand = $_GET['brand'];
+  if (isset($brand)) {
+    $items = $site->index()->filterBy("intendedTemplate", "product")->published()->filter(function ($item) use ($brand) {
+      return $item->brand()->html() == $brand;
+    });
+  } else {
+    $items = $page->children()->filterBy("intendedTemplate", "product")->published();
+  }
+
   if ($sort == 'price' || $sort == 'name') {
     $items = $items->sortBy($sort, 'asc');
   }
@@ -26,6 +34,11 @@ if (count($items) > 0) { ?>
         ?>
         (<?=sprintf('%02d', count($items)) ?>) Produkte
         <form class="inline" method="GET">
+        <?php if(isset($brand)) {
+          ?>
+          <input type="hidden" name="brand" value="<?=$brand?>">
+          <?php
+        }?>
         <span class="small darkGreen floatRight">Sortieren Nach: <select name="sort" class="darkGreen sort" onchange="this.form.submit()">
           <option value="relevance" <?=($sort == 'relevance' ? 'selected' : '') ?>>Relevanz</option>
           <option value="name" <?=($sort == 'name' ? 'selected' : '') ?>>Name</option>
