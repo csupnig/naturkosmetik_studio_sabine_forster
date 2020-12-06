@@ -47,6 +47,8 @@ columns:
           previewImage:
             label: Preview image
             type: files
+            uploads:
+              template: media
             template: media
             required: true
 
@@ -62,6 +64,8 @@ columns:
           headlineImage:
             label: Headline image
             type: files
+            uploads:
+              template: media
             multiple: false
             required: true
 

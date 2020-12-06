@@ -37,6 +37,8 @@ columns:
           backgroundImage:
             label: Page background
             type: files
+            uploads:
+              template: media
             multiple: false
             required: true
 
@@ -57,6 +59,8 @@ columns:
           headlineImage:
             label: Headline image
             type: files
+            uploads:
+              template: media
             multiple: false
             required: true
 
@@ -90,6 +94,8 @@ columns:
           introImage:
             label: Introduction image
             type: files
+            uploads:
+              template: media
             multiple: false
             required: true
 
@@ -144,5 +150,7 @@ columns:
           eventsImage:
             label: Events image
             type: files
+            uploads:
+              template: media
             multiple: false
             required: true

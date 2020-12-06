@@ -38,6 +38,8 @@ columns:
           backgroundImage:
             label: Page background
             type: files
+            uploads:
+              template: media
             multiple: false
             required: true
 
@@ -63,24 +65,4 @@ columns:
             label: Header image
             type: files
             multiple: false
-            required: true
-
-          footerHeadline:
-            label: Category Footer
-            type: headline
-
-          footerImage:
-            label: Footer image
-            type: files
-            multiple: false
-            required: true
-
-          footerIntro:
-            label: Footer Headline
-            type: textarea
-            required: true
-
-          footerText:
-            label: Footer Text
-            type: textarea
             required: true
