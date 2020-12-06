@@ -76,6 +76,7 @@ columns:
 
           highlightsSection:
             label: Highlighted products
+            type: headline
 
           productHighlights:
             label: Highlighted products

@@ -22,11 +22,14 @@ Introimage:
 
 ----
 
-Myproductsheadline: Ambient Living: Kosmetik mit Bio-Siegel einer einfachen Philosophie: 100% Natur.
+Infolistintro: Ambient Living: Kosmetik mit Bio-Siegel einer einfachen Philosophie: 100% Natur.
 
 ----
 
-Myproductstext: “Essbare Naturkosmetik: Ich lasse nur Zutaten auf die Haut, die gesund zu essen wären!” Absolut VEGAN, keine Chemie und keine Tier-Produkte - nur handgemachte Pflanzenessenzen aus kontrolliert biologischem Anbau. Ein Cocktail an Natur, welcher der Haut hilft, in ihr Gleichgewicht zu kommen bzw. in diesem zu bleiben. Ich bin Mitbegründerin dieser einzigartigen Produktline und arbeite damit aus Überzeugung seit 20 Jahren in meinem Naturkosmetik-Studio.
+Infolisttext:
+
+“Essbare Naturkosmetik: Ich lasse nur Zutaten auf die Haut, die gesund zu essen wären!” Absolut VEGAN, keine Chemie und keine Tier-Produkte - nur handgemachte Pflanzenessenzen aus kontrolliert biologischem Anbau. Ein Cocktail an Natur, welcher der Haut hilft, in ihr Gleichgewicht zu kommen bzw. in diesem zu bleiben.
+Ich bin Mitbegründerin dieser einzigartigen Produktline und arbeite damit aus Überzeugung seit 20 Jahren in meinem Naturkosmetik-Studio.
 
 ----
 
@@ -34,3 +37,11 @@ Producthighlights:
 
 - shop/iris-creme-250ml
 - shop/iris-fluid-350ml
+
+----
+
+Myproductsheadline: Ambient Living: Kosmetik mit Bio-Siegel einer einfachen Philosophie: 100% Natur.
+
+----
+
+Myproductstext: “Essbare Naturkosmetik: Ich lasse nur Zutaten auf die Haut, die gesund zu essen wären!” Absolut VEGAN, keine Chemie und keine Tier-Produkte - nur handgemachte Pflanzenessenzen aus kontrolliert biologischem Anbau. Ein Cocktail an Natur, welcher der Haut hilft, in ihr Gleichgewicht zu kommen bzw. in diesem zu bleiben. Ich bin Mitbegründerin dieser einzigartigen Produktline und arbeite damit aus Überzeugung seit 20 Jahren in meinem Naturkosmetik-Studio.
