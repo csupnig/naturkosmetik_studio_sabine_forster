@@ -39,9 +39,9 @@ columns:
             type: headline
             
           shortDescription:
-            label: Preview description (Max. 100 characters)
+            label: Preview description (Max. 110 characters)
             type: textarea
-            maxlength: 100
+            maxlength: 110
             required: true
 
           previewImage:

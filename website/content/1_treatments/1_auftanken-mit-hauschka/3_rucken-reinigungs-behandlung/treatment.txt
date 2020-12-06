@@ -1,3 +1,7 @@
+Brand: Dr. Hauschka
+
+----
+
 Name: Rücken Reinigungs-Behandlung
 
 ----
@@ -21,6 +25,4 @@ Feuchtigkeit spendet
 
 ----
 
-Previewimage:
-
-- article-03.jpg
+Previewimage: - article-03.jpg

@@ -6,7 +6,13 @@ columns:
       treatmentCategories:
         headline: Treatment categories
         type: pages
-        template: treatmentcategory
+        templates: treatmentcategory
+        sortable: true
+
+      treatmentSpecial:
+        headline: Treatment specials
+        type: pages
+        templates: treatmentspecial
         sortable: true
 
       files:
