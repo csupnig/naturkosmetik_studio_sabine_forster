@@ -2,7 +2,7 @@
 //Set background image
 if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")"; 
 else $backgroundStyle = ""; ?>
-<body class="home beigeBackground" style="<?= $backgroundStyle ?>">
+<body class="treatments beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
 	<?php snippet('overview', ["content" => "treatments", "filter" => "off"]); ?>
 	<section class="studios">

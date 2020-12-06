@@ -49,3 +49,32 @@ columns:
             type: files
             template: media
             required: true
+
+          headlineSectionHeadline:
+            label: Headline
+            type: headline
+
+          headlineHeadline:
+            label: Headline
+            type: textarea
+            required: true
+
+          headlineImage:
+            label: Headline image
+            type: files
+            multiple: false
+            required: true
+
+          infoListSectionHeadline:
+            label: Detailed information
+            type: headline
+
+          infoListIntro:
+            label: Detailed information intro
+            type: textarea
+            required: true
+
+          infoListText:
+            label: Detailed information text
+            type: textarea
+            required: true

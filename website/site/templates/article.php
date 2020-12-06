@@ -4,20 +4,17 @@ if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image
 else $backgroundStyle = ""; ?>
 <body class="article lightGreenBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
-  <section class="article width100 largeTopPadding padding darkGreenBackground">
-    <div class="width2C bigGap oneToTwo topMargin">
-      <div class="item rightPadding vFlex">
-
-
-
+  <section class="article width100 padding largeRightPadding darkGreenBackground">
+    <div class="grid2C ratio1-2 topMargin">
+      <div class="item vFlex">
       </div>
       <div class="item relative">
         <h1 class="small width75 white smallTopMargin"><?= $page->name()->html() ?></h1>
         <span class="width100 small white topMargin flexGrow"><?= $page->shortDescription()->kirbyText() ?></span>
       </div>
     </div>
-    <div class="width2C bigGap oneToTwo topMargin">
-      <div class="item rightPadding vFlex relative">
+    <div class="grid2C ratio1-2 topMargin">
+      <div class="item vFlex relative">
         <h2 class="white">Details</h2>
         <div class="width100 white topMargin strongTopBorder extraSmallTopPadding">
           <h4>Datum</h4>
@@ -62,7 +59,7 @@ else $backgroundStyle = ""; ?>
   if (count($articles) > 0) { ?>
     <section class="articles width100 padding darkGreenBackground">
       <h2 class="white">Weitere<br/>Artikel</h2>
-      <div class="width3C topMargin">
+      <div class="grid3C topMargin">
         <?php foreach ($articles as $article) { ?>
           <div class="item hoverFlip">
             <a href="<?= $article->url() ?>">

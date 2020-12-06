@@ -5,14 +5,12 @@ else $backgroundStyle = ""; ?>
 <div id="snipcart" data-api-key="<?= $site->snipcartkey()->text() ?>" data-config-modal-style="side"></div>
 <body class="category beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
-  <section class="product width100 padding alignRight">
-    <?php snippet('breadcrumb'); ?>
-    <div class="width2C topMargin">
-      <div class="item rightPadding vFlex">
+  <?php snippet('breadcrumb'); ?>
+  <section class="product width100 alignRight hPadding bottomMargin">
+    <div class="grid2C">
+      <div class="item smallRightPadding vFlex">
         <h1 class="small width75 darkGreen smallTopMargin"><?= $page->name()->html() ?></h1>
         <span class="width75 small darkGreen topMargin flexGrow"><?= $page->description()->kirbyText() ?></span>
-
-
       </div>
       <div class="item relative">
         <?php if ($image = $page->headerImage()->toFile()) { ?>
@@ -26,7 +24,7 @@ else $backgroundStyle = ""; ?>
   if (count($overviews) > 0) { ?>
     <section class="productOverviews width100 padding">
       <h2 class="darkGreen">Kategorien<br/><?= $page->name()->html() ?></h2>
-      <div class="width2C topMargin bigGap">
+      <div class="grid2C topMargin largeGap">
         <?php foreach ($overviews as $overview) { ?>
           <div class="item">
             <h3 class="darkGreen small"><?=$overview->name()->html() ?></h3>

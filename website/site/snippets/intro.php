@@ -1,4 +1,4 @@
-<section class="intro width2C padding bottomMargin">
+<section class="intro grid2C padding bottomMargin">
 	<div class="item">
 		<h3 class="darkGreen"><?= $page->introIntro()->kirbyText() ?></h3>
 		<span class="darkGreen smallTopMargin"><?= $page->introText()->kirbyText() ?></span>

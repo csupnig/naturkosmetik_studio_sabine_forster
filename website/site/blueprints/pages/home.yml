@@ -113,7 +113,7 @@ columns:
           treatmentHighlights:
             label: Treatment highlights
             type: pages
-            query: site.find("treatments").children().filterBy("intendedTemplate", "treatment")
+            query: site.index.filterBy("intendedTemplate", "treatment")
             min: 3
             max: 3
             required: true
