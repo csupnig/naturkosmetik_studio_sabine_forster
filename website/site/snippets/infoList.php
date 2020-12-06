@@ -15,7 +15,7 @@
 						if (!in_array($product->brand()->html(), $brands)) $brands[] = $product->brand()->html();
 					}
 					foreach ($brands as $brand) { ?>
-						<li class="width100"><a href="<?=$site->find("brand-overview")->url() ?>?brand=<?= $brand ?>"><?= $brand ?></a></li>
+						<li class="width100"><a href="<?= $site->find("brandoverview")->url() ?>?brand=<?= $brand ?>"><?= $brand ?></a></li>
 					<?php }
 				} else if ($page->template() == "treatmentspecial") { ?>
 					<li class="width100"><a href="#methods">Methoden</a></li>

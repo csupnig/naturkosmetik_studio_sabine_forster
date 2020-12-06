@@ -8,4 +8,4 @@ Backgroundimage:
 
 ----
 
-Shortdescription: Finde Produkte deiner Lieblingsmarke:
+Shortdescription: Finde die Produkte deiner Lieblingsmarke
