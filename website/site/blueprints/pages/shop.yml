@@ -60,22 +60,26 @@ columns:
             multiple: false
             required: true
 
-          productsSectionHeadline:
-            label: Products
+          infoListSectionHeadline:
+            label: Detailed information
             type: headline
 
-          myProductsHeadline:
-            label: My Products Headline
+          infoListIntro:
+            label: Detailed information intro
             type: textarea
             required: true
 
-          myProductsText:
-            label: My Products Text
+          infoListText:
+            label: Detailed information text
             type: textarea
             required: true
+
+          highlightsSection:
+            label: Highlighted products
+            type: headline
 
           productHighlights:
-            label: Product highlights
+            label: Highlighted products
             type: pages
             query: site.find("shop").index.filterBy("intendedTemplate", "product")
             min: 2
