@@ -1,1 +1,11 @@
+Backgroundimage:
+
+- img_background_treatments.png
+
+----
+
 Name: Marken
+
+----
+
+Header: Ganzheitliche Behandlungen mit reiner Naturkosmetik.

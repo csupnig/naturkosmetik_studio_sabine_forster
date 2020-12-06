@@ -29,4 +29,17 @@ columns:
             type: text
             required: true
 
+          description:
+            label: Description
+            type: textarea
+            required: true
+
+          brandImage:
+            label: Image
+            type: files
+            uploads:
+              template: media
+            multiple: false
+            required: true
+
 

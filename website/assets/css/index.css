@@ -208,7 +208,7 @@ button.sticker.greenBackground:hover { background-color:#1c3f41; }
 button.sticker.lightGreenBackground:hover { background-color:#f5f4ef; }
 button.sticker.top { top:3rem; }
 button.sticker.left { left:-6rem; }
-button.sticker.right { right:10rem; }
+button.sticker.right { right:-6rem; }
 span.footnote { transform:rotate(-90deg); transform-origin:bottom right; position:absolute; }
 span.footnote.top.right { top:0; right:1.5rem; }
 ul.arrow li { list-style:none; padding:0.8rem 3rem 0.8rem 0; background-repeat:no-repeat; background-position:center right; background-size:1.5rem; }

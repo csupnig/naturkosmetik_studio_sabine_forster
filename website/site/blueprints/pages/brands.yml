@@ -18,8 +18,20 @@ columns:
             label: Page title
             type: title
             translate: false
+          backgroundImage:
+            label: Page background
+            type: files
+            uploads:
+              template: media
+            multiple: false
+            required: true
           name:
             label: Name
+            type: text
+            width: 2/3
+            required: true
+          header:
+            label: Page header
             type: text
             width: 2/3
             required: true
