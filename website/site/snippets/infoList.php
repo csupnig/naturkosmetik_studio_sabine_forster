@@ -15,7 +15,7 @@
 						if (!in_array($product->brand()->html(), $brands)) $brands[] = $product->brand()->html();
 					}
 					foreach ($brands as $brand) { ?>
-						<li class="width100"><a href="placeholder&brand=<?= $brand ?>"><?= $brand ?></a></li>
+						<li class="width100"><a href="placeholder?brand=<?= $brand ?>"><?= $brand ?></a></li>
 					<?php }
 				} else {
 					//In the treatment category template, this snippet lists all other treatment categories
