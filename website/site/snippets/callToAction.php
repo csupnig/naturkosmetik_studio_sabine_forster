@@ -9,6 +9,8 @@ else $background = ""; ?>
   			echo "Sie sind verhindert?<br/> Mehr Informationen zu den Stornobedinungen<br/>finden Sie in den AGBS";
 		} else if ($content == "question") {
   			echo "Haben Sie noch Fragen?<br/>Ich berate Sie gerne";
+  		} else if ($content == "book") {
+  			echo "Möchten Sie einen Termin buchen? <br/>Bitte kontaktieren Sie mich per Email.";
   		} ?>
 	</h3><br/>
 	<button class="circle <?= $content ?> <?= $color ?> topMargin">

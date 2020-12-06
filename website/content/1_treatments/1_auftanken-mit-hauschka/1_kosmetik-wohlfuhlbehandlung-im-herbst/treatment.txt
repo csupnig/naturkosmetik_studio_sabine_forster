@@ -10,10 +10,7 @@ Price: 75
 
 ----
 
-Description:
-
-Bei dieser feuchtigkeitsspendenden Behandlung wird die Haut tiefgreifend gereinigt. Mit Iris-Peeling und Aktiv-Maske werden abgestorbene Hautschüppchen entfernt und die Durchblutung sowie Regeneration angeregt. Diese intensive Pflegebehandlung mit Elixieren, Serum, Kuröl und Maske lässt Ihre Haut wieder strahlen und ist eine optimale Vorbereitung 
-auf die kühlere Jahreszeit.
+Description: Bei dieser feuchtigkeitsspendenden Behandlung wird die Haut tiefgreifend gereinigt. Mit Iris-Peeling und Aktiv-Maske werden abgestorbene Hautschüppchen entfernt und die Durchblutung sowie Regeneration angeregt. Diese intensive Pflegebehandlung mit Elixieren, Serum, Kuröl und Maske lässt Ihre Haut wieder strahlen und ist eine optimale Vorbereitung auf die kühlere Jahreszeit.
 
 ----
 
