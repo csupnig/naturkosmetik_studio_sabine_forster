@@ -12,9 +12,10 @@
 					$products = $site->index()->filterBy("intendedTemplate", "product")->published();
 					$brands = [];
 					foreach ($products as $product) {
-						if (!in_array($product->brand()->html(), $brands)) $brands[] = $product->brand()->html();
+					  if (!in_array($product->brand()->value(), $brands)) {
+						  $brands[] = $product->brand()->value();
+            }
 					}
-					var_dump($brands);
 					foreach ($brands as $brand) { ?>
 						<li class="width100"><a href="<?= $site->find("shop")->find("brandoverview")->url() ?>?brand=<?= $brand ?>"><?= $brand ?></a></li>
 					<?php }
