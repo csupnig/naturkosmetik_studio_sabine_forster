@@ -5,7 +5,7 @@
     </div>
     <div class="navigation floatRight">
         <?php foreach($site->children()->listed() as $item): ?>
-            <span class="smallLeftMargin <?= $item->title()->html() ?> <?= r($item->isOpen(), 'active') ?>">
+            <span class="smallLeftMargin darkGreen <?= $item->title()->html() ?> <?= r($item->isOpen(), 'active strong bottomBorder') ?>">
               <a href="<?= $item->url() ?>" title="<?= $item->name()->html() ?>"><?= $item->name()->html() ?></a>
             </span>
         <?php endforeach ?>

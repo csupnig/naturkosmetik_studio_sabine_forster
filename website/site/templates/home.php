@@ -9,7 +9,7 @@ else $backgroundStyle = ""; ?>
 			<h1 class="darkGreen"><?= $page->headlineHeadline()->kirbyText() ?></h1>
 			<span class="darkGreen"><?= $page->headlineSubline()->html() ?></span>
 		</div>
-		<div class="width100 alignLeft hPadding relative">
+		<div class="width85 floatLeft relative">
 			<?php if ($image = $page->headlineImage()->toFile()) { ?>
 				<img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $page->headlineHeadline()->html() ?>"/>
 			<?php } ?>

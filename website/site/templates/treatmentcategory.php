@@ -53,7 +53,7 @@ else $backgroundStyle = ""; ?>
 			<div class="grid2C ratio3-2 topMargin darkGreen">
 				<?php foreach ($treatments as $treatment) { ?>
 					<div class="item">
-						<h3 class="small"><?= $treatment->name()->html() ?></h3>
+						<h3 class="extraSmall"><?= $treatment->name()->html() ?></h3>
 						<span class="small smallTopMargin"><?= $treatment->description()->kirbyText() ?></span>
 						<span class="extraSmall contact absolute"><a class="uppercase" href="mailto:<?= $site->email()->url() ?>?subject=Anfrage zu <?= $treatment->name()->html() ?>">Behandlung anfragen</a></span>
 					</div>
