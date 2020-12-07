@@ -32,7 +32,7 @@ else $backgroundStyle = ""; ?>
 
     if (++$count%2) {
     ?>
-		<section class="brand width100 vPadding">
+		<section class="brand width100 vPadding" id="<?=$brand->slug()?>">
 			<div class="grid2C topMargin">
         <div class="item relative">
           <?php if ($image = $brand->brandImage()->toFile()) { ?>
@@ -50,7 +50,7 @@ else $backgroundStyle = ""; ?>
 			</div>
 		</section>
   <?php } else { ?>
-      <section class="brand width100 vPadding">
+      <section class="brand width100 vPadding" id="<?=$brand->slug()?>">
         <div class="grid2C topMargin">
 
           <div class="item hPadding vFlex">
