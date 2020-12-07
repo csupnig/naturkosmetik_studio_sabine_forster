@@ -26,6 +26,7 @@ else $backgroundStyle = ""; ?>
   $count = 0;
 
   $shopBrands = $site->find("shop")->find("brandoverview");
+  $treatments = $site->find("treatments");
 
   foreach ($brands as $brand) {
 
@@ -37,14 +38,14 @@ else $backgroundStyle = ""; ?>
           <?php if ($image = $brand->brandImage()->toFile()) { ?>
             <img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $brand->name()->html() ?>"/>
           <?php } ?>
-          <button class="sticker top right white greenBackground"><a href="<?=$shopBrands->url() ?>?brand=<?= $brand->name()->html() ?>"><?= $brand->name()->html() ?> im Shop</a></button>
+          <button class="sticker top right white greenBackground"><a href="<?=$shopBrands->url() ?>?brand=<?= $brand->title()->html() ?>"><?= $brand->name()->html() ?> im Shop</a></button>
         </div>
 				<div class="item hPadding vFlex">
 					<div class="width100 darkGreen topBorder"></div>
 					<h3 class="width75 darkGreen smallTopMargin"><?=$brand->name()->html() ?></h3>
 					<span class="small width75 darkGreen topMargin flexGrow"><?=$brand->description()->kirbyText() ?></span>
 
-					<a href="<?= $page->url() ?>"><button class="width100 rectangle darkGreen topMargin">Behandlungen mit <?=$brand->name()->html() ?></button></a>
+					<a href="<?=$treatments->url() ?>?brand=<?= $brand->title()->html() ?>"><button class="width100 rectangle darkGreen topMargin">Behandlungen mit <?=$brand->name()->html() ?></button></a>
 				</div>
 			</div>
 		</section>
@@ -57,13 +58,13 @@ else $backgroundStyle = ""; ?>
             <h3 class="width75 darkGreen smallTopMargin"><?=$brand->name()->html() ?></h3>
             <span class="small width75 darkGreen topMargin flexGrow"><?=$brand->description()->kirbyText() ?></span>
 
-            <a href="<?= $page->url() ?>"><button class="width100 rectangle darkGreen topMargin">Behandlungen mit <?=$brand->name()->html() ?></button></a>
+            <a href="<?=$treatments->url() ?>?brand=<?= $brand->title()->html() ?>"><button class="width100 rectangle darkGreen topMargin">Behandlungen mit <?=$brand->name()->html() ?></button></a>
           </div>
           <div class="item relative">
             <?php if ($image = $brand->brandImage()->toFile()) { ?>
               <img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $brand->name()->html() ?>"/>
             <?php } ?>
-            <button class="sticker top left white greenBackground"><a href="<?=$shopBrands->url() ?>?brand=<?= $brand->name()->html() ?>"><?= $brand->name()->html() ?> im Shop</a></button>
+            <button class="sticker top left white greenBackground"><a href="<?=$shopBrands->url() ?>?brand=<?= $brand->title()->html() ?>"><?= $brand->name()->html() ?> im Shop</a></button>
           </div>
         </div>
       </section>
