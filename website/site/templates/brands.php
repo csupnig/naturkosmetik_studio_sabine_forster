@@ -73,5 +73,6 @@ else $backgroundStyle = ""; ?>
 	<?php
     }
   }
+  snippet('callToAction', ['content' => 'shop', 'color' => 'darkGreen']);
   snippet('footer'); ?>
 </body>
