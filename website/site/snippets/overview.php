@@ -11,7 +11,7 @@ else if ($content == "product") {
   if (isset($_GET['brand'])) {
     $brand = $_GET['brand'];
     $items = $site->index()->filterBy("intendedTemplate", "product")->published()->filter(function ($item) use ($brand) {
-      return $item->brand()->html() == $brand;
+      return strtolower($item->brand()->value()) == strtolower($brand);
     });
   } else {
     $items = $page->children()->filterBy("intendedTemplate", "product")->published();
