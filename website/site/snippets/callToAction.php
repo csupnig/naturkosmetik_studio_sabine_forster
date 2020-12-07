@@ -17,7 +17,7 @@ if ($content == "newsletter") {
   		} else if ($content == "book") {
   			echo "Möchten Sie einen Termin buchen? <br/>Bitte kontaktieren Sie mich per Email.";
   		} else if ($content == "shop") {
-        echo "Mein Online-Shop bietet ein<br/>>ausgewähltes Angebot an<br/>hochwertigen Naturprodukten.";
+        echo "Mein Online-Shop bietet ein<br/>ausgewähltes Angebot an<br/>hochwertigen Naturprodukten.";
       } ?>
 	</h3><br/>
   <?php if ($content == "shop") {
