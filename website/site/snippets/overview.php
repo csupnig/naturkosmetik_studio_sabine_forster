@@ -6,12 +6,20 @@ if (isset($_GET['sort'])) {
   $sort = 'relevance';
 }
 
-if ($content == "treatments") $items = $site->find("treatments")->children()->filterBy("intendedTemplate", "treatmentcategory")->published();
-else if ($content == "product") {
+if ($content == "treatments") {
+  if (isset($_GET['brand'])) {
+    $brand = $_GET['brand'];
+    $items = $site->find("treatments")->index()->filterBy("intendedTemplate", "treatment")->published()->filter(function ($item) use ($brand) {
+      return strtolower($item->brand()->value()) == strtolower($brand);
+    });
+  } else {
+    $items = $site->find("treatments")->children()->filterBy("intendedTemplate", "treatmentcategory")->published();
+  }
+} else if ($content == "product") {
   if (isset($_GET['brand'])) {
     $brand = $_GET['brand'];
     $items = $site->index()->filterBy("intendedTemplate", "product")->published()->filter(function ($item) use ($brand) {
-      return $item->brand()->html() == $brand;
+      return strtolower($item->brand()->value()) == strtolower($brand);
     });
   } else {
     $items = $page->children()->filterBy("intendedTemplate", "product")->published();
@@ -26,7 +34,13 @@ else if ($content == "productcategory") $items = $page->children()->filterBy("in
 if (count($items) > 0) { ?>
   <section class="overview width100 hPadding">
     <h2 class="darkGreen">
-      <?php if ($page->template() == "treatments") echo "Meine<br/>Behandlungen";
+      <?php if ($page->template() == "treatments") {
+        if (isset($brand)) {
+          echo "Behandlungen<br/>mit ".$site->find("brands")->find($brand)->name()->html();
+        } else {
+          echo "Meine<br/>Behandlungen";
+        }
+      }
       else if ($page->template() == "shop") echo "Shop<br/>Kategorien";
       else if (in_array($page->template(), ["shop", "productCategory", "product"])) echo "Produkte in<br/>dieser Kategorie";
       else echo $page->overviewHeadline()->kirbyText();

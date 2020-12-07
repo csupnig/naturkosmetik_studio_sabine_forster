@@ -185,6 +185,9 @@ button.circle.cancellation { background-image:url("/assets/images/icon-cancellat
 button.circle.cancellation:hover { background-image:url("/assets/images/icon-cancellation-darkGreen.png"); }
 button.circle.question { background-image:url("/assets/images/icon-question-green.png"); }
 button.circle.question:hover { background-image:url("/assets/images/icon-question-darkGreen.png"); }
+/* TODO fix image for shop button */
+button.circle.shop { background-image:url("/assets/images/icon-question-green.png"); }
+button.circle.shop:hover { background-image:url("/assets/images/icon-question-darkGreen.png"); }
 button.circle.right { right:-5rem; }
 button.circle.bottom { bottom:3rem; }
 button.highlight { width:10rem; height:10rem; border-radius:50%; transform:rotate(-15deg); text-align:center; position:absolute; cursor:default; }

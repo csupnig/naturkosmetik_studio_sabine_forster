@@ -16,8 +16,15 @@ if ($content == "newsletter") {
   			echo "Haben Sie noch Fragen?<br/>Ich berate Sie gerne";
   		} else if ($content == "book") {
   			echo "Möchten Sie einen Termin buchen? <br/>Bitte kontaktieren Sie mich per Email.";
-  		} ?>
+  		} else if ($content == "shop") {
+        echo "Mein Online-Shop bietet ein<br/>ausgewähltes Angebot an<br/>hochwertigen Naturprodukten.";
+      } ?>
 	</h3><br/>
+  <?php if ($content == "shop") {
+    ?>
+    <a href="<?=$site->find("shop")->url() ?>">
+  <?php
+  }?>
 	<button class="circle <?= $content ?> <?= $color ?> topMargin"<?= $modalTrigger ?>>
 		<?php if ($content == "cancellation") {
 			if ($site->termsConditionsFile()->isNotempty()) { ?>
@@ -29,4 +36,9 @@ if ($content == "newsletter") {
 			<a href="mailto:<?= $site->email()->html() ?>" target="_blank"><?= $site->email()->html() ?></a>
 		<?php } ?>
 	</button>
+  <?php if ($content == "shop") {
+  ?>
+    </a>
+    <?php
+    }?>
 </section>
