@@ -31,7 +31,7 @@
 .leftPadding { padding-left:10rem; }
 .rightPadding { padding-right:10rem; }
 /*Site-specific large paddings*/
-.largeTopPadding, body > section:first-of-type { padding-top:20rem; }
+.largeTopPadding, body > section:first-of-type { padding-top:15rem; }
 .largeBottomPadding { padding-bottom:12rem; }
 .largeRightPadding { padding-right:20rem; }
 /*Site-specific small & extra small paddings*/
@@ -144,9 +144,6 @@ div.data.darkGreen { padding:0.8rem 0; border-top:0.08rem solid #1c3f41; }
 
 body { background-repeat:no-repeat; background-size:50%; }
 
-header .secondary { padding:2.5rem 0; display:none; }
-header .primary:hover .secondary { display:block; }
-
 footer { height:25rem; }
 
 nav.breadcrumb ol { list-style: none;}
@@ -203,13 +200,12 @@ button.snipcart-cart-button:hover svg { transform: translateX(3rem); stroke: #1c
 
 /*Default text styles*/
 span.extraSmall, .dataList { font:400 1rem/1.5rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
-nav .secondary { font:400 1rem/2rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; text-transform:none !important; }
 span, select { font:400 1.3rem/1.8rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
 span.small { font:400 1.15rem/1.65rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
 .modal .header h1  { font:400 1.5rem/2rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
 h1 { font:500 7.5rem/8rem "new-spirit", sans-serif; }
 h1.small { font:500 3.5rem/4rem "new-spirit", sans-serif; }
-h2, h4, nav .primary { font:400 1rem/1.5rem "Geomanist-Book", sans-serif; text-transform:uppercase; letter-spacing:0.07rem; }
+h2, h4, nav .navigation > ul { font:400 1rem/1.5rem "Geomanist-Book", sans-serif; text-transform:uppercase; letter-spacing:0.07rem; }
 h3.small { font:400 1.8rem/2.4rem "new-spirit", sans-serif; }
 h3.extraSmall { font:400 1.5rem/2.1rem "new-spirit", sans-serif; }
 h3, h2.large, span.large, p.large { font:400 2.2rem/2.88rem "new-spirit", sans-serif; text-transform:none; }
@@ -217,6 +213,7 @@ button.sticker, button.highlight, button.rectangle { font:400 1.3rem/2.1rem "new
 button.circledNext, ul.arrow { font:400 1.3rem/2.3rem "new-spirit", sans-serif; }
 button.next { font:400 2.2rem/2.2rem "Geomanist-Regular", sans-serif; }
 h2 span.small { text-transform: none; }
+nav .navigation > ul > li > ul{ font:400 1rem/2rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; text-transform:none !important; }
 /*Text styles for externally loaded elements*/
 .newsletter form td { font:400 1.6rem/1.8rem "Geomanist-Regular", sans-serif; color:#1c3f41; }
 .newsletter form input { font:400 1rem/1.1rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; color:#1c3f41; }
@@ -236,6 +233,7 @@ select.sort { text-transform:uppercase; text-decoration:underline; }
 /*Link styles*/
 .alwaysUnderline, .alwaysUnderline a, .hoverUnderline:hover, button.next, button.circledNext { text-decoration:underline !important; }
 .noUnderline, .noUnderline a:link, .noUnderline a:visited, .noUnderline a:hover, .noUnderline a:active, span a:hover, span a:active, h1 a:link, h1:visited, h2 a:link, h2:visited, h3 a:link, h3:visited, button:hover { text-decoration:none !important; }
+
 nav.darkGreen .primary a:hover, nav.darkGreen .secondary a:hover { border-bottom:0.08rem solid #1c3f41; }
 
 /*=================================== Christenscheiss ===================================*/
@@ -245,6 +243,54 @@ nav.darkGreen .primary a:hover, nav.darkGreen .secondary a:hover { border-bottom
 .amount-input button:hover { background:white; }
 .amount-input .amount-number { height: 2.88rem; width: 2.88rem; }
 
+/*=================================== NAV Styles ===================================*/
+body { overflow-x: hidden; }
+header .logo { top: 5rem; left: 10rem; z-index: 500;}
+.navigation {text-align: right}
+
+.navigation ul {list-style: none;transition: background 0.3s ease-in-out; padding-bottom: 10rem;}
+.navigation ul:hover {background:#fff;}
+.navigation > ul > li {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  padding: 3px 10px 3px 0;
+  /*z-index: 100;*/
+}
+
+/* SECOND LEVEL */
+
+.navigation > ul > li > ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 0rem 1000rem 3rem 1000rem; /* trick from css-tricks comments */
+  margin: 0rem -1000rem 0 -1000rem; /* trick from css-tricks comments */
+  /*z-index: -1;*/
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  background: #fff;
+}
+
+.navigation > ul > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navigation > ul > li > ul:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.navigation > ul > li > ul > li {
+  padding: 3px 0;
+}
+
+.navigation > ul > li:hover .drop {
+  font-weight: bold;
+}
 /*=================================== Mobile Styles ===================================*/
 
 @media all and (max-width:600px) {
