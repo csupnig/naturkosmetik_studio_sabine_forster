@@ -14,6 +14,7 @@ columns:
           - articles
           - shop
           - newsletter
+          - terms
         sortable: true
 
       files:
@@ -86,7 +87,7 @@ columns:
           bankData:
             label: Bank data
             type:  textarea
-          
+
       social:
         type: fields
         fields:
@@ -139,7 +140,7 @@ columns:
             type: textarea
             help: If your page uses an embedded newsletter signup form, its accompanying description can be configured here.
             width: 1/2
-          
+
       shop:
         type: fields
         fields:

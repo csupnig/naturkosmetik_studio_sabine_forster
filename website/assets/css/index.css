@@ -15,6 +15,7 @@
 .grid2C.largeGap { gap: 6rem; }
 .grid2C.ratio1-2 { grid-template-columns:1fr 2fr; gap:6.5rem; }
 .grid2C.ratio3-2 { grid-template-columns:3fr 2fr; grid-column-gap:18rem; grid-row-gap:10rem; }
+.grid2C.ratio2-3 { grid-template-columns:2fr 3fr; grid-column-gap:18rem; grid-row-gap:10rem; }
 .alignRight > .grid2C { grid-template-columns:0.88fr 1.12fr; }
 .grid3C { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.5rem; }
 .grid3C > *:not(.item) { grid-column:1/4; }
