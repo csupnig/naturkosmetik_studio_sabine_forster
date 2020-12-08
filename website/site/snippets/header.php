@@ -20,6 +20,11 @@ $headerBackgroundColor = "whiteBackground"; ?>
               </ul>
             </li>
         <?php } ?>
+        <li>
+          <button class="snipcart-checkout">
+            <span class="snipcart-items-count"></span>
+          </button>
+        </li>
       </ul>
     </div>
   </nav>
