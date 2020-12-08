@@ -1,9 +1,21 @@
-Title: Events
-
-----
-
 Name: Events
 
 ----
 
-Backgroundimage: - background-1.png
+Backgroundimage:
+
+- background-1.png
+
+----
+
+Introheadline: Seminare, Workshops und Gordon Familientraining
+
+----
+
+Introtext: Oribus rerum, od itat que as simus trunter extperfe rovi dis mod enihi ert ulibus dis pore sequi re parum hariosa dit quam voluptur, architius aut aspe voluptasped quia cum acernam harum fuga.
+
+----
+
+Introimage:
+
+- events-01.jpg

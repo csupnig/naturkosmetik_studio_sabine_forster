@@ -12,7 +12,8 @@
 
 /*Site-specific grids*/
 .grid2C { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
-.grid2C.largeGap { gap: 6rem; }
+.grid2C.largeGap { gap:6rem; }
+.grid2C.extraLargeGap { grid-column-gap:16rem; grid-row-gap:1.5rem; }
 .grid2C.ratio1-2 { grid-template-columns:1fr 2fr; gap:6.5rem; }
 .grid2C.ratio3-2 { grid-template-columns:3fr 2fr; grid-column-gap:18rem; grid-row-gap:10rem; }
 .alignRight > .grid2C { grid-template-columns:0.88fr 1.12fr; }
@@ -41,6 +42,7 @@
 .smallRightPadding { padding-right:6rem; }
 .extraSmallPadding { padding:1.5rem; }
 .extraSmallTopPadding { padding-top:1.5rem; }
+.tinyVPadding { padding-top:0.8rem; padding-bottom:0.8rem; }
 /*Site-specific padding exceptions*/
 .padding.alignLeft, .hPadding.alignLeft { padding-left:0; padding-right:16rem; }
 .padding.alignRight, .hPadding.alignRight { padding-right:0; }
@@ -84,6 +86,8 @@ span.topMargin, span.bottomMargin, span.smallTopMargin, span.smallBottomMargin {
 button.circle { width:8rem; height:8rem; background-repeat:no-repeat; background-size:cover; border-radius:0; }
 button.circle.book { background-image:url("/assets/images/icon-book-green.png"); }
 button.circle.book:hover { background-image:url("/assets/images/icon-book-darkGreen.png"); }
+button.circle.events { background-image:url("/assets/images/icon-contact-green.png"); }
+button.circle.events:hover { background-image:url("/assets/images/icon-contact-darkGreen.png"); }
 button.circle.more { background-image:url("/assets/images/icon-more-green.png"); }
 button.circle.more:hover { background-image:url("/assets/images/icon-more-darkGreen.png"); }
 button.circle.newsletter { background-image:url("/assets/images/icon-newsletter-green.png"); }

@@ -88,7 +88,7 @@ Producthighlights:
 Eventhighlight:
 
 - >
-  about/events/fuhlen-sie-sich-wohl-in-ihrer-haut
+  about/events/naturkosmetik/fuhlen-sie-sich-wohl-in-ihrer-haut
 
 ----
 

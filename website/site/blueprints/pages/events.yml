@@ -4,9 +4,9 @@ columns:
   - width: 1/3
     sections:
       reviews:
-        headline: Events
+        headline: Event categories
         type: pages
-        template: event
+        template: eventcategory
         sortable: true
 
       files:
@@ -36,6 +36,28 @@ columns:
 
           backgroundImage:
             label: Page background
+            type: files
+            uploads:
+              template: media
+            multiple: false
+            required: true
+
+          introlSectionHeadline:
+            label: Intro
+            type: headline
+
+          introHeadline:
+            label: Intro headline
+            type: text
+            required: true
+
+          introText:
+            label: Intro text
+            type: textarea
+            required: true
+
+          introImage:
+            label: Intro image
             type: files
             uploads:
               template: media

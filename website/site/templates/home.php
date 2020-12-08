@@ -83,7 +83,7 @@ else $backgroundStyle = ""; ?>
 					<?php if ($image = $page->eventsImage()->toFile()) { ?>
 						<img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $page->eventsHeadline()->html() ?>"/>
 					<?php } ?>
-					<button class="sticker top left white greenBackground"><a href="<?= $site->find("about")->find("events")->toPage()->url() ?>">Zu allen Events</a></button>
+					<button class="sticker top left white greenBackground"><a href="<?= $site->find("about")->find("events")->url() ?>">Zu allen Events</a></button>
 				</div>
 			</div>
 		</section>

@@ -143,7 +143,7 @@ columns:
           eventHighlight:
             label: Event highlight
             type: pages
-            query: site.find("about").find("events").children().filterBy("intendedTemplate", "event")
+            query: site.find("about").find("events").index.filterBy("intendedTemplate", "event")
             multiple: false
             required: true
 

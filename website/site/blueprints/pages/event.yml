@@ -66,7 +66,44 @@ columns:
             width: 1/2
             required: true
 
+          lecturersSectionHeadline:
+            label: Lecturers (Optional)
+            type: headline
+
+          lecturerName1:
+            label: Lecturer 1 name (Optional, max. 23 ch.)
+            type: text
+            width: 1/2
+            maxlength: 23
+
+          lecturerName2:
+            label: Lecturer 2 name (Optional, max. 23 ch.)
+            type: text
+            width: 1/2
+            maxlength: 23
+
+          lecturerDescription1:
+            label: Lecturer 1 name (Optional, max. 40 ch.)
+            type: text
+            width: 1/2
+            maxlength: 40
+
+          lecturerDescription2:
+            label: Lecturer 2 name (Optional, max. 40 ch.)
+            type: text
+            width: 1/2
+            maxlength: 40
+
+          descriptionSectionHeadline:
+            label: Descriptions
+            type: headline
+
           shortDescription:
             label: Short description
+            type: textarea
+            required: true
+
+          description:
+            label: Description
             type: textarea
             required: true

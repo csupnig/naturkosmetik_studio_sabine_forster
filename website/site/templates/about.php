@@ -11,7 +11,7 @@ else $backgroundStyle = ""; ?>
 				<span class="small darkGreen topMargin flexGrow"><?=$page->introText()->kirbyText() ?></span>
 				<a href="#contact"><button class="width100 next small darkGreen topMargin">Hallo sagen</button></a>
 			</div>
-			<div class="item relative">
+			<div class="item">
 				<?php if ($image = $page->introImage()->toFile()) { ?>
 				  <img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $page->introHeadline()->html() ?>"/>
 				<?php } ?>
