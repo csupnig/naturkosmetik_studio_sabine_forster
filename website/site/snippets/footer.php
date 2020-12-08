@@ -1,8 +1,11 @@
+<?php
+snippet('newsletterSignup');
+?>
 <footer id="footer" class="width100 vFlex padding darkGreen lightGreenBackground">
 	<div class="width100 inlineBlock flexGrow">
 		<div class="width66 floatLeft">
 			<h2 class="large"><?= $site->newsletterCall()->kirbyText() ?></h2>
-			<span class="large"><a class="newsletter" href="#">Newsletter Anmeldung</a></span>
+			<span class="large"><a class="newsletter" data-modal-trigger="newsletter" href="">Newsletter Anmeldung</a></span>
 		</div>
 		<div class="floatRight noUnderline">
 			<?php if ($site->termsConditionsFile()->isNotempty()) { ?>
