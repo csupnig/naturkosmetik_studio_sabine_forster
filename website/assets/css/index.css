@@ -156,6 +156,10 @@ div.data.darkGreen { padding:0.8rem 0; border-top:0.08rem solid #1c3f41; }
 body { background-repeat:no-repeat; background-size:50%; }
 
 footer { height:25rem; }
+header .secondary { padding:2.5rem 0; display:none; }
+header .primary:hover .secondary { display:block; }
+
+footer { height:25rem; }
 
 nav.breadcrumb ol { list-style: none;}
 nav.breadcrumb .clear { clear: both; }
@@ -209,6 +213,8 @@ button.snipcart-cart-button:hover svg { transform: translateX(3rem); stroke: #1c
 .snipcart .snipcart-cart__footer-col div.snipcart__actions--link::after { content:'Detaillierter Warenkorb'; display:block; position: absolute; top:0; left:0; width: 100%; background: #fff; }
 .snipcart-items-count {font-size: 0.8rem; color: #fff; background: #637950; border-radius: 50%; padding: 0.3rem; transform: translate(-0rem, -0.8rem); display: inline-block; width: 1.5rem; height: 1.5rem; position: absolute; line-height: 1.2rem; }
 .snipcart-checkout {width: 2rem; height: 4rem; margin-left: 3rem; background-image:url("/assets/images/icon-cart-darkGreen.png");}
+.snipcart * { font-family: "Geomanist-Book", sans-serif !important; }
+
 
 .modal { width:33%; height:100%; min-height:100%; position:fixed; top:0; right:0; left:auto; overflow-y:auto; z-index:1000; transform:translateX(100%); transition:transform 0.5s ease-in-out; background:#fff; }
 .modal.in { transform: translateX(0); }
@@ -237,7 +243,6 @@ nav .navigation > ul > li > ul{ font:400 1rem/2rem "Geomanist-Regular", sans-ser
 .newsletter form td { font:400 1.6rem/1.8rem "Geomanist-Regular", sans-serif; color:#1c3f41; }
 .newsletter form input { font:400 1rem/1.1rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; color:#1c3f41; }
 .newsletter form td button { font:400 1.1rem/1.8rem "new-spirit", sans-serif !important; letter-spacing:0.02rem; }
-.snipcart * { font-family: "Geomanist-Book", sans-serif !important; }
 
 /*Text styles*/
 .black, .black a { color:#000; }
