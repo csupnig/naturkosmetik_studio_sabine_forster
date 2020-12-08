@@ -1,7 +1,10 @@
+<?php $headerColor = "darkGreen";
+$headerBackgroundColor = "whiteBackground"; ?>
+
 <header class="width100 absolute padding">
-  <nav class="collapsed width100 darkGreen noUnderline">
+  <nav class="collapsed width100 <?= $headerColor ?> noUnderline">
     <div class="width25 logo floatLeft">
-      <a href="<?=$site->url() ?>"><img class="width100" src="<?= $site->url() ?>/../assets/images/logo.png" alt="<?= $site->name()->html() ?>"/></a>
+      <a href="<?=$site->url() ?>"><img class="width100" src="<?= $site->url() ?>/../assets/images/logo_<?= $headerColor ?>.png" alt="<?= $site->name()->html() ?>"/></a>
     </div>
     <div class="navigation floatRight">
       <?php foreach($site->children()->listed() as $item) { ?>
