@@ -41,3 +41,68 @@ columns:
               template: media
             multiple: false
             required: true
+
+          introSectionHeadline:
+            label: Intro
+            type: headline
+
+          introHeadline:
+            label: Intro headline
+            type: textarea
+            required: true
+
+          introText:
+            label: Intro text
+            type: textarea
+            required: true
+
+          introImage:
+            label: Intro image
+            type: files
+            uploads:
+              template: media
+            multiple: false
+            required: true
+
+          educationSectionHeadline:
+            label: Education section
+            type: headline
+
+          educationIntro:
+            label: Education intro
+            type: textarea
+            required: true
+
+          educationText:
+            label: Education text
+            type: textarea
+            info: Use list for desired appearance
+            required: true
+
+          philosophySectionHeadline:
+            label: Philosophy section
+            type: headline
+
+          philosophyHeadline:
+            label: Philosophy headline
+            type: text
+            required: true
+
+          philosophyIntro:
+            label: Philosophy intro
+            type: textarea
+            required: true
+
+          philosophyText:
+            label: Philosophy text
+            type: textarea
+            info: Use list for desired appearance
+            required: true
+
+          philosophyBackground:
+            label: Philosophy background
+            type: files
+            uploads:
+              template: media
+            multiple: false
+            required: true
