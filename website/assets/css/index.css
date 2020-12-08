@@ -33,10 +33,11 @@
 /*Site-specific large paddings*/
 .largeTopPadding, body > section:first-of-type { padding-top:15rem; }
 .largeBottomPadding { padding-bottom:12rem; }
-.largeRightPadding { padding-right:20rem; }
+.largeRightPadding { padding-right:16rem; }
+.extraLargeRightPadding { padding-right:20rem; }
 /*Site-specific small & extra small paddings*/
 .smallPadding { padding:6rem; }
-.smallLeftPadding { padding-right:6rem; }
+.smallLeftPadding { padding-left:6rem; }
 .smallRightPadding { padding-right:6rem; }
 .extraSmallPadding { padding:1.5rem; }
 .extraSmallTopPadding { padding-top:1.5rem; }
@@ -128,10 +129,15 @@ select.sort { cursor:pointer; background:transparent; }
 /*Snippets*/
 ul.arrow li { list-style:none; padding:0.8rem 3rem 0.8rem 0; background-repeat:no-repeat; background-position:center right; background-size:1.5rem; }
 ul.arrow.darkGreen li { background-image:url("/assets/images/icon-next-darkGreen.png");  }
-.dataList ul li { list-style:none; padding:0.8rem 0; }
+div.data.darkGreen { padding:0.8rem 0; border-top:0.08rem solid #1c3f41; }
+.dataList.extraSmall ul li { list-style:none; padding:0.8rem 0; }
+.dataList.small ul li { list-style:none; padding:1rem 0; }
 .dataList.darkGreen ul li { border-top:0.08rem solid #1c3f41; }
 .dataList.darkGreen ul li:first-of-type { border-top:0.16rem solid #1c3f41; }
-div.data.darkGreen { padding:0.8rem 0; border-top:0.08rem solid #1c3f41; }
+.dataList::-webkit-scrollbar { width:0.16rem; border-radius:50%; }
+.dataList.darkGreen::-webkit-scrollbar-track { background:#d0d2ce; }
+.dataList.darkGreen::-webkit-scrollbar-thumb { background:#1c3f41; }
+
 
 .hoverFlip .flip:nth-child(2) { visibility:hidden; }
 .hoverFlip:hover .flip:first-child { display:none; }
@@ -155,9 +161,13 @@ nav.breadcrumb ol li:first-child::before {content:none;}
 nav.breadcrumb ol li a { text-decoration: none;}
 nav.breadcrumb { text-transform: none; }
 
+section.education .dataList { max-height:25.55rem; overflow-y:scroll; }
+
 section.overview .item img { z-index:5; display:none; }
 section.overview .item:hover img { display:block; }
 section.overview .item.product img { display:block; }
+
+section.philosophy { min-height:40rem; background-size:cover; }
 
 section.studios .item, section.studios .item img { height:48rem; }
 section.studios .item img { z-index:5; }
@@ -201,9 +211,9 @@ button.snipcart-cart-button:hover svg { transform: translateX(3rem); stroke: #1c
 /*=================================== Texts ===================================*/
 
 /*Default text styles*/
-span.extraSmall, .dataList { font:400 1rem/1.5rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
+span.extraSmall, .dataList.extraSmall { font:400 1rem/1.5rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
 span, select { font:400 1.3rem/1.8rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
-span.small { font:400 1.15rem/1.65rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
+span.small, .dataList.small { font:400 1.15rem/1.65rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
 .modal .header h1  { font:400 1.5rem/2rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
 h1 { font:500 7.5rem/8rem "new-spirit", sans-serif; }
 h1.small { font:500 3.5rem/4rem "new-spirit", sans-serif; }
@@ -214,7 +224,7 @@ h3, h2.large, span.large, p.large { font:400 2.2rem/2.88rem "new-spirit", sans-s
 button.sticker, button.highlight, button.rectangle { font:400 1.3rem/2.1rem "new-spirit", sans-serif; letter-spacing:0.02rem; }
 button.circledNext, ul.arrow { font:400 1.3rem/2.3rem "new-spirit", sans-serif; }
 button.next { font:400 2.2rem/2.2rem "Geomanist-Regular", sans-serif; }
-h2 span.small { text-transform: none; }
+button.next.small { font:400 1.5rem/2.2rem "new-spirit", sans-serif; }
 nav .navigation > ul > li > ul{ font:400 1rem/2rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; text-transform:none !important; }
 /*Text styles for externally loaded elements*/
 .newsletter form td { font:400 1.6rem/1.8rem "Geomanist-Regular", sans-serif; color:#1c3f41; }
@@ -231,6 +241,7 @@ nav .navigation > ul > li > ul{ font:400 1rem/2rem "Geomanist-Regular", sans-ser
 .uppercase { text-transform:uppercase; letter-spacing:0.07rem; }
 .strong { font-weight:bold; }
 select.sort { text-transform:uppercase; text-decoration:underline; }
+h2 span.small { text-transform: none; }
 
 /*Link styles*/
 .alwaysUnderline, .alwaysUnderline a, .hoverUnderline:hover, button.next, button.circledNext { text-decoration:underline !important; }
