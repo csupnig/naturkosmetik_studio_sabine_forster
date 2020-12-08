@@ -34,4 +34,6 @@ $(document).ready(function () {
         jQuery('.modal').removeClass('in');
       }
   });
+  /* Navigation */
+  $('.navigation > ul > li').hover(function() {$(this).parents('.navigation').addClass('in');}, function() {$(this).parents('.navigation').removeClass('in');})
 });
