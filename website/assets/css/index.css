@@ -268,62 +268,6 @@ nav.darkGreen .primary a:hover, nav.darkGreen .secondary a:hover { border-bottom
 .amount-input button:hover { background:white; }
 .amount-input .amount-number { height: 2.88rem; width: 2.88rem; }
 
-/*=================================== NAV Styles ===================================*/
-body { overflow-x: hidden; }
-header .logo { top: 5rem; left: 10rem; z-index: 500;}
-.navigation {text-align: right;transition: background 0.1s ease-in-out;}
-.navigation.in {background: #fff;}
-
-.navigation ul {list-style: none;}
-.navigation > ul > li {
-  display: inline-block;
-  text-align: left;
-  position: relative;
-  padding: 3px 10px 3px 0;
-  /*z-index: 100;*/
-}
-
-/* SECOND LEVEL */
-
-.navigation > ul > li > ul {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  padding: 0rem 1000rem 3rem 1000rem; /* trick from css-tricks comments */
-  margin: 0rem -1000rem 0 -1000rem; /* trick from css-tricks comments */
-  /*z-index: -1;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
-   */
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  transform: scaleY(0);
-  transform-origin: top center;
-  opacity: 0;
-  background: #fff;
-  min-height: 10em;
-}
-
-.navigation > ul > li:hover > ul {
-  /*visibility: visible;
-  opacity: 1;*/
-  transform: scaleY(1);
-  opacity: 1;
-}
-
-.navigation > ul > li > ul:hover {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-.navigation > ul > li > ul > li {
-  padding: 3px 0;
-}
-
-.navigation > ul > li:hover .drop {
-  font-weight: bold;
-}
 /*=================================== Mobile Styles ===================================*/
 
 @media all and (max-width:600px) {
