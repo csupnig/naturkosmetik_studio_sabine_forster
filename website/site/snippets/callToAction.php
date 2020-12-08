@@ -3,7 +3,6 @@ else $background = ""; ?>
 <?php
 $modalTrigger = "";
 if ($content == "newsletter") {
-  snippet('newsletterSignup');
   $modalTrigger = " data-modal-trigger=\"newsletter\"";
 }?>
 <section class="callToAction width100 padding largeTopMargin largeBottomMargin centeredText <?=$background ?>">

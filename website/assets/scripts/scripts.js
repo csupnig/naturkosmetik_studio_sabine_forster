@@ -24,8 +24,10 @@ $(document).ready(function () {
 	});
 
   /*Modal dialogue*/
-  $('[data-modal-trigger]').on('click', function(){
+  $('[data-modal-trigger]').on('click', function(e){
     $('.modal.'+$(this).attr('data-modal-trigger')).addClass('in');
+    e.preventDefault();
+    return false;
   });
   $('body').on('click', function(e) {
       if (!$(e.originalEvent.target).is('[data-modal-trigger]') && !$(e.originalEvent.target).is('.modal') && !$(e.originalEvent.target).parents('.modal').length) {
