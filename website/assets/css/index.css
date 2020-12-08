@@ -143,13 +143,17 @@ div.data.darkGreen { padding:0.8rem 0; border-top:0.08rem solid #1c3f41; }
 .dataList.darkGreen::-webkit-scrollbar-track { background:#d0d2ce; }
 .dataList.darkGreen::-webkit-scrollbar-thumb { background:#1c3f41; }
 
-
 .hoverFlip .flip:nth-child(2) { visibility:hidden; }
 .hoverFlip:hover .flip:first-child { display:none; }
 .hoverFlip:hover .flip:nth-child(2) { visibility:visible; }
 .item .cutout { width:100%; height:100%; top:0; left:0; z-index:100; position:absolute; display:none; }
 .item .cutout.darkGreen { background:url("/assets/images/cutOut-darkGreen.png") no-repeat; background-size:cover; }
 .item:hover .cutout { display:block; }
+
+.amount-input .controls { display: grid;grid-template-columns: 1fr 1fr 1fr; }
+.amount-input button { height: 2.88rem; width: 2.88rem; border: 0.08rem solid #1c3f41; }
+.amount-input button:hover { background:white; }
+.amount-input .amount-number { height: 2.88rem; width: 2.88rem; }
 
 /*=================================== Templates ===================================*/
 
@@ -205,8 +209,8 @@ button.snipcart-cart-button:hover svg { transform: translateX(3rem); stroke: #1c
 .snipcart .snipcart-discount-box__submit { color: #637950; }
 .snipcart .snipcart-cart__footer-col div.snipcart__actions--link { position:relative; }
 .snipcart .snipcart-cart__footer-col div.snipcart__actions--link::after { content:'Detaillierter Warenkorb'; display:block; position: absolute; top:0; left:0; width: 100%; background: #fff; }
-.snipcart-items-count {font-size: 0.8rem; color: #fff; background: #637950; border-radius: 50%; padding: 0.3rem; transform: translate(-0rem, -0.8rem); display: inline-block; width: 1.5rem; height: 1.5rem; position: absolute; line-height: 1.2rem; }
-.snipcart-checkout {width: 2rem; height: 4rem; margin-left: 3rem; background-image:url("/assets/images/icon-cart-darkGreen.png");}
+.snipcart-items-count { font-size: 0.8rem; color: #fff; background: #637950; border-radius: 50%; padding: 0.3rem; transform: translate(-0rem, -0.8rem); display: inline-block; width: 1.5rem; height: 1.5rem; position: absolute; line-height: 1.2rem; }
+.snipcart-checkout { width: 2rem; height: 4rem; margin-left: 3rem; background-image:url("/assets/images/icon-cart-darkGreen.png");}
 
 .modal { width:33%; height:100%; min-height:100%; position:fixed; top:0; right:0; left:auto; overflow-y:auto; z-index:1000; transform:translateX(100%); transition:transform 0.5s ease-in-out; background:#fff; }
 .modal.in { transform: translateX(0); }
@@ -220,6 +224,7 @@ span.extraSmall, .dataList.extraSmall { font:400 1rem/1.5rem "Geomanist-Regular"
 span, select { font:400 1.3rem/1.8rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
 span.small, .dataList.small { font:400 1.15rem/1.65rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
 .modal .header h1  { font:400 1.5rem/2rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; }
+.amount-input span { font:200 1.3rem/2.88rem "new-spirit", sans-serif; letter-spacing:0.02rem; }
 h1 { font:500 7.5rem/8rem "new-spirit", sans-serif; }
 h1.small { font:500 3.5rem/4rem "new-spirit", sans-serif; }
 h2, h4, nav .navigation > ul { font:400 1rem/1.5rem "Geomanist-Book", sans-serif; text-transform:uppercase; letter-spacing:0.07rem; }
@@ -254,69 +259,7 @@ h2 span.small { text-transform: none; }
 
 nav.darkGreen .primary a:hover, nav.darkGreen .secondary a:hover { border-bottom:0.08rem solid #1c3f41; }
 
-/*=================================== Christenscheiss ===================================*/
-.amount-input span { font:200 1.3rem/2.88rem "new-spirit", sans-serif; letter-spacing:0.02rem; }
-.amount-input .controls { display: grid;grid-template-columns: 1fr 1fr 1fr; }
-.amount-input button { height: 2.88rem; width: 2.88rem; border: 0.08rem solid #1c3f41; }
-.amount-input button:hover { background:white; }
-.amount-input .amount-number { height: 2.88rem; width: 2.88rem; }
 
-/*=================================== NAV Styles ===================================*/
-body { overflow-x: hidden; }
-header .logo { top: 5rem; left: 10rem; z-index: 500;}
-.navigation {text-align: right;transition: background 0.1s ease-in-out;}
-.navigation.in {background: #fff;}
-
-.navigation ul {list-style: none;}
-.navigation > ul > li {
-  display: inline-block;
-  text-align: left;
-  position: relative;
-  padding: 3px 10px 3px 0;
-  /*z-index: 100;*/
-}
-
-/* SECOND LEVEL */
-
-.navigation > ul > li > ul {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  padding: 0rem 1000rem 3rem 1000rem; /* trick from css-tricks comments */
-  margin: 0rem -1000rem 0 -1000rem; /* trick from css-tricks comments */
-  /*z-index: -1;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
-   */
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  transform: scaleY(0);
-  transform-origin: top center;
-  opacity: 0;
-  background: #fff;
-  min-height: 10em;
-}
-
-.navigation > ul > li:hover > ul {
-  /*visibility: visible;
-  opacity: 1;*/
-  transform: scaleY(1);
-  opacity: 1;
-}
-
-.navigation > ul > li > ul:hover {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-.navigation > ul > li > ul > li {
-  padding: 3px 0;
-}
-
-.navigation > ul > li:hover .drop {
-  font-weight: bold;
-}
 /*=================================== Mobile Styles ===================================*/
 
 @media all and (max-width:600px) {

@@ -48,8 +48,9 @@ columns:
             type: headline
 
           shortDescription:
-            label: Short description
-            type: textarea
+            label: Short description (Max. 50 characters)
+            type: text
+            maxlength: 50
             required: true
 
           detailsSectionHeadline:

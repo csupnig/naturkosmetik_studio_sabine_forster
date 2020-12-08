@@ -6,9 +6,14 @@ columns:
       categories:
         headline: Categories
         type: pages
-        templates:
-          - productcategory
-          - products
+        template: productcategory
+        sortable: true
+
+      systemPages:
+        headline: System pages
+        type: pages
+        max: 1
+        template: products
         sortable: true
 
       files:

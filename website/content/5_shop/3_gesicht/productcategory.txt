@@ -8,7 +8,7 @@ Backgroundimage:
 
 ----
 
-Shortdescription: Reine Natur bringt die gesündeste Lösung. Gesichzg.
+Shortdescription: Reine Natur bringt die gesündeste Lösung. Gesicht.
 
 ----
 
@@ -23,9 +23,7 @@ Headerimage:
 
 ----
 
-Footerimage:
-
-- photo-1575407089895-2e477d1b702a.jpeg
+Footerimage: - photo-1575407089895-2e477d1b702a.jpeg
 
 ----
 

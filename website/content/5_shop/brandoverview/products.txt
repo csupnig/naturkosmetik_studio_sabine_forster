@@ -2,10 +2,4 @@ Name: Markenübersicht
 
 ----
 
-Backgroundimage:
-
-- img_background_treatments.png
-
-----
-
-Shortdescription: Finde die Produkte deiner Lieblingsmarke
+Shortdescription: Eine Übersicht über alle Verfügbaren Marken
