@@ -120,7 +120,7 @@ else $backgroundStyle = ""; ?>
 	<?php } ?>
 	<?php $articles = $site->find("articles")->children()->filterBy("intendedTemplate", "article")->published()->limit(3);
 	if (count($articles) > 0) { ?>
-		<section class="articles width100 padding">
+		<section class="articles width100 topMargin hPadding">
 			<h2 class="darkGreen">Aktuelle<br/>Artikel</h2>
 			<div class="grid3C topMargin">
 				<?php foreach ($articles as $article) { ?>

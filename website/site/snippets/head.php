@@ -12,10 +12,12 @@
 
     <!--Styles-->
     <link rel="stylesheet" href="https://use.typekit.net/iuq0gym.css">
+    <?= css(['assets/css/snippets.css', '@auto']) ?>
     <?= css(['assets/css/index.css', '@auto']) ?>
 
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/snippets.js"></script>
     <script type="text/javascript" src="/assets/scripts/scripts.js"></script>
 
     <?php if ($page->template() == "product") {
