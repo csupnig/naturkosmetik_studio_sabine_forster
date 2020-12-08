@@ -160,6 +160,10 @@ div.data.darkGreen { padding:0.8rem 0; border-top:0.08rem solid #1c3f41; }
 body { background-repeat:no-repeat; background-size:50%; }
 
 footer { height:25rem; }
+header .secondary { padding:2.5rem 0; display:none; }
+header .primary:hover .secondary { display:block; }
+
+footer { height:25rem; }
 
 nav.breadcrumb ol { list-style: none;}
 nav.breadcrumb .clear { clear: both; }
@@ -177,6 +181,8 @@ section.overview .item:hover img { display:block; }
 section.overview .item.product img { display:block; }
 
 section.philosophy { min-height:40rem; background-size:cover; }
+
+section.article .vFlex { min-height: 30rem; }
 
 section.studios .item, section.studios .item img { height:48rem; }
 section.studios .item img { z-index:5; }
