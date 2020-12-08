@@ -33,10 +33,11 @@
 /*Site-specific large paddings*/
 .largeTopPadding, body > section:first-of-type { padding-top:15rem; }
 .largeBottomPadding { padding-bottom:12rem; }
-.largeRightPadding { padding-right:20rem; }
+.largeRightPadding { padding-right:16rem; }
+.extraLargeRightPadding { padding-right:20rem; }
 /*Site-specific small & extra small paddings*/
 .smallPadding { padding:6rem; }
-.smallLeftPadding { padding-right:6rem; }
+.smallLeftPadding { padding-left:6rem; }
 .smallRightPadding { padding-right:6rem; }
 .extraSmallPadding { padding:1.5rem; }
 .extraSmallTopPadding { padding-top:1.5rem; }
@@ -221,7 +222,7 @@ h3, h2.large, span.large, p.large { font:400 2.2rem/2.88rem "new-spirit", sans-s
 button.sticker, button.highlight, button.rectangle { font:400 1.3rem/2.1rem "new-spirit", sans-serif; letter-spacing:0.02rem; }
 button.circledNext, ul.arrow { font:400 1.3rem/2.3rem "new-spirit", sans-serif; }
 button.next { font:400 2.2rem/2.2rem "Geomanist-Regular", sans-serif; }
-h2 span.small { text-transform: none; }
+button.next.small { font:400 1.5rem/2.2rem "new-spirit", sans-serif; }
 nav .navigation > ul > li > ul{ font:400 1rem/2rem "Geomanist-Regular", sans-serif; letter-spacing:0.02rem; text-transform:none !important; }
 /*Text styles for externally loaded elements*/
 .newsletter form td { font:400 1.6rem/1.8rem "Geomanist-Regular", sans-serif; color:#1c3f41; }
@@ -238,6 +239,7 @@ nav .navigation > ul > li > ul{ font:400 1rem/2rem "Geomanist-Regular", sans-ser
 .uppercase { text-transform:uppercase; letter-spacing:0.07rem; }
 .strong { font-weight:bold; }
 select.sort { text-transform:uppercase; text-decoration:underline; }
+h2 span.small { text-transform: none; }
 
 /*Link styles*/
 .alwaysUnderline, .alwaysUnderline a, .hoverUnderline:hover, button.next, button.circledNext { text-decoration:underline !important; }

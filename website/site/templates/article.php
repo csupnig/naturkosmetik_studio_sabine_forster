@@ -4,7 +4,7 @@ if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image
 else $backgroundStyle = ""; ?>
 <body class="article lightGreenBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
-  <section class="article width100 padding largeRightPadding darkGreenBackground">
+  <section class="article width100 padding extraLargeRightPadding darkGreenBackground">
     <div class="grid2C ratio1-2 topMargin">
       <div class="item vFlex">
       </div>
