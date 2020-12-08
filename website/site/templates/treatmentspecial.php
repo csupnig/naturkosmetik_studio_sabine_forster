@@ -37,7 +37,7 @@ else $backgroundStyle = ""; ?>
 		</div>
 		<div class="width50 darkGreen whiteBackground floatLeft smallPadding vFlex">
 			<h2>Kann hilfreich<br/>sein bei</h2>
-			<div class="flexGrow dataList darkGreen topMargin">
+			<div class="flexGrow dataList extraSmall darkGreen topMargin">
 				<?= $page->usageText()->kirbyText() ?>
 			</div>
 			<span class="extraSmall uppercase"><?= $page->usageRemark()->html() ?></span>
