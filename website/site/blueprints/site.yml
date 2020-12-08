@@ -82,8 +82,11 @@ columns:
           address:
             label: Address
             type:  textarea
-            translate: false
 
+          bankData:
+            label: Bank data
+            type:  textarea
+          
       social:
         type: fields
         fields:
@@ -118,24 +121,25 @@ columns:
           socialLine:
             type: line
 
-          newslettercall:
-            label: Newsletter signup text
-            type: textarea
-            help: If your site features repeating calls to action advertising your newsletter, this is where you can set the corresponding text.
-            width: 1/2
-
-          newsletterIntro:
-            label: Newsletter intro text
-            type: textarea
-            help: If your page uses an embedded newsletter signup form, its intro can be configured here.
-            width: 1/2
-
           newsletterHeader:
-            label: Newsletter signup header
+            label: Newsletter signup headline
             type: text
             width: 1/2
             translate: false
-            help: Header on the newsletter entry form
+            help: If your site features calls to action advertising your newsletter, this is where you can set the corresponding headline.
+
+          newsletterCall:
+            label: Newsletter signup text
+            type: textarea
+            help: If your site features calls to action advertising your newsletter, this is where you can set the corresponding text.
+            width: 1/2
+
+          newsletterIntro:
+            label: Newsletter description
+            type: textarea
+            help: If your page uses an embedded newsletter signup form, its accompanying description can be configured here.
+            width: 1/2
+          
       shop:
         type: fields
         fields:
@@ -144,7 +148,7 @@ columns:
             type: headline
 
           snipcartkey:
-            label: Ship Cart Api Key
+            label: Snip Cart Api Key
             type: text
             help: Copy the public Snip Cart API KEY here
 
@@ -188,37 +192,33 @@ columns:
           footerline:
             type: line
 
-          footerExtensionSectionHeadline:
-            label: Footer extension
-            type: headline
-
           footerExtensionHeadline:
-            label: Footer extension headline
+            label: Extended footer headline
             type: textarea
             width: 1/2
             required: true
 
           footerExtensionText:
-            label: Footer extension text
+            label: Extended footer text
             type: textarea
             width: 1/2
             required: true
 
           footerExtensionLinkTarget:
-            label: Footer extension button target
+            label: Extended footer button target
             type: pages
             width: 1/2
             multiple: false
             required: true
 
           footerExtensionLinkText:
-            label: Footer extension button text
+            label: Extended footer button text
             type: text
             width: 1/2
             required: true
 
           footerExtensionImage:
-            label: Footer extension image
+            label: Extended footer image
             type: files
             multiple: false
             required: true

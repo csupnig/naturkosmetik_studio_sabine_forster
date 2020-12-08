@@ -1,9 +1,68 @@
-Title: About
-
-----
-
 Name: Über mich
 
 ----
 
-Backgroundimage: - background-1.png
+Backgroundimage:
+
+- background-1.png
+
+----
+
+Introheadline:
+
+Sabine Forster,
+die Frau hinter
+dem Studio.
+
+----
+
+Introtext: Oribus rerum, od itat que as simus trunter extperfe rovi dis mod enihi ert ulibus dis pore sequi re parum hariosa dit quam voluptur, architius aut aspe voluptasped quia cum acernam harum fuga.
+
+----
+
+Introimage:
+
+- about-01.jpg
+
+----
+
+Educationintro:
+
+Philosophie von innerer 
+und äußerer Schönheit.
+
+----
+
+Educationtext:
+
+- Diplomierte ganzheitliche Naturkosmetikerin seit 2000
+- Thalamus-Heilpraktikerschule München
+- Kosmetik-Meisterbrief seit 2003
+- Dr. Hauschka-Naturkosmetikerin
+- Noreia-Blüten-Essenz Beraterin nach Erika Pichler
+- Dipl. Systemische Kinesiologie bei Dr. Martin Sourek
+- Diplomierte ganzheitliche Naturkosmetikerin seit 2000
+- Diplomierte ganzheitliche Naturkosmetikerin seit 2000
+- Diplomierte ganzheitliche Naturkosmetikerin seit 2000
+
+----
+
+Philosophyheadline: Philosophie von innerer  und äußerer Schönheit.
+
+----
+
+Philosophyintro: Als diplomierte ganzheitliche Naturkosmetikerin ist das Ziel jeder meiner Behandlungen, die Verbindung zwischen äußerer und innerer Schönheit zu fördern.
+
+----
+
+Philosophytext:
+
+Als diplomierte ganzheitliche Naturkosmetikerin ist das Ziel jeder meiner Behandlungen, die Verbindung zwischen äußerer und innerer Schönheit zu fördern.Ich verwende dazu aus Überzeugung nur reinste Produkte höchster Qualität von Firma ambient Living Cosmetics und Dr. Hauschka. Haut, Immun- und Nervensystem sind eng miteinander verbunden und reagieren aufeinander. Reine Naturprodukte unterstützen diese Wechselwirkung auf sanfte und nachhaltige Weise von außen. Systemische Kinesiologie und Energiebalancen stärken Ihre inneren Kräfte.
+
+In einem entspannenden Atmosphäre sind meine Behandlung eine natürliche und wertvolle Nahrung für Ihr körperliches und seelisches Wohlbefinden. Genießen Sie persönliche Beratung und Wohlfühlbehandlungen, die speziell auf Ihre Bedürfnisse abgestimmt sind, in einer Atmosphäre von Respekt und Vertrauen.
+
+----
+
+Philosophybackground:
+
+- about-02.jpg

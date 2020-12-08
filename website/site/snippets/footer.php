@@ -1,6 +1,4 @@
-<?php
-snippet('newsletterSignup');
-?>
+<?php snippet('newsletterSignup'); ?>
 <footer id="footer" class="width100 vFlex padding darkGreen lightGreenBackground">
 	<div class="width100 inlineBlock flexGrow">
 		<div class="width66 floatLeft">

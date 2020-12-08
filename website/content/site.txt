@@ -1,4 +1,4 @@
-Title: Site Title
+Title: Naturkosmetik Studio Sabine Forster
 
 ----
 
@@ -31,12 +31,25 @@ Phone: +43 676 590 55 34
 
 Address:
 
+Sabine Forster, diplomierte Naturkosmetikerin
+Mitglied der Wirtschaftskammer OÖ
+
 Studio Linz
 4040 Lichtenberg, Lierzbergerweg 55
 
 Studio Lichtenberg
 Praxisgemeinschaft Beauty- & Vitalcenter
 4020 Linz, Unionstraße 3, 1. Stock
+
+----
+
+Bankdata:
+
+Naturkosmetik-Studio Sabine Forster
+IBAN AT53 3413 5000 0716 3835
+BIC RZOOAT2L135
+Raiffeisenbank Gramastetten-Herzogsdorf
+USt-IdNr.: ATU 61967713
 
 ----
 
@@ -56,6 +69,10 @@ Linkedin:
 
 ----
 
+Newsletterheader: Newsletter Anmeldung
+
+----
+
 Newslettercall: Wollen Sie immer auf dem Laufenden bleiben? Melden Sie sich für meinen Newsletter an.
 
 ----
@@ -68,10 +85,6 @@ Meine Daten werden nicht weitergegeben und ich kann meine Zustimmung jederzeit p
 
 Vielen Dank!
 Ihre, Sabine Forster
-
-----
-
-Newsletterheader: Newsletter Anmeldung
 
 ----
 

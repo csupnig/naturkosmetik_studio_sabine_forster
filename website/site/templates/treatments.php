@@ -5,7 +5,7 @@ else $backgroundStyle = ""; ?>
 <body class="treatments beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
 	<?php snippet('overview', ["content" => "treatments", "filter" => "off"]); ?>
-	<section class="studios">
+	<section id="studios" class="studios">
 		<?php for ($i = 1; $i <= 2; $i++) { 
 			?>
 			<div class="studio width50 darkGreen floatLeft">
