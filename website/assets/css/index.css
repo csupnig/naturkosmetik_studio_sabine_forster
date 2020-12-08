@@ -265,7 +265,6 @@ h2 span.small { text-transform: none; }
 
 nav.darkGreen .primary a:hover, nav.darkGreen .secondary a:hover { border-bottom:0.08rem solid #1c3f41; }
 
-
 /*=================================== Mobile Styles ===================================*/
 
 @media all and (max-width:600px) {
