@@ -21,7 +21,7 @@ $headerBackgroundColor = "whiteBackground"; ?>
             </li>
         <?php } ?>
         <li>
-          <button class="snipcart-checkout darkGreen">
+          <button class="snipcart-checkout">
             <span class="snipcart-items-count"></span>
           </button>
         </li>
