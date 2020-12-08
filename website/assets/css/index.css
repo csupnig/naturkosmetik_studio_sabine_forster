@@ -268,16 +268,23 @@ header .logo { top: 5rem; left: 10rem; z-index: 500;}
   top: 100%;
   padding: 0rem 1000rem 3rem 1000rem; /* trick from css-tricks comments */
   margin: 0rem -1000rem 0 -1000rem; /* trick from css-tricks comments */
-  /*z-index: -1;*/
+  /*z-index: -1;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+   */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: top center;
   opacity: 0;
   background: #fff;
   min-height: 10em;
 }
 
 .navigation > ul > li:hover > ul {
-  visibility: visible;
+  /*visibility: visible;
+  opacity: 1;*/
+  transform: scaleY(1);
   opacity: 1;
 }
 
