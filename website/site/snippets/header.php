@@ -1,6 +1,6 @@
 <?php $headerColor = "darkGreen";
 $headerBackgroundColor = "whiteBackground"; ?>
-
+<div id="snipcart" hidden data-api-key="<?= $site->snipcartkey()->text() ?>" data-config-modal-style="side"></div>
 <header class="width100 noUnderline noWrap">
   <nav class=" width100 <?= $headerColor ?>">
     <div class="width25 logo absolute">

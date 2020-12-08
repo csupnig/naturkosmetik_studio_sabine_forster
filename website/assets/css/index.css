@@ -255,10 +255,10 @@ nav.darkGreen .primary a:hover, nav.darkGreen .secondary a:hover { border-bottom
 /*=================================== NAV Styles ===================================*/
 body { overflow-x: hidden; }
 header .logo { top: 5rem; left: 10rem; z-index: 500;}
-.navigation {text-align: right}
+.navigation {text-align: right;transition: background 0.3s ease-in-out;}
+.navigation.in {background: #fff;}
 
-.navigation ul {list-style: none;transition: background 0.3s ease-in-out; padding-bottom: 10rem;}
-.navigation ul:hover {background:#fff;}
+.navigation ul {list-style: none;}
 .navigation > ul > li {
   display: inline-block;
   text-align: left;
@@ -280,6 +280,7 @@ header .logo { top: 5rem; left: 10rem; z-index: 500;}
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
   background: #fff;
+  min-height: 10em;
 }
 
 .navigation > ul > li:hover > ul {
