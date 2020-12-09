@@ -30,7 +30,7 @@ else $backgroundStyle = ""; ?>
 				</div>
 			</div>
 			<?php foreach ($eventCategory->children()->filterBy("intendedTemplate", "event")->published() as $event) { ?>
-				<div class="grid2C extraLargeGap vPadding">
+				<div id="<?= $event->title()->html() ?>" class="grid2C extraLargeGap vPadding">
 					<div class="item">
 						<h2><?= $event->category()->html() ?></h2>
 						<h3 class="topMargin"><?= $event->name()->html() ?></h3>

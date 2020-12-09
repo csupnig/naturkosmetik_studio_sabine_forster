@@ -35,14 +35,6 @@ columns:
             type: text
             required: true
 
-          backgroundImage:
-            label: Page background
-            type: files
-            uploads:
-              template: media
-            multiple: false
-            required: true
-
           previewSesctionHeadline:
             label: Preview Content
             type: headline

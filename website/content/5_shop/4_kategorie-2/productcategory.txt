@@ -1,0 +1,19 @@
+Name: Kategorie-2
+
+----
+
+Shortdescription: Short description (Max. 50 characters) Short descr
+
+----
+
+Description: Short description (Max. 50 characters) Short description (Max. 50 characters) Short description (Max. 50 characters) Short description (Max. 50 characters)
+
+----
+
+Headerimage:
+
+- article-01.jpg
+
+----
+
+Backgroundimage: 

@@ -18,6 +18,10 @@ Description: Bei dieser feuchtigkeitsspendenden Behandlung wird die Haut tiefgre
 
 ----
 
+Usage: Verwendung Verwendung
+
+----
+
 Shortdescription: Eine tiefgehende Reinigung, die Feuchtigkeit spendet
 
 ----

@@ -1,6 +1,6 @@
 <?php snippet('head');
 //Set background image
-if ($page->parent()->toPage()->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")"; 
+if ($page->parent()->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->parent()->backgroundImage()->toFile()->url().")"; 
 else $backgroundStyle = ""; ?>
 <body class="treatmentCategory beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
@@ -52,7 +52,7 @@ else $backgroundStyle = ""; ?>
 			<h2 class="darkGreen"><?= $page->name()->html() ?><br/>Behandlungen</h2>
 			<div class="grid2C ratio3-2 topMargin darkGreen">
 				<?php foreach ($treatments as $treatment) { ?>
-					<div class="item">
+					<div id="<?= $treatment->title()->html() ?>" class="item">
 						<h3 class="extraSmall"><?= $treatment->name()->html() ?></h3>
 						<span class="small smallTopMargin"><?= $treatment->description()->kirbyText() ?></span>
 						<span class="extraSmall contact absolute"><a class="uppercase" href="mailto:<?= $site->email()->url() ?>?subject=Anfrage zu <?= $treatment->name()->html() ?>">Behandlung anfragen</a></span>
@@ -65,7 +65,7 @@ else $backgroundStyle = ""; ?>
 							</div>
 							<div class="data strongTopBorder darkGreen vSmallPadding">
 								<h4>Kosten</h4>
-								<span class="extraSmall"><?= $treatment->price()->html() ?></span>
+								<span class="extraSmall">€<?= $treatment->price()->html() ?></span>
 							</div>
 						</div>
 						<div class="width100">

@@ -19,11 +19,13 @@ columns:
             label: Page title
             type: title
             translate: false
+
           name:
             label: Name
             type: text
             width: 2/3
             required: true
+            
           text:
             label: Terms introduction
             type: textarea

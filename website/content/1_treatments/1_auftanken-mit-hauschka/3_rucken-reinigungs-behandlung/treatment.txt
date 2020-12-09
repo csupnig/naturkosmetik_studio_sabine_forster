@@ -18,6 +18,10 @@ Description: Diese klassische Behandlung ist ein perfekter Einstieg in die Welt 
 
 ----
 
+Usage: Verwendung Verwendung
+
+----
+
 Shortdescription:
 
 Eine tiefgehende Reinigung, die 

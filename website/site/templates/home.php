@@ -35,7 +35,7 @@ else $backgroundStyle = ""; ?>
 				$i++ ?>
 				<div class="item hoverFlip">
 					<div class="width100 flex square extraSmallPadding relative <?= $textClass ?> <?= $backgroundClass ?>">
-						<h3 class="width75 flexGrow"><a href="<?= $treatment->url() ?>"><?= $treatment->name()->html() ?></a></h3>
+						<h3 class="width75 flexGrow"><a href="<?= $treatment->parent()->url() ?>#<?= $treatment->title()->html() ?>"><?= $treatment->name()->html() ?></a></h3>
 						<span class="footnote top right"><?= $treatment->duration()->html() ?></span>
 						<span class="large alignFlexEnd">€<?= $treatment->price()->html() ?></span>
 					</div>
