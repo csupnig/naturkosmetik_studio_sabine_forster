@@ -1,0 +1,42 @@
+Brand: eternel
+
+----
+
+Name: Testprodukt
+
+----
+
+Price: 999
+
+----
+
+Size: 1000ml
+
+----
+
+Productimage:
+
+- product-02.jpg
+
+----
+
+Shortdescription: Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen
+
+----
+
+Description: Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen, Testprodukt für Testanwendungen,
+
+----
+
+Ingredients: Testzutat 1, Testzutat 2, Testzutat 3, Testzutat 3, Testzutat 5
+
+----
+
+Application: Testanwendungen, Testanwendungen, Testanwendungen
+
+----
+
+Similarproducts:
+
+- shop/gesicht/mischhaut/iris-creme
+- shop/gesicht/mischhaut/iris-fluid

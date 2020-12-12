@@ -164,7 +164,7 @@ body { background-repeat:no-repeat; background-size:100%; }
 
 footer { height:25rem; }
 
-header { min-height:12rem; z-index:500; }
+header { min-height:12rem; z-index:500; transition:height 0.2s ease-in; }
 header.white:hover { background-color:#fff; border-bottom:0.08rem solid #1c3f41; }
 header.darkGreen:hover { background-color:#fff; border-bottom:0.08rem solid #1c3f41; }
 .shop header.darkGreen:hover { background-color:#1c3f41; }
@@ -228,8 +228,8 @@ button.snipcart-cart-button:hover svg { transform: translateX(3rem); stroke: #1c
 .snipcart .snipcart-discount-box__submit { color: #637950; }
 .snipcart .snipcart-cart__footer-col div.snipcart__actions--link { position:relative; }
 .snipcart .snipcart-cart__footer-col div.snipcart__actions--link::after { content:'Detaillierter Warenkorb'; display:block; position: absolute; top:0; left:0; width: 100%; background: #fff; }
-.snipcart-items-count { font-size: 0.8rem; color: #fff; background: #637950; border-radius: 50%; padding: 0.3rem; transform: translate(-0rem, -0.8rem); display: inline-block; width: 1.5rem; height: 1.5rem; position: absolute; line-height: 1.2rem; }
-.snipcart-checkout { width:1.5rem; height:2.25rem; background-repeat:no-repeat; background-position:center center; background-size:contain; }
+.snipcart-items-count { font-size: 0.8rem; color: #fff; background: #637950; border-radius: 50%; padding: 0.3rem; transform: translate(0.2rem, -0.6rem); display: inline-block; width: 1.5rem; height: 1.5rem; position: absolute; line-height: 1.2rem; }
+.snipcart-checkout { width:1.25rem; height:1.875rem; background-repeat:no-repeat; background-position:center center; background-size:contain; }
 .snipcart-checkout.darkGreen, .blog header:hover .snipcart-checkout.white { background-image:url("/assets/images/icon-cart-darkGreen.png"); }
 .snipcart-checkout.white, .shop header:hover .snipcart-checkout.darkGreen { background-image:url("/assets/images/icon-cart-white.png"); }
 
