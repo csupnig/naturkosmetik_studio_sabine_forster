@@ -2,15 +2,14 @@
 //Set background image
 if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")";
 else $backgroundStyle = ""; ?>
-<body class="blog articles lightGreenBackground" style="<?= $backgroundStyle ?>">
+<body class="articles lightGreenBackground">
 	<?php snippet('header'); ?>
   <?php $highlight = $page->highlight()->toPage(); ?>
   <?php $articles = $page->children()->filterBy("intendedTemplate", "article")->published()->filter(function ($item) use ($highlight) {
     return $item->id() !== $highlight->id();
   });
   if (count($articles) > 0) { ?>
-    <section class="articles width100 padding darkGreenBackground">
-      <h2 class="white">Aktuelle<br/>Artikel</h2>
+    <section class="articles width100 padding darkGreenBackground" style="<?= $backgroundStyle ?>">
       <div class="grid2C topMargin">
         <div class="item relative">
           <div class="width75 topBorder white topPadding">
@@ -30,7 +29,10 @@ else $backgroundStyle = ""; ?>
           <button class="sticker top left white greenBackground"><a href="<?= $highlight->url(); ?>">Highlighted Article</a></button>
         </div>
       </div>
-      <div class="grid3C topMargin topPadding">
+      <div class="topPadding">
+        <h2 class="white">Aktuelle<br/>Artikel</h2>
+      </div>
+      <div class="grid3C topMargin">
         <?php foreach ($articles as $article) { ?>
           <div class="item hoverFlip">
             <a href="<?= $article->url() ?>">

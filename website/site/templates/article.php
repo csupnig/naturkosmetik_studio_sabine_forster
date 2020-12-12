@@ -1,16 +1,14 @@
 <?php snippet('head');
-//Set background image
-if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")";
-else $backgroundStyle = ""; ?>
-<body class="blog article lightGreenBackground" style="<?= $backgroundStyle ?>">
+?>
+<body class="article lightGreenBackground">
 	<?php snippet('header'); ?>
   <section class="article width100 padding extraLargeRightPadding darkGreenBackground">
     <div class="grid2C ratio1-2 topMargin">
       <div class="item vFlex">
       </div>
       <div class="item relative">
-        <h1 class="small width75 white smallTopMargin"><?= $page->name()->html() ?></h1>
-        <span class="extraSmall width100 white topMargin flexGrow"><?= $page->shortDescription()->kirbyText() ?></span>
+        <h3 class="width75 white smallTopMargin"><?= $page->name()->html() ?></h3>
+        <span class="width100 white topMargin flexGrow"><?= $page->shortDescription()->kirbyText() ?></span>
       </div>
     </div>
     <div class="grid2C ratio1-2 topMargin">
@@ -24,12 +22,12 @@ else $backgroundStyle = ""; ?>
           <h4>Lesezeit</h4>
           <span class="extraSmall"><?=$page->readingTime()->text() ?></span>
         </div>
-        <div class="width100 white smallTopMargin topBorder exstraSmallTopPadding lightBorder">
+        <div class="width100 white smallTopMargin topBorder extraSmallTopPadding lightBorder">
           <h4>Thema</h4>
           <span class="extraSmall"><?=$page->category()->html() ?></span>
         </div>
 
-        <div class="absolute bottom smallTopPadding white width100 topBorder">
+        <div class="absolute bottom extraSmallTopPadding white width100 topBorder">
           <span class="white">Share this article</span>
         </div>
       </div>
@@ -49,7 +47,7 @@ else $backgroundStyle = ""; ?>
             </div>
           </div>
         <?php } ?>
-        <span class="extraSmall width100 white topMargin flexGrow"><?= $page->articleText()->kirbyText() ?></span>
+        <span class="width100 white topMargin flexGrow"><?= $page->articleText()->kirbyText() ?></span>
       </div>
     </div>
   </section>
