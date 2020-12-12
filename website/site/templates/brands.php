@@ -36,8 +36,8 @@ else $backgroundStyle = ""; ?>
         </div>
 				<div class="item hPadding vFlex">
 					<div class="width100 darkGreen topBorder"></div>
-					<h3 class="width75 darkGreen smallTopMargin"><?=$brand->name()->html() ?></h3>
-					<span class="small width75 darkGreen topMargin flexGrow"><?=$brand->description()->kirbyText() ?></span>
+					<h3 class="width85 darkGreen smallTopMargin"><?=$brand->name()->html() ?></h3>
+					<span class="small width85 darkGreen topMargin flexGrow"><?=$brand->description()->kirbyText() ?></span>
 					<a href="<?=$treatments->url() ?>?brand=<?= $brand->title()->html() ?>"><button class="width100 rectangle darkGreen topMargin">Behandlungen mit <?=$brand->name()->html() ?></button></a>
 				</div>
 			</div>
