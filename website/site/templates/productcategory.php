@@ -3,7 +3,7 @@
 if ($site->find("shop")->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$site->find("shop")->backgroundImage()->toFile()->url().")";
 else $backgroundStyle = ""; ?>
 <div id="snipcart" data-api-key="<?= $site->snipcartkey()->text() ?>" data-config-modal-style="side"></div>
-<body class="productCategory beigeBackground" style="<?= $backgroundStyle ?>">
+<body class="shop productCategory beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
   <?php snippet('breadcrumb'); ?>
   <section class="product width100 alignRight hPadding bottomMargin">

@@ -2,7 +2,7 @@
 //Set background image
 if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")";
 else $backgroundStyle = ""; ?>
-<body class="article lightGreenBackground" style="<?= $backgroundStyle ?>">
+<body class="blog article lightGreenBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
   <section class="article width100 padding extraLargeRightPadding darkGreenBackground">
     <div class="grid2C ratio1-2 topMargin">

@@ -2,7 +2,7 @@
 //Set background image
 if ($site->find("shop")->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$site->find("shop")->backgroundImage()->toFile()->url().")";
 else $backgroundStyle = ""; ?>
-<body class="product beigeBackground" style="<?= $backgroundStyle ?>">
+<body class="shop product beigeBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
   <?php snippet('breadcrumb'); ?>
   <section class="product width100 hPadding bottomMargin">
