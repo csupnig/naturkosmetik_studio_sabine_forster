@@ -68,12 +68,13 @@ if (count($items) > 0) { ?>
     <div class="grid3C topMargin">
       <?php foreach ($items as $item) {
         $isProduct = $item->template() == "product";
+        $isProductCategory = $item->template() == "productcategory";
         ?>
         <div class="item <?= $isProduct ? "product" : "hoverFlip"?>">
           <a class="noUnderline" href="<?= $item->url() ?>">
             <div class="width100 square relative whiteBackground">
               <?php
-              if (!$isProduct) { ?>
+              if (!$isProduct && !$isProductCategory) { ?>
                 <div class="cutout darkGreen">
                   <span class="footnote top right white"><?= $item->name()->html() ?></span>
                 </div>

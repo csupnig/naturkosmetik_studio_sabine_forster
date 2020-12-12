@@ -84,6 +84,7 @@ span.topMargin, span.bottomMargin, span.smallTopMargin, span.smallBottomMargin {
 .strongTopBorder.darkGreen { border-top:0.16rem solid #1c3f41 !important; }
 .strongTopBorder.white { border-top:0.16rem solid #fff; }
 
+
 /*Site-specific framework: Buttons & icons*/
 button.circle { width:8rem; height:8rem; background-repeat:no-repeat; background-size:cover; border-radius:0; }
 button.circle.book { background-image:url("/assets/images/icon-book-green.png"); }
@@ -150,6 +151,7 @@ div.data.darkGreen { padding:0.8rem 0; border-top:0.08rem solid #1c3f41; }
 .item .cutout { width:100%; height:100%; top:0; left:0; z-index:100; position:absolute; display:none; }
 .item .cutout.darkGreen { background:url("/assets/images/cutOut-darkGreen.png") no-repeat; background-size:cover; }
 .item:hover .cutout { display:block; }
+.item .details { min-height: 6rem; }
 
 .amount-input .controls { display: grid;grid-template-columns: 1fr 1fr 1fr; }
 .amount-input button { height: 2.88rem; width: 2.88rem; border: 0.08rem solid #1c3f41; }

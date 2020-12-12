@@ -5,7 +5,7 @@ $modalTrigger = "";
 if ($content == "newsletter") {
   $modalTrigger = " data-modal-trigger=\"newsletter\"";
 }?>
-<section class="callToAction width100 padding largeTopMargin largeBottomMargin centeredText <?=$background ?>">
+<section class="callToAction width100 padding largeTopPadding largeBottomMargin centeredText <?=$background ?>">
 	<h3 class="width50 <?= $color ?> inlineBlock">
 		<?php if ($content == "newsletter") {
   			echo $site->newslettercall()->kirbyText();
