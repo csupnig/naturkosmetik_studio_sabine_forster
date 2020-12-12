@@ -18,7 +18,7 @@ else $backgroundStyle = ""; ?>
       <div class="item">
         <ul class="arrow width100 darkGreen">
           <?php
-          $chapters = $page->children()->filterBy('intendedTemplate', 'termchapter');
+          $chapters = $page->children()->filterBy('intendedTemplate', 'termschapter');
 
           foreach ($chapters as $chapter) { ?>
             <li class="width100"><a href="#<?=$chapter->slug() ?>"><?= $chapter->name()->html() ?></a></li>
@@ -27,7 +27,7 @@ else $backgroundStyle = ""; ?>
       </div>
       <div class="item">
         <?php
-        $chapters = $page->children()->filterBy('intendedTemplate', 'termchapter');
+        $chapters = $page->children()->filterBy('intendedTemplate', 'termschapter');
 
         foreach ($chapters as $chapter) { ?>
           <div class="width100 bottomMargin" id="<?=$chapter->slug() ?>">
