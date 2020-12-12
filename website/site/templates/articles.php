@@ -2,7 +2,7 @@
 //Set background image
 if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")";
 else $backgroundStyle = ""; ?>
-<body class="articles lightGreenBackground">
+<body class="blog articles lightGreenBackground">
 	<?php snippet('header'); ?>
   <?php $highlight = $page->highlight()->toPage(); ?>
   <?php $articles = $page->children()->filterBy("intendedTemplate", "article")->published()->filter(function ($item) use ($highlight) {
