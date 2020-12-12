@@ -1,6 +1,6 @@
 <?php snippet('head');
 ?>
-<body class="article lightGreenBackground">
+<body class="blog article lightGreenBackground">
 	<?php snippet('header'); ?>
   <section class="article width100 padding extraLargeRightPadding darkGreenBackground">
     <div class="grid2C ratio1-2 topMargin">
