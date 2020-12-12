@@ -145,13 +145,13 @@ div.data.darkGreen { padding:0.8rem 0; border-top:0.08rem solid #1c3f41; }
 .dataList.darkGreen::-webkit-scrollbar-track { background:#d0d2ce; }
 .dataList.darkGreen::-webkit-scrollbar-thumb { background:#1c3f41; }
 
-.hoverFlip .flip:nth-child(2) { visibility:hidden; }
-.hoverFlip:hover .flip:first-child { display:none; }
-.hoverFlip:hover .flip:nth-child(2) { visibility:visible; }
+.hoverFlip .flip:nth-child(2) { /*visibility:hidden;*/ opacity:0; position: absolute; top: 0; left: 0; width: 100%;}
+.hoverFlip:hover .flip:first-child { /*display:none;*/ opacity:0; }
+.hoverFlip:hover .flip:nth-child(2) { /*visibility:visible;*/ opacity:1; }
 .item .cutout { width:100%; height:100%; top:0; left:0; z-index:100; position:absolute; display:none; }
 .item .cutout.darkGreen { background:url("/assets/images/cutOut-darkGreen.png") no-repeat; background-size:cover; }
 .item:hover .cutout { display:block; }
-.item .details { min-height: 6rem; }
+.item .details { min-height: 6rem; position: relative;}
 
 .amount-input .controls { display: grid;grid-template-columns: 1fr 1fr 1fr; }
 .amount-input button { height: 2.88rem; width: 2.88rem; border: 0.08rem solid #1c3f41; }
