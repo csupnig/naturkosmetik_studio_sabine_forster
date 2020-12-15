@@ -1,10 +1,10 @@
-title: Product
+title: Produkt
 
 columns:
   - width: 1/3
     sections:
       files:
-        headline: Media
+        headline: Medien
         type: files
         template: media
         sortable: true
@@ -15,16 +15,16 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           generalSectionHeadline:
-            label: General
+            label: Allgemein
             type: headline
 
           brand:
-            label: Brand
+            label: Marke
             type: select
             options: query
             query: 
@@ -41,18 +41,18 @@ columns:
             required: true
 
           price:
-            label: Price (€)
+            label: Preis (€)
             type: text
             width: 1/2
             required: true
 
           size:
-            label: Size (Optional)
+            label: Größe (Optional)
             type: text
             width: 1/2
 
           productImage:
-            label: Image
+            label: Bild
             type: files
             uploads:
               template: media
@@ -60,36 +60,36 @@ columns:
             required: true
 
           detailsSectionHeadline:
-            label: Product Details
+            label: Produktdetails
             type: headline
 
           shortDescription:
-            label: Short description (Max. 100 characters)
+            label: Kurzbeschreibung (Max. 100 Zeichen)
             type: textarea
             maxlength: 100
             required: true
           
           description:
-            label: Description
+            label: Beschreibung
             type: textarea
             required: true
           
           ingredients:
-            label: Ingredients (optional)
+            label: Inhaltsstoffe (optional)
             type: textarea
             required: false
 
           application:
-            label: Application
+            label: Anwendung
             type: textarea
             required: true
 
           similarProductsSectionHeadline:
-            label: Similar products
+            label: Ähnliche Produkte
             type: headline
 
           similarProducts:
-            label: Similar products (Optional, max. 2)
+            label: Ähnliche Produkte (Optional, max. 2)
             type: pages
             query: site.find("shop").index.filterBy("intendedTemplate", "product")
             max: 2

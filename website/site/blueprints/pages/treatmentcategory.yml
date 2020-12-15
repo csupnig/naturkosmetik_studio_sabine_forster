@@ -1,16 +1,16 @@
-title: Treatment category
+title: Behandlungskategorie
 
 columns:
   - width: 1/3
     sections:
       treatmentCategories:
-        headline: Treatments
+        headline: Behandlungen
         type: pages
         template: treatment
         sortable: true
 
       files:
-        headline: Media
+        headline: Medien
         type: files
         template: media
         sortable: true
@@ -21,12 +21,12 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           generalSectionHeadline:
-            label: General
+            label: Allgemein
             type: headline
 
           name:
@@ -35,17 +35,17 @@ columns:
             required: true
 
           previewSectionHeadline:
-            label: Preview
+            label: Vorschau
             type: headline
             
           shortDescription:
-            label: Preview description (Max. 110 characters)
+            label: KurzBeschreibung (Max. 110 Zeichen)
             type: textarea
             maxlength: 110
             required: true
 
           previewImage:
-            label: Preview image
+            label: Vorschaubild
             type: files
             uploads:
               template: media
@@ -53,16 +53,16 @@ columns:
             required: true
 
           headlineSectionHeadline:
-            label: Headline
+            label: Titelzeile
             type: headline
 
           headlineHeadline:
-            label: Headline
+            label: Titelzeile
             type: textarea
             required: true
 
           headlineImage:
-            label: Headline image
+            label: Titelzeilenbild
             type: files
             uploads:
               template: media
@@ -70,25 +70,25 @@ columns:
             required: true
 
           highlightSectionHeadline:
-            label: Highlighted treatment
+            label: Behandlungs-Highlight
             type: headline
 
           treatmentHighlight:
-            label: Highlighted treatment (Optional)
+            label: Behandlungs-Highlight (Optional)
             type: pages
             query: page.children.filterBy("intendedTemplate", "treatment")
             multiple: false
 
           infoListSectionHeadline:
-            label: Detailed information
+            label: Details
             type: headline
 
           infoListIntro:
-            label: Detailed information intro
+            label: Einleitung zu Details
             type: textarea
             required: true
 
           infoListText:
-            label: Detailed information text
+            label: Text zu Details
             type: textarea
             required: true

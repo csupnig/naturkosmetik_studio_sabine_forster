@@ -77,13 +77,13 @@ else $backgroundStyle = ""; ?>
 							<span class="extraSmall">€<?= $event->price()->html() ?></span>
 						</div>
 					</div>
-					<a href="<?= $event->url() ?>"><button class="width100 rectangle darkGreen topMargin">Mehr zu diesem Event</button></a>
+					<a href="<?= $site->find("events")->url() ?>#<?= $event->title()->html() ?>"><button class="width100 rectangle darkGreen topMargin">Mehr zu diesem Event</button></a>
 				</div>
 				<div class="item relative">
 					<?php if ($image = $page->eventsImage()->toFile()) { ?>
 						<img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $page->eventsHeadline()->html() ?>"/>
 					<?php } ?>
-					<button class="sticker top left white greenBackground"><a href="<?= $site->find("about")->find("events")->url() ?>">Zu allen Events</a></button>
+					<button class="sticker top left white greenBackground"><a href="<?= $site->find("events")->url() ?>">Zu allen Events</a></button>
 				</div>
 			</div>
 		</section>

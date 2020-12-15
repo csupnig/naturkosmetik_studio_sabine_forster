@@ -8,10 +8,16 @@ else $headerColor = "darkGreen"; ?>
       <?php foreach($site->children()->listed() as $item) { ?>
         <div class="primary <?= $item->template() ?> extraSmallLeftPadding floatLeft relative">
           <a class="<?= $headerColor ?> <?= r($item->isOpen(), 'active strong bottomBorder') ?>" href="<?= $item->url() ?>" title="<?= $item->name()->html() ?>"><?= $item->name()->html() ?></a>
-          <?php if (in_array($item->template(), ["treatments", "brands", "about", "shop", "productcategory", "products", "product"])) { ?>
+          <?php if (in_array($item->template(), ["treatments", "brands", "events", "shop", "productcategory", "products", "product"])) { ?>
             <div class="tertiary absolute noWrap">
-              <?php foreach ($item->children()->listed() as $subItem) { ?>
-                <a class="<?= $headerColor ?> <?= r($subItem->isOpen(), 'active strong bottomBorder') ?>" href="<?= $subItem->url() ?>" title="<?= $subItem->name()->html() ?>"><?= $subItem->name()->html() ?></a><br/>
+              <?php foreach ($item->children()->listed() as $subItem) { 
+                if ($item->template() == "brands") { ?>
+                  <a class="<?= $headerColor ?> <?= r($subItem->isOpen(), 'active strong bottomBorder') ?>" href="<?= $item->url() ?>#<?= $subItem->title()->html() ?>" title="<?= $subItem->name()->html() ?>"><?= $subItem->name()->html() ?></a><br/>
+                <?php } else if ($item->template() == "events") { ?>
+                  <a class="<?= $headerColor ?> <?= r($subItem->isOpen(), 'active strong bottomBorder') ?>" href="<?= $item->url() ?>#<?= $subItem->title()->html() ?>" title="<?= $subItem->name()->html() ?>"><?= $subItem->name()->html() ?></a><br/>
+                <?php } else { ?>
+                  <a class="<?= $headerColor ?> <?= r($subItem->isOpen(), 'active strong bottomBorder') ?>" href="<?= $subItem->url() ?>" title="<?= $subItem->name()->html() ?>"><?= $subItem->name()->html() ?></a><br/>
+                <?php } ?>
               <?php } ?>
               <?php if ($item->template() == "treatments") { ?>
                 <a class="<?= $headerColor ?> smallTopMargin inlineBlock" href="<?= $site->find('treatments')->url() ?>#studios" title="studios">Studios</a>

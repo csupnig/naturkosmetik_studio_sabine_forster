@@ -29,7 +29,7 @@
 					<li class="width100"><a href="#treatments">Sitzungen</a></li>
 				<?php } else {
 					//In the treatment category template, this snippet lists all other treatment categories
-					if ($page->template() == "treatmentcategory") $items = $page->siblings()->filterBy("intendedTemplate", "treatmentcategory")->published();
+					if ($page->template() == "treatmentcategory") $items = $page->siblings()->filterBy("intendedTemplate", "in", ["treatmentcategory", "treatmentspecial"])->published();
 					//In all other instances, this snippet can list a manually selected collection of pages
 					else $items = $page->infoListPages()->toPages();
 					

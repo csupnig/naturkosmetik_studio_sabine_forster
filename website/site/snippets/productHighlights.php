@@ -15,7 +15,7 @@ if (count($products) >= 1) { ?>
 			<div class="item hoverFlip">
 				<a href="<?= $product->url() ?>">
 					<?php if ($image = $product->productImage()->toFile()) { ?>
-						<img class="width100 height85 cover" src="<?= $image->url() ?>" alt="<?= $product->name()->html() ?>"/>
+						<img class="productPhoto width100 contain whiteBackground" src="<?= $image->url() ?>" alt="<?= $product->name()->html() ?>"/>
 					<?php } ?>
 				</a>
 				<div class="details width100 smallTopMargin hoverFlip">

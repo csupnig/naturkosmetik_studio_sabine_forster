@@ -1,4 +1,4 @@
-title: Event
+title: Veranstaltung
 
 columns:
   - width: 1/3
@@ -8,7 +8,7 @@ columns:
         fields:
           info:
             type: info
-            text: This page cannot contain any further pages or files.
+            text: Diese Seite kann keine weiteren Seiten oder Dateien beinhalten.
 
   - width: 2/3
     sections:
@@ -16,12 +16,12 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           generalSectionHeadline:
-            label: General
+            label: Allgemein
             type: headline
 
           name:
@@ -31,79 +31,79 @@ columns:
             required: true
 
           category:
-            label: Type
+            label: Typ
             type: text
             width: 1/3
             required: true
 
           date:
-            label: Date
+            label: Datum
             type: date
             width: 1/3
             required: true
 
           time:
-            label: Time
+            label: Zeit
             type: text
             width: 1/3
             required: true
 
           duration:
-            label: Duration
+            label: Dauer
             type: text
             width: 1/3
             required: true
 
           location:
-            label: Location
+            label: Ort
             type: text
             width: 2/3
             required: true
 
           price:
-            label: Price (€)
+            label: Preis (€)
             type: text
             width: 1/2
             required: true
 
           lecturersSectionHeadline:
-            label: Lecturers (Optional)
+            label: Vortragende (Optional)
             type: headline
 
           lecturerName1:
-            label: Lecturer 1 name (Optional, max. 23 ch.)
+            label: Vortragende(r) 1 - Name (Optional, max. 23 Z.)
             type: text
             width: 1/2
             maxlength: 23
 
           lecturerName2:
-            label: Lecturer 2 name (Optional, max. 23 ch.)
+            label: Vortragende(r) 2 - Name (Optional, max. 23 Z.)
             type: text
             width: 1/2
             maxlength: 23
 
-          lecturerDescription1:
-            label: Lecturer 1 name (Optional, max. 40 ch.)
+          lecturerBeschreibung1:
+            label: Vortragende(r) 1 - Beschreibung (Optional, max. 40 Z.)
             type: text
             width: 1/2
             maxlength: 40
 
-          lecturerDescription2:
-            label: Lecturer 2 name (Optional, max. 40 ch.)
+          lecturerBeschreibung2:
+            label: Vortragende(r) 2 - Beschreibung (Optional, max. 40 Z.)
             type: text
             width: 1/2
             maxlength: 40
 
           descriptionSectionHeadline:
-            label: Descriptions
+            label: Beschreibungen
             type: headline
 
           shortDescription:
-            label: Short description
+            label: Kurzbeschreibung
             type: textarea
             required: true
 
           description:
-            label: Description
+            label: Beschreibung
             type: textarea
             required: true

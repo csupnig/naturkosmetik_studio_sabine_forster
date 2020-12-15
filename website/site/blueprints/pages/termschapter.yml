@@ -1,4 +1,4 @@
-title: Terms Chapter
+title: Nutzungsbedinungen-Kapitel
 
 columns:
   - width: 1/3
@@ -8,7 +8,7 @@ columns:
         fields:
           info:
             type: info
-            text: This page cannot contain any further pages or files.
+            text: Diese Seite kann keine weiteren Seiten oder Dateien beinhalten.
 
   - width: 2/3
     sections:
@@ -16,18 +16,18 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           name:
-            label: Name
+            label: Kapitelname
             type: text
             width: 2/3
             required: true
             
           text:
-            label: Terms introduction
+            label: Text
             type: textarea
             required: true
 

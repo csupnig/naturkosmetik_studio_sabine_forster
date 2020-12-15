@@ -11,7 +11,7 @@ else $backgroundStyle = ""; ?>
         <div class="item">
           <div class="width100 square">
             <?php if ($image = $page->productImage()->toFile()) { ?>
-              <img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $page->name()->html() ?>"/>
+              <img class="productPhoto width100 contain whiteBackground" src="<?= $image->url() ?>" alt="<?= $page->name()->html() ?>"/>
             <?php } ?>
           </div>
         </div>

@@ -1,10 +1,10 @@
-title: Event category
+title: Veranstaltungskategorie
 
 columns:
   - width: 1/3
     sections:
       categories:
-        headline: Events
+        headline: Veranstaltungen
         type: pages
         template: event
         sortable: true
@@ -15,15 +15,15 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           generalSectionHeadline:
-            label: General
+            label: Allgemein
             type: headline
 
           name:
-            label: Category name
+            label: Kategoriename
             type: text
             required: true

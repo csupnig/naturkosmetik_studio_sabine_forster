@@ -94,7 +94,7 @@ Snipcartkey: MGUyMjU1NDQtNTE3Ni00ODUxLTgzNzgtZWRmY2NjOTVhZDZjNjM3MzgxODMyMzYwNDQ
 
 Deliverypage:
 
-- about
+- terms
 
 ----
 

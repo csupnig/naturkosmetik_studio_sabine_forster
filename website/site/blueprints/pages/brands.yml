@@ -1,16 +1,16 @@
-title: Brands
+title: Marken
 
 columns:
   - width: 1/3
     sections:
       treatmentbrands:
-        headline: Brands
+        headline: Marken
         type: pages
         template: brand
         sortable: true
 
       files:
-        headline: Media
+        headline: Medien
         type: files
         template: media
         sortable: true
@@ -21,12 +21,12 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           backgroundImage:
-            label: Page background
+            label: Seitenhintergrund
             type: files
             uploads:
               template: media
@@ -34,13 +34,13 @@ columns:
             required: true
 
           name:
-            label: Name
+            label: Seitenname
             type: text
             width: 2/3
             required: true
 
           header:
-            label: Page header
+            label: Seitenüberschrift
             type: text
             width: 2/3
             required: true

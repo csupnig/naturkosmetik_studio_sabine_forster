@@ -1,10 +1,12 @@
-Name: Aktuelles
+Title: Blog
 
 ----
 
-Backgroundimage:
+Name: Blog
 
-- background-1.png
+----
+
+Backgroundimage: - background-1.png
 
 ----
 

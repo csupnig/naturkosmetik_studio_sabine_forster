@@ -8,7 +8,7 @@ columns:
         fields:
           info:
             type: info
-            text: This page cannot contain any further pages or files.
+            text: Diese Seite kann keine weiteren Seiten oder Dateien beinhalten.
 
   - width: 2/3
     sections:
@@ -16,22 +16,22 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           generalSectionHeadline:
-            label: General
+            label: Allgemein
             type: headline
 
           name:
-            label: Name of reviewer
+            label: Name der/des Kundin/Kunden
             type: text
             width: 1/2
             required: true
 
           location:
-            label: Location of reviewer
+            label: Ort der/des Kundin/Kunden
             type: text
             width: 1/2
             required: true

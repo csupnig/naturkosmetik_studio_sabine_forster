@@ -33,17 +33,16 @@
       </div>
       <div class="item relative">
         <?php if ($page->articleImages()->isNotEmpty()) { ?>
-          <div class="carousel cycle">
-            <div class="items">
+          <div class="width100 carousel cycle relative">
+            <div class="width100 items">
               <?php foreach ($page->articleImages()->toFiles() as $image) { ?>
-                <div class="item">
-                  <img class="width75" src="<?=$image->url() ?>">
+                <div class="width100 item">
+                  <img class="width100 cover" src="<?=$image->url() ?>">
                 </div>
               <?php } ?>
             </div>
             <div class="navigation">
-              <button class="next"></button>
-              <button class="previous"></button>
+              <button class="next circledNext white absolute"></button>
             </div>
           </div>
         <?php } ?>

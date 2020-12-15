@@ -1,10 +1,10 @@
-title: Article
+title: Artikel
 
 columns:
   - width: 1/3
     sections:
       files:
-        headline: Media
+        headline: Medien
         type: files
         template: media
         sortable: true
@@ -15,40 +15,40 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           generalSectionHeadline:
-            label: General
+            label: Allgemein
             type: headline
 
           name:
-            label: Title
+            label: Titel
             type: text
             width: 2/3
             required: true
 
           category:
-            label: Category
+            label: Kategorie
             type: text
             width: 1/3
             required: true
 
           articleDate:
-            label: Date
+            label: Datum
             type: date
             width: 1/3
             required: true
 
           readingTime:
-            label: Reading time
+            label: Lesedauer
             type: text
             width: 1/3
             required: true
 
           previewImage:
-            label: Preview image
+            label: Vorschaubild
             type: files
             uploads:
               template: media
@@ -56,16 +56,16 @@ columns:
             required: true
 
           articleSectionHeadline:
-            label: Article
+            label: Artikel
             type: headline
 
           shortDescription:
-            label: Short description
+            label: Kurzbeschreibung
             type: textarea
             required: true
 
           articleImages:
-            label: Article Images
+            label: Bilder
             type: files
             uploads:
               template: media
@@ -73,6 +73,6 @@ columns:
             required: false
 
           articleText:
-            label: Article Text
+            label: Text
             type: textarea
             required: true

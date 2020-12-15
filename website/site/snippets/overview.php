@@ -13,7 +13,7 @@ if ($content == "treatments") {
       return strtolower($item->brand()->value()) == strtolower($brand);
     });
   } else {
-    $items = $site->find("treatments")->children()->filterBy("intendedTemplate", "treatmentcategory")->published();
+    $items = $site->find("treatments")->children()->filterBy("intendedTemplate", "in", ["treatmentcategory", "treatmentspecial"])->published();
   }
 } else if ($content == "product") {
   if (isset($_GET['brand'])) {

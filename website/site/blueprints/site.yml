@@ -1,15 +1,16 @@
-title: Site
+title: Website
 
 columns:
   - width: 1/3
     sections:
       pages:
-        headline: Pages
+        headline: Seiten
         type: pages
         templates:
           - home
           - treatments
           - brands
+          - events
           - about
           - articles
           - shop
@@ -18,7 +19,7 @@ columns:
         sortable: true
 
       files:
-        headline: Files
+        headline: Dateien
         type: files
         sortable: true
 
@@ -28,71 +29,71 @@ columns:
         type: fields
         fields:
           title:
-            label: Title
+            label: Titel
             type:  text
 
           settingsheadline:
-            label: Site settings
+            label: Seiteneinstellungen
             type: headline
 
           name:
-            label: Site name
+            label: Website-Name
             type:  text
 
       meta:
         type: fields
         fields:
           metaheadline:
-            label: Meta data
+            label: Meta Daten
             type: headline
 
           author:
-            label: Authors
+            label: Autoren
             type:  text
             translate: false
 
           description:
-            label: Description
+            label: Beschreibung
             type:  textarea
-            help: This serves as a short description of your site for search engine previews.
+            help: Kurzsbeschreibung für Suchmaschinen-Vorschau
 
           keywords:
-            label: Keywords
+            label: Schlagworte
             type:  text
-            help: Use comma-seperated keywords to aid search engines in finding your site.
+            help: Schlagworte für Suchmaschinen durch Beistriche abtrennen
 
       contact:
         type: fields
         fields:
           contactheadline:
-            label: Contact info
+            label: Kontaktinformationen
             type: headline
 
           email:
-            label: Email address
+            label: Emailadresse
             type:  text
             width: 1/2
             translate: false
 
           phone:
-            label: Phone number
+            label: Telefonnummer
             type:  text
             width: 1/2
             translate: false
 
           address:
-            label: Address
+            label: Adresse
             type:  textarea
 
           bankData:
-            label: Bank data
+            label: Bankdaten
             type:  textarea
 
       social:
         type: fields
         fields:
           socialheadline:
-            label: Social networks
+            label: Soziale Netzwerke
             type: headline
 
           facebook:
@@ -123,50 +124,46 @@ columns:
             type: line
 
           newsletterHeader:
-            label: Newsletter signup headline
+            label: Newsletter Anmeldungs-Überschrift
             type: text
             width: 1/2
             translate: false
-            help: If your site features calls to action advertising your newsletter, this is where you can set the corresponding headline.
 
           newsletterCall:
-            label: Newsletter signup text
+            label: Newsletter Anmeldungstext
             type: textarea
-            help: If your site features calls to action advertising your newsletter, this is where you can set the corresponding text.
             width: 1/2
 
           newsletterIntro:
-            label: Newsletter description
+            label: Newsletter Beschreibung
             type: textarea
-            help: If your page uses an embedded newsletter signup form, its accompanying description can be configured here.
             width: 1/2
 
       shop:
         type: fields
         fields:
           shopheadline:
-            label: Shop
+            label: Snipcart-Shop
             type: headline
 
           snipcartkey:
-            label: Snip Cart Api Key
+            label: Snip Cart API Schlüssel
             type: text
-            help: Copy the public Snip Cart API KEY here
 
           deliveryPage:
-            label: Delivery information (page)
+            label: Seite zu Lieferbedingungen
             type: pages
             query: site.pages
             multiple: false
             translate: false
             width: 1/2
-            help: Link the page about delivery information here.
+            help: Hier kann die Seite verknüpft werden, auf denen die Shop-Lieferbedingungen angeführt sind.
 
       footer:
         type: fields
         fields:
           footerheadline:
-            label: Footer texts & links
+            label: Footer
             type: headline
 
           copyright:
@@ -174,52 +171,52 @@ columns:
             type:  text
             width: 1/3
             translate: false
-            help: Insert the copyright holder of your website here.
+            help: Copyright-Besitzer dieser Website
 
           design:
             label: Design
             type:  text
             width: 1/3
             translate: false
-            help: Help out your design studio by naming them here.
+            help: Name des/der Designer/s dieser Website
 
           designLink:
             label: Design link
             type:  text
             width: 1/3
             translate: false
-            help: Help out your design studio by placing a link to their website here.
+            help: Link zur Website des/der Designer/s dieser Website
 
           footerline:
             type: line
 
           footerExtensionHeadline:
-            label: Extended footer headline
+            label: Überschrift des erweiterten Footers
             type: textarea
             width: 1/2
             required: true
 
           footerExtensionText:
-            label: Extended footer text
+            label: Text des erweiterten Footers
             type: textarea
             width: 1/2
             required: true
 
           footerExtensionLinkTarget:
-            label: Extended footer button target
+            label: Link des erweiterten Footers - Ziel
             type: pages
             width: 1/2
             multiple: false
             required: true
 
           footerExtensionLinkText:
-            label: Extended footer button text
+            label: Link des erweiterten Footers - Text
             type: text
             width: 1/2
             required: true
 
           footerExtensionImage:
-            label: Extended footer image
+            label: Hintergrund des erweiterten Footers
             type: files
             multiple: false
             required: true
@@ -228,71 +225,71 @@ columns:
         type: fields
         fields:
           termsheadline:
-            label: Terms & legal notes
+            label: AGBS & Impressum
             type: headline
 
           termsConditionsFile:
-            label: Terms & conditions (file)
+            label: AGBS (Datei)
             type: files
             query: site.files
             multiple: false
             translate: false
             width: 1/2
-            help: If your site supplies the terms & conditions as a file (f.e. in PDF format), link this file here.
+            help: Hier können AGBs im Datei-Format (z.B. PDF) verknüpft werden.
 
           termsConditionsPage:
-            label: Terms & conditions (page)
+            label: AGBS (Seite)
             type: pages
             query: site.pages
             multiple: false
             translate: false
             width: 1/2
-            help: If your site supplies the terms & conditions in the form of a page, link that page here.
+            help: Hier können AGBs als Seite verknüpft werden.
 
           legalNoticePage:
-            label: Legal notice (page)
+            label: Impressum (Seite)
             type: pages
             query: site.pages
             multiple: false
             translate: false
             width: 1/2
-            help: If your site features a dedicated legal notice page linked in the footer or other repeating elements, this is where you can set that link.
+            help: Hier kann das Impressum als Seite verknüpft werden.
 
       cookies:
         type: fields
         fields:
           cookiesheadline:
-            label: Cookie pop-up & policy
+            label: Cookie Pop-Up & Bedingungen
             type: headline
 
           cookieHeadline:
-            label: Cookie pop-up headline
+            label: Cookie Pop-Up Überschrift
             type: text
             width: 1/2
 
           cookieText:
-            label: Cookie pop-up text
+            label: Cookie Pop-Up Text
             type: textarea
 
           cookieContent:
-            label: Cookie content placeholder
+            label: Platzhalter für Cookie-exklusive Inhalte
             type: textarea
-            help: This text is displayed instead of elements which cannot be utilized as long as the user has not given consent to the cookie policy.
+            help: Dieser Text wird an Stelle wegen Cookie-Einstellungen ausgeblendeter Inhalte angezeigt.
 
           cookiePolicyFile:
-            label: Cookie policy (file)
+            label: Cookie Bedingungen (Datei)
             type: files
             query: site.files
             multiple: false
             translate: false
             width: 1/2
-            help: If your site supplies the terms & conditions as a file (f.e. in PDF format), link this file here.
+            help: Hier können die Cookie-Bedingungen im Datei-Format (z.B. PDF) verknüpft werden.
 
           cookiePolicyPage:
-            label: Cookie policy (page)
+            label: Cookie Bedingungen (Seite)
             type: pages
             query: site.pages
             multiple: false
             translate: false
             width: 1/2
-            help: If your site supplies the cookie policy in the form of a page, link that page here.
+            help: Hier können die Cookie-Bedinungen als Seite verknüpft werden.

@@ -25,9 +25,9 @@ if ($content == "newsletter") {
     <a href="<?=$site->find("shop")->url() ?>">
   <?php } else if ($content == "cancellation") {
     if ($site->termsConditionsFile()->isNotempty()) { ?>
-      <a href="<?= $site->termsConditionsFile()->toFile()->url() ?>">Nutzungsbedinungen</a>
+      <a href="<?= $site->termsConditionsFile()->toFile()->url() ?>">
     <?php } else if ($site->termsConditionsPage()->isNotEmpty()) { ?>
-      <a href="<?= $site->termsConditionsPage()->toPage()->url() ?>">Nutzungsbedinungen</a>
+      <a href="<?= $site->termsConditionsPage()->toPage()->url() ?>">
     <?php }
   } else if (($content == "book") || ($content == "question") || ($content == "events")) { ?>
     <a href="mailto:<?= $site->email()->html() ?>" target="_blank">

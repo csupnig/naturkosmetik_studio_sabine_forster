@@ -1,10 +1,12 @@
+Title: Veranstaltungen
+
+----
+
 Name: Events
 
 ----
 
-Backgroundimage:
-
-- background-1.png
+Backgroundimage: - background-1.png
 
 ----
 
@@ -16,6 +18,4 @@ Introtext: Oribus rerum, od itat que as simus trunter extperfe rovi dis mod enih
 
 ----
 
-Introimage:
-
-- events-01.jpg
+Introimage: - events-01.jpg

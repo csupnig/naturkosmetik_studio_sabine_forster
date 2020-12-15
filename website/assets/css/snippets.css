@@ -71,6 +71,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 /*Other*/
 .clickable { cursor:pointer; }
 .cover { object-fit:cover; }
+.contain { object-fit:contain; }
 .scaleDown { object-fit:scale-down; }
 .doubleColumns { column-count:2; }
 *:disabled { opacity:0.3; cursor:default; }
@@ -83,9 +84,13 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 .carousel.directAccess .item { display:none; }
 
 /*Slide Carousel*/
-.carousel { overflow:hidden; }
+.carousel.slide, .carousel.multiSlide { overflow:hidden; }
 .carousel.slide .items, .carousel.multiSlide .items { display:flex; flex-direction:row; position:relative; }
 .carousel.slide .items .item, .carousel.multiSlide .items .item { flex:none; }
+
+/*Cycle Carousel*/
+.carousel.cycle .items { overflow:hidden; display:flex; flex-direction:row; position:relative; }
+.carousel.cycle .items .item { flex:none; }
 
 /*Lightbox*/
 .lightbox { cursor:pointer; }

@@ -80,15 +80,15 @@ Treatmenthighlights:
 
 Producthighlights:
 
-- shop/iris-creme-250ml
-- shop/iris-fluid-350ml
+- shop/gesicht/mischhaut/iris-creme
+- shop/gesicht/mischhaut/iris-fluid
 
 ----
 
 Eventhighlight:
 
 - >
-  about/events/naturkosmetik/fuhlen-sie-sich-wohl-in-ihrer-haut
+  events/naturkosmetik/fuhlen-sie-sich-wohl-in-ihrer-haut
 
 ----
 

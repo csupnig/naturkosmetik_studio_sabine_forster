@@ -1,10 +1,10 @@
-title: Treatment special
+title: Spezialbehandlung
 
 columns:
   - width: 1/3
     sections:
       treatments:
-        headline: Treatments (Max. 2)
+        headline: Behandlungen (Max. 2)
         type: pages
         template: treatment
         min: 1
@@ -12,7 +12,7 @@ columns:
         sortable: true
 
       files:
-        headline: Media
+        headline: Medien
         type: files
         template: media
         sortable: true
@@ -23,163 +23,163 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           generalSectionHeadline:
-            label: General
+            label: Allgemein
             type: headline
 
           name:
-            label: Name
+            label: Seitenname
             type: text
             required: true
 
           previewSectionHeadline:
-            label: Preview
+            label: Vorschau
             type: headline
             
           shortDescription:
-            label: Preview description (Max. 110 characters)
+            label: Kurzbeschreibung (Max. 110 Zeichen)
             type: textarea
             maxlength: 110
             required: true
 
           previewImage:
-            label: Preview image
+            label: Vorschaubild
             type: files
             uploads:
               template: media
             required: true
 
           headlineSectionHeadline:
-            label: Headline
+            label: Titelzeile
             type: headline
 
           headlineHeadline:
-            label: Headline
+            label: Titelzeilenüberschrift
             type: textarea
             required: true
 
           headlineText:
-            label: Headline text
+            label: Titelzeilentext
             type: textarea
             required: true
 
           headlineImage:
-            label: Headline image
+            label: Titelzeilenbild
             type: files
             multiple: false
             required: true
 
           infoListSectionHeadline:
-            label: Detailed information
+            label: Details
             type: headline
 
           infoListIntro:
-            label: Detailed information intro
+            label: Einleitung zu Details
             type: textarea
             required: true
 
           infoListText:
-            label: Detailed information text
+            label: Text zu Details
             type: textarea
             required: true
 
           methodsSectionHeadline:
-            label: Methods
+            label: Methoden
             type: headline
 
           methodHeadline1:
-            label: Method headline 1 (Max. 30 ch.)
+            label: Methodenüberschrift 1 (Max. 30 Z.)
             type: text
             width: 1/3
             maxlength: 30
             required: true
 
           methodHeadline2:
-            label: Method headline 2 (Max. 30 ch.)
+            label: Methodenüberschrift 2 (Max. 30 Z.)
             type: text
             width: 1/3
             maxlength: 30
             required: true
 
           methodHeadline3:
-            label: Method headline 3 (Max. 30 ch.)
+            label: Methodenüberschrift 3 (Max. 30 Z.)
             type: text
             width: 1/3
             maxlength: 30
             required: true
 
           methodText1:
-            label: Method text 1
+            label: Methodentext 1
             type: textarea
             width: 1/3
             required: true
 
           methodText2:
-            label: Method text 2
+            label: Methodentext 2
             type: textarea
             width: 1/3
             required: true
 
           methodText3:
-            label: Method text 3
+            label: Methodentext 3
             type: textarea
             width: 1/3
             required: true
 
           methodHeadline4:
-            label: Method headline 4 (Optional, max. 30 ch.)
+            label: Methodenüberschrift 4 (Optional, max. 30 Z.)
             type: text
             width: 1/3
             maxlength: 30
 
           methodHeadline5:
-            label: Method headline 5 (Optional, max. 30 ch.)
+            label: Methodenüberschrift 5 (Optional, max. 30 Z.)
             type: text
             width: 1/3
             maxlength: 30
 
           methodHeadline6:
-            label: Method headline 6 (Optional, max. 30 ch.)
+            label: Methodenüberschrift 6 (Optional, max. 30 Z.)
             type: text
             width: 1/3
             maxlength: 30
 
           methodText4:
-            label: Method text 4 (Optional)
+            label: Methodentext 4 (Optional)
             type: textarea
             width: 1/3
 
           methodText5:
-            label: Method text 5 (Optional)
+            label: Methodentext 5 (Optional)
             type: textarea
             width: 1/3
 
           methodText6:
-            label: Method text 6 (Optional)
+            label: Methodentext 6 (Optional)
             type: textarea
             width: 1/3
 
           usageSectionHeadline:
-            label: Usage
+            label: Anwendung
             type: headline
 
           usageText:
-            label: Usage text
+            label: Anwendungstext
             type: textarea
-            info: Use list for desired appearance
+            info: Zur korrekten Darstellung Inhalt in Liste strukturieren
             required: true
 
           usageRemark:
-            label: Usage remark
+            label: Anwendungshinweis
             type: text
             required: true
 
           usageImage:
-            label: Usage image
+            label: Anwendungsbild
             type: files
             uploads:
               template: media

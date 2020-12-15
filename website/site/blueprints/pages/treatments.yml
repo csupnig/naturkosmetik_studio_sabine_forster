@@ -1,22 +1,22 @@
-title: Treatments
+title: Behandlungen
 
 columns:
   - width: 1/3
     sections:
       treatmentCategories:
-        headline: Treatment categories
+        headline: Behandlungskategorien
         type: pages
         templates: treatmentcategory
         sortable: true
 
       treatmentSpecial:
-        headline: Treatment specials
+        headline: Spezialbehandlungen
         type: pages
         templates: treatmentspecial
         sortable: true
 
       files:
-        headline: Media
+        headline: Medien
         type: files
         template: media
         sortable: true
@@ -27,21 +27,21 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           generalSectionHeadline:
-            label: General
+            label: Allgemein
             type: headline
 
           name:
-            label: Page name
+            label: Seitentitel
             type: text
             required: true
 
           backgroundImage:
-            label: Page background
+            label: Seitenhintergrund
             type: files
             uploads:
               template: media
@@ -49,71 +49,71 @@ columns:
             required: true
 
           studioSectionHeadline:
-            label: Studio data
+            label: Studiodaten
             type: headline
 
           studioName1:
-            label: Studio 1 name
+            label: Studio 1 - Name
             type: textarea
             width: 1/2
             required: true
 
           studioName2:
-            label: Studio 2 name
+            label: Studio 2 . Name
             type: textarea
             width: 1/2
             required: true
 
           studioHeadline1:
-            label: Studio 1 headline
+            label: Studio 1 - Überschrift
             type: text
             width: 1/2
             required: true
 
           studioHeadline2:
-            label: Studio 2 headline
+            label: Studio 2 - Überschrift
             type: text
             width: 1/2
             required: true
 
           studioSubline1:
-            label: Studio 1 subline
+            label: Studio 1 - Zusatz
             type: text
             width: 1/2
             required: true
 
           studioSubline2:
-            label: Studio 2 subline
+            label: Studio 2 - Zusatz
             type: text
             width: 1/2
             required: true
 
           studioAddress1:
-            label: Studio 1 address
+            label: Studio 1 - Adresse
             type: text
             width: 1/2
             required: true
 
           studioAddress2:
-            label: Studio 2 address
+            label: Studio 2 - Adresse
             type: text
             width: 1/2
             required: true
 
           studioDays1:
-            label: Studio 1 days
+            label: Studio 1 - Öffnungstage
             type: text
             width: 1/2
             required: true
 
           studioDays2:
-            label: Studio 2 days
+            label: Studio 2 - Öffnungstage
             type: text
             width: 1/2
             required: true
 
           studioImage1:
-            label: Studio 1 image
+            label: Studio 1 - Bild
             type: files
             uploads:
               template: media
@@ -121,7 +121,7 @@ columns:
             required: true
 
           studioImage2:
-            label: Studio 2 image
+            label: Studio 2 - Bild
             type: files
             uploads:
               template: media
@@ -129,7 +129,7 @@ columns:
             required: true
 
           studioRemark:
-            label: Booking remark
+            label: Buchungshinweis
             type: textarea
             required: true
 

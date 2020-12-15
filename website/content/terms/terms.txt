@@ -1,6 +1,8 @@
-Backgroundimage:
+Title: AGBs
 
-- img_background_treatments.png
+----
+
+Backgroundimage: - img_background_treatments.png
 
 ----
 

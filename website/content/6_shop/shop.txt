@@ -1,10 +1,12 @@
+Title: Shop
+
+----
+
 Name: Shop
 
 ----
 
-Backgroundimage:
-
-- background-1.png
+Backgroundimage: - background-1.png
 
 ----
 
@@ -16,9 +18,7 @@ Introtext: Tauchen Sie Ihre Samen mit meinem anderen in die Welt der reinen Natu
 
 ----
 
-Introimage:
-
-- home-02.jpg
+Introimage: - home-02.jpg
 
 ----
 

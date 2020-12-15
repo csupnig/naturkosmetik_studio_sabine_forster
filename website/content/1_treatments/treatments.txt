@@ -1,10 +1,12 @@
+Title: Behandlungen
+
+----
+
 Name: Behandlungen
 
 ----
 
-Backgroundimage:
-
-- background-1.png
+Backgroundimage: - background-1.png
 
 ----
 
@@ -54,15 +56,11 @@ Studiodays2: Mittwoch, Donnerstag, Freitag
 
 ----
 
-Studioimage1:
-
-- studio1.jpg
+Studioimage1: - studio1.jpg
 
 ----
 
-Studioimage2:
-
-- studio-2.jpg
+Studioimage2: - studio-2.jpg
 
 ----
 

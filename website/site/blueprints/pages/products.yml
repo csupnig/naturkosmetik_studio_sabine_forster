@@ -1,16 +1,16 @@
-title: Products
+title: Produktübersicht
 
 columns:
   - width: 1/3
     sections:
       products:
-        headline: Products
+        headline: Produkte
         type: pages
         template: product
         sortable: true
 
       files:
-        headline: Media
+        headline: Medien
         type: files
         template: media
         sortable: true
@@ -21,24 +21,24 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           generalSectionHeadline:
-            label: General
+            label: Allgemein
             type: headline
 
           name:
-            label: Page name
+            label: Seitentitel
             type: text
             required: true
 
           previewSesctionHeadline:
-            label: Preview Content
+            label: Vorschau
             type: headline
 
           shortDescription:
-            label: Short description
+            label: Kurzbeschreibung
             type: textarea
             required: true

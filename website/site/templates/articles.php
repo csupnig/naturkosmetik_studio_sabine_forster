@@ -2,14 +2,14 @@
 //Set background image
 if ($page->backgroundImage()->isNotEmpty()) $backgroundStyle = "background-image:url(".$page->backgroundImage()->toFile()->url().")";
 else $backgroundStyle = ""; ?>
-<body class="blog articles lightGreenBackground">
+<body class="blog articles darkGreenBackground" style="<?= $backgroundStyle ?>">
 	<?php snippet('header'); ?>
   <?php $highlight = $page->highlight()->toPage(); ?>
   <?php $articles = $page->children()->filterBy("intendedTemplate", "article")->published()->filter(function ($item) use ($highlight) {
     return $item->id() !== $highlight->id();
   });
   if (count($articles) > 0) { ?>
-    <section class="articles width100 padding darkGreenBackground" style="<?= $backgroundStyle ?>">
+    <section class="articles width100 padding">
       <div class="grid2C topMargin">
         <div class="item relative">
           <div class="width75 topBorder white topPadding">
@@ -26,7 +26,7 @@ else $backgroundStyle = ""; ?>
           <?php if ($image = $highlight->previewImage()->toFile()) { ?>
             <img class="width100 cover" src="<?= $image->url() ?>" alt="<?= $highlight->name()->html() ?>"/>
           <?php } ?>
-          <button class="sticker top left white greenBackground"><a href="<?= $highlight->url(); ?>">Highlighted Article</a></button>
+          <button class="sticker top left white greenBackground"><a href="<?= $highlight->url(); ?>">Highlighted<br/>Article</a></button>
         </div>
       </div>
       <div class="topPadding">

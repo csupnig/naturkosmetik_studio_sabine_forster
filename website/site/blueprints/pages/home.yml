@@ -1,16 +1,16 @@
-title: Home
+title: Startseite
 
 columns:
   - width: 1/3
     sections:
       reviews:
-        headline: Reviews
+        headline: Kundenberichte
         type: pages
         template: review
         sortable: true
 
       files:
-        headline: Media
+        headline: Medien
         type: files
         template: media
         sortable: true
@@ -21,21 +21,21 @@ columns:
         type: fields
         fields:
           title:
-            label: Page title
+            label: Seitentitel
             type: title
             translate: false
 
           generalSectionHeadline:
-            label: General
+            label: Allgemein
             type: headline
 
           name:
-            label: Page name
+            label: Seitentitel
             type: text
             required: true
 
           backgroundImage:
-            label: Page background
+            label: Seitenhintergrund
             type: files
             uploads:
               template: media
@@ -43,21 +43,21 @@ columns:
             required: true
 
           headlineSectionHeadline:
-            label: Headline
+            label: Titelzeile
             type: headline
 
           headlineHeadline:
-            label: Headline
+            label: Titelzeilenüberschrift
             type: textarea
             required: true
 
           headlineSubline:
-            label: Subline
+            label: Titelzeilenzusatz
             type: text
             required: true
 
           headlineImage:
-            label: Headline image
+            label: Titelzeilenbild
             type: files
             uploads:
               template: media
@@ -65,34 +65,34 @@ columns:
             required: true
 
           headlineLinkTarget:
-            label: Headline button target
+            label: Titelzeilenlink - Ziel
             type: pages
             width: 1/2
             multiple: false
             required: true
 
           headlineLinkText:
-            label: Headline button text
+            label: Titelzeilenlink - Text
             type: text
             width: 1/2
             required: true
 
           introSectionHeadline:
-            label: Introduction
+            label: Einleitung
             type: headline
 
           introIntro:
-            label: Introduction intro
+            label: Einleitungseinleitung
             type: textarea
             required: true
 
           introText:
-            label: Introduction text
+            label: Einleitungstext
             type: textarea
             required: true
 
           introImage:
-            label: Introduction image
+            label: Einleitungsbild
             type: files
             uploads:
               template: media
@@ -100,24 +100,24 @@ columns:
             required: true
 
           introLinkTarget:
-            label: Introduction button target
+            label: Einleitungslink - Ziel
             type: pages
             width: 1/2
             multiple: false
             required: true
 
           introLinkText:
-            label: Introduction button text
+            label: Einleitungslink - Text
             type: text
             width: 1/2
             required: true        
 
           treatmentsSectionHeadline:
-            label: Treatments
+            label: Behandlungen
             type: headline
 
           treatmentHighlights:
-            label: Treatment highlights
+            label: Behandlungs-Highlights
             type: pages
             query: site.index.filterBy("intendedTemplate", "treatment")
             min: 3
@@ -125,11 +125,11 @@ columns:
             required: true
 
           productsSectionHeadline:
-            label: Products
+            label: Produkte
             type: headline
 
           productHighlights:
-            label: Product highlights
+            label: Produkt-Highlights
             type: pages
             query: site.find("shop").index.filterBy("intendedTemplate", "product")
             min: 2
@@ -137,18 +137,18 @@ columns:
             required: true
 
           eventsSectionHeadline:
-            label: Events
+            label: Veranstaltungen
             type: headline
 
           eventHighlight:
-            label: Event highlight
+            label: Veranstaltungs-Highlight
             type: pages
-            query: site.find("about").find("events").index.filterBy("intendedTemplate", "event")
+            query: site.find("events").index.filterBy("intendedTemplate", "event")
             multiple: false
             required: true
 
           eventsImage:
-            label: Events image
+            label: Veranstaltungsbild
             type: files
             uploads:
               template: media

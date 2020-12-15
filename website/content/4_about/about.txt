@@ -1,10 +1,12 @@
+Title: Über mich
+
+----
+
 Name: Über mich
 
 ----
 
-Backgroundimage:
-
-- background-1.png
+Backgroundimage: - background-1.png
 
 ----
 
@@ -20,9 +22,7 @@ Introtext: Oribus rerum, od itat que as simus trunter extperfe rovi dis mod enih
 
 ----
 
-Introimage:
-
-- about-01.jpg
+Introimage: - about-01.jpg
 
 ----
 
@@ -63,6 +63,4 @@ In einem entspannenden Atmosphäre sind meine Behandlung eine natürliche und we
 
 ----
 
-Philosophybackground:
-
-- about-02.jpg
+Philosophybackground: - about-02.jpg
