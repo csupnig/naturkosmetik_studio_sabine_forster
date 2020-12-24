@@ -51,6 +51,7 @@
 .padding.alignFarRight, .hPadding.alignFarRight { padding-left:40rem; padding-right:16rem; }
 header.padding { padding:3rem 10rem 0; }
 footer.padding { padding:3rem 10rem 3rem 3rem; }
+#cookie_banner-wrapper.padding { padding:3rem; }
 
 /*Site-specific standards margins*/
 span.topMargin, span.bottomMargin, span.smallTopMargin, span.smallBottomMargin { display:inline-block; }
@@ -159,7 +160,11 @@ div.data.darkGreen { padding:0.8rem 0; border-top:0.08rem solid #1c3f41; }
 .amount-input button:hover { background:white; }
 .amount-input .amount-number { height: 2.88rem; width: 2.88rem; }
 
+.productPhoto { height:34rem; }
+
 /*=================================== Templates ===================================*/
+
+#cookie_banner-wrapper { left:10rem; bottom:0; width:30rem; z-index:1000; }
 
 body { background-repeat:no-repeat; background-size:100%; }
 
@@ -196,9 +201,6 @@ section.overview .item.product img { display:block; }
 
 section.philosophy { min-height:40rem; background-size:cover; }
 
-.productPhoto { height:34rem; }
-
-/*section.article .vFlex { min-height: 30rem; }*/
 section.article .carousel, section.article .carousel img { height:34rem; }
 section.article .carousel button { top:16rem; right:-4rem; padding:0 !important; }
 
@@ -295,18 +297,199 @@ header .primary > a.white:hover, /*header .secondary > a.white:hover,*/ header .
 
 @media all and (max-width:600px) {
 
-	/*Universal initialization*/
-
-	/*Site-specific initialization*/
-
 	/*=================================== Snippets ===================================*/
 
-	/*Site-specific snippets*/
+	/*Site-specific grids*/
+	.grid2C { grid-template-columns:1fr; gap:12rem; }
+	.grid2C.largeGap { gap:12rem; }
+	.grid2C .item.largeRightPadding { padding-left:10rem; padding-right:10rem; }
+	/*.grid2C.extraLargeGap { grid-column-gap:16rem; grid-row-gap:1.5rem; }*/
+	.grid2C.ratio1-2 { grid-template-columns:1fr; gap:6.5rem; }
+	.grid2C.ratio3-2 { grid-template-columns:1fr; grid-column-gap:0; grid-row-gap:14rem; }
+	/*.grid2C.ratio2-3 { grid-template-columns:2fr 3fr; grid-column-gap:18rem; grid-row-gap:10rem; }*/
+	.alignRight > .grid2C { grid-template-columns:1fr; }
+	.grid3C { grid-template-columns:1fr; gap:6rem; }
+	/*.grid3C > *:not(.item) { grid-column:1/4; }*/
+	.grid3C .item.square, .grid3C .item .square, .grid3C .item .square img { height:34rem; }
+	/*.carousel .grid3C .item:nth-of-type(3n) { margin-right:1.5rem; }*/
+
+	/*Site-specific standard paddings*/
+	.padding { padding:12rem 10rem 10rem; }
+	.vPadding { padding-top:10rem; padding-bottom:8rem; }
+	.topPadding { padding-top:10rem; }
+	.bottomPadding { padding-bottom:8rem; }
+	/*Site-specific large paddings*/
+	.largeTopPadding, body > section:first-of-type { padding-top:30rem; }
+	.largeBottomPadding { padding-bottom:20rem; }
+	/*Site-specific small & extra small paddings*/
+	.smallPadding { padding:6rem; }
+	.extraSmallPadding { padding:3rem; }
+	.extraSmallTopPadding { padding-top:3rem; }
+	.tinyVPadding { padding-top:1.6rem; padding-bottom:1.6rem; }
+	/*Site-specific padding exceptions*/
+	.padding.alignFarRight, .hPadding.alignFarRight { padding-left:10rem; padding-right:10rem; }
+	/*header.padding { padding:3rem 10rem 0; }*/
+	footer.padding { padding:10rem; }
+	#cookie_banner-wrapper.padding { padding:6rem; }
+
+	/*Site-specific standards margins*/
+	.topMargin { margin-top:6rem; }
+	.bottomMargin { margin-bottom:6rem; }
+	/*Site-specific large margins*/
+	.largeTopMargin { margin-top:12rem; }
+	.largeBottomMargin { margin-bottom:12rem; }
+	/*Site-specific small margins*/
+	.smallTopMargin { margin-top:3rem; }
+	.smallBottomMargin { margin-bottom:3rem; }
+	.smallLeftMargin { margin-left:3rem; }
+
+	/*Site-specific framework: Borders*/
+	.border.darkGreen { border:0.16rem solid #1c3f41; }
+	.topBorder.darkGreen { border-top:0.16rem solid #1c3f41; }
+	.bottomBorder.darkGreen { border-bottom:0.16rem solid #1c3f41; }
+	.rightBorder.darkGreen { border-right:none; }
+	.topBorder.white { border-top:0.16rem solid #fff; }
+	.bottomBorder.white { border-bottom:0.16rem solid #fff; }
+	.leftBorder.darkGreen { border-left:none; }
+	.strongTopBorder.darkGreen { border-top:0.32rem solid #1c3f41 !important; }
+	.strongTopBorder.white { border-top:0.32rem solid #fff; }	
+
+	/*Site-specific framework: Buttons & icons*/
+	button.circle { width:26rem; height:26rem; background-repeat:no-repeat; background-size:cover; border-radius:0; }
+	button.circle.right { right:-20rem; }
+	button.circle.bottom { bottom:-14rem; }
+	button.highlight { width:20rem; height:20rem; }
+	button.highlight.top { top:-10rem; }
+	button.highlight.right { right:3rem; }
+	button.line { width:4rem; height:0.3rem; margin-left:-0.4rem; margin-right:-0.4rem; }
+	button.next { min-width:3rem; min-height:3rem; padding-right:6rem; }
+	button.next.darkGreen { background-size:3rem; }
+	button.next.white { background-size:3rem; }
+	button.previous { min-width:3rem; min-height:3rem; padding-left:6rem; }
+	button.previous.darkGreen { background-size:3rem; }
+	button.circledNext { min-width:6rem; height:6rem; padding-right:8rem; }
+	button.circledNext.darkGreen { background-size:6rem; }
+	button.circledNext.white { background-size:6rem; }
+	button.circledNext.circleOnly { padding-right:6rem; }
+	button.rectangle { height:auto; padding:2rem 8rem 2rem 2rem; background-position:center right 2rem; background-size:4.6rem; }
+	button.rectangle.darkGreen { border:0.16rem solid #1c3f41; }
+	button.rectangle.white { border:0.16rem solid #fff; }
+	button.sticker { width:22rem; height:22rem; }
+	button.sticker.top { top:-8rem; }
+	button.sticker.left { left:-11rem; }
+	button.sticker.right { right:3rem; }
+	button.sticker.top.left { left:6rem !important; top:6rem !important; }
+
+	/* Snippets*/
+	ul.arrow li { list-style:none; padding:1.6rem 6rem 1.6rem 0; background-repeat:no-repeat; background-position:center right; background-size:3rem; }
+	div.data.darkGreen { padding:1.6rem 0; border-top:0.16rem solid #1c3f41; }
+	.dataList.extraSmall ul li { padding:1.6rem 0; }
+	.dataList.small ul li { padding:2rem 0; }
+	.dataList.darkGreen ul li { border-top:0.16rem solid #1c3f41; }
+	.dataList.darkGreen ul li:first-of-type { border-top:0.32rem solid #1c3f41; }
+	.dataList::-webkit-scrollbar { width:1rem; }
+
+	.item:hover .cutout { display:none; }
+	.item .details { min-height:12rem; }
+
+	.amount-input .controls { grid-template-columns:1fr 1fr 1fr; }
+	.amount-input button { height:6rem; width:6rem; border:0.16rem solid #1c3f41; }
+	.amount-input .amount-number { height:6rem; width:6rem; }
+
+	.productPhoto { height:68rem; }
 
 	/*=================================== Templates ===================================*/
 
+	#cookie_banner-wrapper { left:0; bottom:0; width:100vw; z-index:1000; }
+
+	header nav .navigation { background-color:#f5f4ef; background-image:url("/assets/images/background-header.png"); background-repeat:no-repeat; background-position:top left; background-size:100%; display:none !important; }
+	header.active nav .navigation { width:100vw; height:100vh; top:0; left:0; display:block !important; position:fixed; }
+	header.active nav .navigation .primary { width:80%; margin-left:10%; margin-right:10%; text-align:center; border-bottom:0.16rem solid #1c3f41; }
+	header.active nav .navigation .primary.shop, header.active nav .navigation .primary.extra { width:30%; margin-top:7vh; border-bottom:none; }
+	header.active nav .navigation .primary:first-of-type { margin-top:20vh; }
+	header.active nav .navigation .tertiary { display:none !important; }
+	header .toggle { width:8rem; height:8rem; top:6rem; right:10rem; background-size:contain; }
+	header .toggle.white { background-image:url("/assets/images/icon-toggle-white.png"); }
+	header .toggle.darkGreen { background-image:url("/assets/images/icon-toggle-darkGreen.png"); }
+	header.active .toggle.white { background-image:url("/assets/images/icon-close-white.png"); }
+	header.active .toggle.darkGreen { background-image:url("/assets/images/icon-close-darkGreen.png"); }
+	header .logo { width:34rem; height:14rem; }
+	header .logo.white, .blog header:hover .logo.white { background-image:url("/assets/images/logo-white.png"); }
+	header .logo.darkGreen, .shop header:hover .logo.darkGreen { background-image:url("/assets/images/logo-darkGreen.png"); }
+	header { transition:height 0s ease-in; }
+	header.white:hover { background-color:transparent !important; border-bottom:none !important; }
+	header.darkGreen:hover { background-color:transparent !important; border-bottom:none !important; }
+	.shop header.darkGreen:hover { background-color:transparent !important; }
+	.blog header:hover .white.bottomBorder { border-bottom:none !important; }
+	.shop header:hover .darkGreen.bottomBorder { border-bottom:none !important; }
+	
+	footer { height:auto; }
+	footer .floatRight { margin:6rem 0; float:left; }
+	footer .width50 { width:100%; }
+	section.article .item:first-of-type .absolute { position:relative; margin-top:6rem; }
+	section.article .carousel, section.article .carousel img { height:68rem; }
+	section.article .carousel button { top:32rem; right:-7.4rem; padding:0 !important; }
+	section.articles .item .absolute { position:relative; margin-top:6rem; }
+	section.callToAction .width50 { width:100%; }
+	section.contact .grid2C .item:nth-of-type(2) { margin-top:10rem; }
+	section.education .dataList { max-height:51.1rem; padding-left:10rem; }
+	section.footerExtension .width33 { width:75%; }
+	section.headline span { width:75%; display:inline-block; }
+	section.headline h1 { margin-top:6rem; }
+	section.headline .width45, section.headline .width55 { width:75%; }
+	section.intro .alignFlexEnd { align-self:center; margin-top:6rem; margin-bottom:6rem; }
+	section.philosophy { margin-top:10rem; padding-bottom:80rem; }
+	section.product .item.smallLeftPadding, section.productDetails .item.smallLeftPadding { padding-left:0; }
+	section.product .grid2C .grid2C { grid-template-columns:2fr 1fr; }
+	section.remark .width33, section.remark .width50 { width:75%; }
+	section.reviews .width66 { width:75%; }
+	section.studios .width50 { width:100%; }
+	section.studios .item, section.studios .item img { height:90rem; }
+	section.treatments > .width50 { width:100%; margin-top:6rem; }
+	section.usage { display:block !important; }
+	section.usage > .width50 { width:100%; }
+
+	.treatmentCategory section.treatments .item .contact { display:block; }
+
+	/*=================================== Externally loaded elements ===================================*/
+
+	.newsletter form input { width:100%; padding:1rem 1.6rem !important; border:0.16rem solid #637950 !important; }
+	.newsletter form td button { border: 0.16rem solid #1c3f41!important; }
+
+	button.snipcart-cart-button { line-height: 4.4rem; height:8rem; padding:2rem 8rem 2rem 2rem; background-position:center right 2rem; background-size:4.6rem; }
+	button.snipcart-cart-button:hover { border:0.16rem solid #1c3f41; }
+	button.snipcart-cart-button { border:0.16rem solid #1c3f41;}
+	button.snipcart-cart-button:hover svg { transform: translateX(6rem); stroke:#1c3f41; }
+	.snipcart .snipcart-discount-box__form { border:0.16rem solid #637950; }
+	.snipcart-items-count { font-size:3rem; padding:0; transform: translate(0.4rem, -1.2rem); width:6rem; height:6rem; line-height:6rem; }
+	.snipcart-checkout { width:5rem; height:8rem; }
+
+	.modal { width:90%; height:100%; }
+	.modal .header { padding: 3rem 6rem; }
+	.modal .content { padding: 3rem 6rem; }
 
 	/*=================================== Texts ===================================*/
 
-	/*Default text styles*/
+	/*Default types*/
+	span.extraSmall, .dataList.extraSmall, nav.breadcrumb { font:2.8rem/4rem "Geomanist-Regular", sans-serif; letter-spacing:0.04rem; }
+	span, select { font:3.5rem/5rem "Geomanist-Regular", sans-serif; letter-spacing:0.04rem; }
+	span.small, .dataList.small { font:3rem/4rem "Geomanist-Regular", sans-serif; letter-spacing:0.04rem; }
+	.modal .header h1  { font:3rem/4rem "Geomanist-Regular", sans-serif; letter-spacing:0.04rem; }
+	.amount-input span { font:200 3rem/6rem "new-spirit", sans-serif; letter-spacing:0.04rem; }
+	h1 { font:500 15rem/17rem "new-spirit", sans-serif; }
+	h1.small { font:500 7rem/7rem "new-spirit", sans-serif; }
+	h2, h4 { font:3rem/4.5rem "Geomanist-Book", sans-serif; text-transform:uppercase; letter-spacing:0.14rem; }
+	h3.small { font:400 3.6rem/4.8rem "new-spirit", sans-serif; }
+	h3.extraSmall { font:400 4rem/5.6rem "new-spirit", sans-serif; }
+	h3, h2.large, span.large, p.large { font:400 4.4rem/5.76rem "new-spirit", sans-serif; text-transform:none; }
+	button.sticker, button.highlight, button.rectangle { font:400 2.6rem/4.2rem "new-spirit", sans-serif; letter-spacing:0.04rem; }
+	button.circledNext, ul.arrow { font:400 3rem/4.6rem "new-spirit", sans-serif; }
+	button.next { font:4.2rem/4.4rem "Geomanist-Regular", sans-serif; }
+	button.next.small { font:400 3rem/4.4rem "new-spirit", sans-serif; }
+	nav .navigation .primary { font:6rem/7vh "Geomanist-Book", sans-serif; text-transform:uppercase; letter-spacing:0.14rem; }
+
+	/*Types for externally loaded elements*/
+	.newsletter form td { font:3.2rem/3.6rem "Geomanist-Regular", sans-serif; }
+	.newsletter form input { font:2rem/2.2rem "Geomanist-Regular", sans-serif; letter-spacing:0.04rem; }
+	.newsletter form td button { font:400 2.2rem/3.6rem "new-spirit", sans-serif !important; letter-spacing:0.04rem; }
 }

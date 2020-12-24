@@ -132,12 +132,10 @@ columns:
           newsletterCall:
             label: Newsletter Anmeldungstext
             type: textarea
-            width: 1/2
 
           newsletterIntro:
             label: Newsletter Beschreibung
             type: textarea
-            width: 1/2
 
       shop:
         type: fields

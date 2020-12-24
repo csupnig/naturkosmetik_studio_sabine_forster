@@ -19,7 +19,7 @@ else $backgroundStyle = ""; ?>
 	</section>
 	<?php snippet('infoList'); ?>
 	<section id="methods" class="methods padding darkGreen">
-		<h2>Unsere<br/>Methdoen</h2>
+		<h2>Unsere<br/>Methoden</h2>
 		<div class="grid3C topMargin">
 			<?php for ($i = 1; $i < 7; $i++) { ?>
 				<div class="item">
@@ -40,7 +40,7 @@ else $backgroundStyle = ""; ?>
 			<div class="flexGrow dataList extraSmall darkGreen topMargin">
 				<?= $page->usageText()->kirbyText() ?>
 			</div>
-			<span class="extraSmall uppercase"><?= $page->usageRemark()->html() ?></span>
+			<span class="extraSmall uppercase topMargin"><?= $page->usageRemark()->html() ?></span>
 		</div>
 	</section>
 	<section id="treatments" class="treatments vPadding topMargin">

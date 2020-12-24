@@ -80,9 +80,8 @@ columns:
             required: false
 
           application:
-            label: Anwendung
+            label: Anwendung (Optional)
             type: textarea
-            required: true
 
           similarProductsSectionHeadline:
             label: Ähnliche Produkte

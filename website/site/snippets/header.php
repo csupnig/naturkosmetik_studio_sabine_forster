@@ -10,12 +10,16 @@ else $headerColor = "darkGreen"; ?>
           <a class="<?= $headerColor ?> <?= r($item->isOpen(), 'active strong bottomBorder') ?>" href="<?= $item->url() ?>" title="<?= $item->name()->html() ?>"><?= $item->name()->html() ?></a>
           <?php if (in_array($item->template(), ["treatments", "brands", "events", "shop", "productcategory", "products", "product"])) { ?>
             <div class="tertiary absolute noWrap">
-              <?php foreach ($item->children()->listed() as $subItem) { 
+              <?php foreach ($item->children()->listed() as $subItem) {
                 if ($item->template() == "brands") { ?>
                   <a class="<?= $headerColor ?> <?= r($subItem->isOpen(), 'active strong bottomBorder') ?>" href="<?= $item->url() ?>#<?= $subItem->title()->html() ?>" title="<?= $subItem->name()->html() ?>"><?= $subItem->name()->html() ?></a><br/>
                 <?php } else if ($item->template() == "events") { ?>
                   <a class="<?= $headerColor ?> <?= r($subItem->isOpen(), 'active strong bottomBorder') ?>" href="<?= $item->url() ?>#<?= $subItem->title()->html() ?>" title="<?= $subItem->name()->html() ?>"><?= $subItem->name()->html() ?></a><br/>
-                <?php } else { ?>
+                <?php } else if ($item->template() == "treatments") { 
+                  if (($subItem->template() == "treatmentcategory") || ($subItem->template() == "treatmentspecial")) { ?>
+                    <a class="<?= $headerColor ?> <?= r($subItem->isOpen(), 'active strong bottomBorder') ?>" href="<?= $subItem->url() ?>" title="<?= $subItem->name()->html() ?>"><?= $subItem->name()->html() ?></a><br/>
+                  <?php }
+                  } else { ?>
                   <a class="<?= $headerColor ?> <?= r($subItem->isOpen(), 'active strong bottomBorder') ?>" href="<?= $subItem->url() ?>" title="<?= $subItem->name()->html() ?>"><?= $subItem->name()->html() ?></a><br/>
                 <?php } ?>
               <?php } ?>
@@ -26,11 +30,14 @@ else $headerColor = "darkGreen"; ?>
           <?php } ?>
         </div>
       <?php } ?>
-      <div class="primary extra extraSmallLeftPadding floatLeft relative">
+      <?php //Only render SnipCart elements if cookies have been accepted
+      if($_COOKIE["cookie-note"] == 1) { ?>
+        <div class="primary extra extraSmallLeftPadding floatLeft relative">
           <button class="snipcart-checkout <?= $headerColor ?>">
-          <span class="snipcart-items-count"></span>
-        </button>
-      </div><br/>
+            <span class="snipcart-items-count"></span>
+          </button>
+        </div><br/>
+      <?php } ?>
       <?php /* <div class="subNavigation shop floatRight">
         <?php foreach ($site->find("shop")->children()->filterBy("intendedTemplate", "productcategory")->listed() as $item) { ?>
           <div class="secondary shop extraSmallLeftPadding floatLeft relative">
@@ -44,7 +51,6 @@ else $headerColor = "darkGreen"; ?>
         <?php } ?>
       </div> */ ?>
     </div>
+    <div class="toggle absolute <?= $headerColor ?>"></div>
   </nav>
-  <div class="toggle"></div>
-  <div class="close"></div>
 </header>

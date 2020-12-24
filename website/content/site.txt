@@ -151,11 +151,11 @@ Legalnoticepage:
 
 ----
 
-Cookieheadline: 
+Cookieheadline: Diese Seite verwendet Cookies
 
 ----
 
-Cookietext: 
+Cookietext: Ohne Ihre Zustimmung ist keine Nutzung des Onlineshops möglich. Mehr Informationen finden Sie in unseren Cookie-Richtlinien.
 
 ----
 
@@ -163,7 +163,9 @@ Cookiecontent:
 
 ----
 
-Cookiepolicyfile: 
+Cookiepolicyfile:
+
+- home-04.jpg
 
 ----
 
