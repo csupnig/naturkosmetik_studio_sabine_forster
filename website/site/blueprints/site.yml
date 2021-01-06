@@ -16,6 +16,7 @@ columns:
           - shop
           - newsletter
           - terms
+          - treatmentspecial
         sortable: true
 
       files:

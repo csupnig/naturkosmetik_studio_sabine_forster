@@ -18,7 +18,6 @@
 					}
 					foreach ($brands as $brandname) {
             $brand = $site->find("brands")->children()->filterBy('intendedTemplate', 'brand')->filter(function($brandItem) use ($brandname) { return $brandItem->title()->value() == $brandname; })->first();
-            //var_dump($brand);
             if (isset($brand)) {
             ?>
 						<li class="width100"><a href="<?= $site->find("shop")->find("brandoverview")->url() ?>?brand=<?= $brand->title()->value() ?>"><?= $brand->name()->text() ?></a></li>

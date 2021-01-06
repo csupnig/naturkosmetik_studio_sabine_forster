@@ -55,23 +55,33 @@ else $backgroundStyle = ""; ?>
 						</div>
 					</div>
 					<div class="item vFlex">
-						<div class="data width100 strongTopBorder darkGreen vSmallPadding">
-							<h4>Zeit</h4>
-							<span class="extraSmall"><?= $event->date()->toDate("d.m.Y").", ".$event->time()->html() ?></span>
-						</div>
-						<div class="data width100 darkGreen vSmallPadding">
-							<h4>Dauer</h4>
-							<span class="extraSmall"><?= $event->duration()->html() ?></span>
-						</div>
-						<div class="data width100 darkGreen vSmallPadding">
-							<h4>Ort</h4>
-							<span class="extraSmall"><?= $event->location()->html() ?></span>
-						</div>
-						<div class="data width100 darkGreen vSmallPadding flexGrow">
-							<h4>Kosten</h4>
-							<span class="extraSmall">€<?= $event->price()->html() ?></span>
-						</div>
-						<a href="mailto:<?= $site->email()->html() ?>?subject=Anfrage zu <?= $event->name()->html() ?>"><button class="width100 rectangle darkGreen topMargin">Anmeldung zu diesem Event</button></a>
+						<?php if ($event->date()->isNotEmpty()) { ?>
+							<div class="data width100 strongTopBorder darkGreen vSmallPadding">
+								<h4>Zeit</h4>
+								<span class="extraSmall"><?= $event->date()->toDate("d.m.Y").", ".$event->time()->html() ?></span>
+							</div>
+							<?php if ($event->duration()->isNotEmpty()) { ?>
+								<div class="data width100 darkGreen vSmallPadding">
+									<h4>Dauer</h4>
+									<span class="extraSmall"><?= $event->duration()->html() ?></span>
+								</div>
+							<?php }
+							if ($event->duration()->isNotEmpty()) { ?>
+							<div class="data width100 darkGreen vSmallPadding">
+								<h4>Ort</h4>
+								<span class="extraSmall"><?= $event->location()->html() ?></span>
+							</div>
+							<?php }
+							if ($event->duration()->isNotEmpty()) { ?>
+							<div class="data width100 darkGreen vSmallPadding flexGrow">
+								<h4>Kosten</h4>
+								<span class="extraSmall">€<?= $event->price()->html() ?></span>
+							</div>
+							<?php } ?>
+							<a href="mailto:<?= $site->email()->html() ?>?subject=Anfrage zu <?= $event->name()->html() ?>"><button class="width100 rectangle darkGreen topMargin">Anmeldung zu diesem Event</button></a>
+						<?php } else { ?>
+							<a href="mailto:<?= $site->email()->html() ?>?subject=Interresse an <?= $event->name()->html() ?>"><button class="width100 rectangle darkGreen topMargin">Interessiert an diesem Event?</button></a>
+						<?php } ?>
 					</div>
 				</div>
 			<?php } ?>

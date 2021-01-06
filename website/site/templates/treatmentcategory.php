@@ -39,7 +39,7 @@ else $backgroundStyle = ""; ?>
 						</div>
 						<div class="data strongTopBorder darkGreen vSmallPadding">
 							<h4>Kosten</h4>
-							<span class="extraSmall"><?= $highlight->price()->html() ?></span>
+							<span class="extraSmall">€<?= $highlight->price()->html() ?></span>
 						</div>
 					</div>
 				</div>
@@ -68,12 +68,14 @@ else $backgroundStyle = ""; ?>
 								<span class="extraSmall">€<?= $treatment->price()->html() ?></span>
 							</div>
 						</div>
-						<div class="width100">
-							<div class="data darkGreen vSmallPadding">
-								<h4>Gut bei</h4>
-								<span class="extraSmall"><?= $treatment->usage()->html() ?></span>
+						<?php if ($treatment->usage()->isNotEmpty()) { ?>
+							<div class="width100">
+								<div class="data darkGreen vSmallPadding">
+									<h4>Gut bei</h4>
+									<span class="extraSmall"><?= $treatment->usage()->html() ?></span>
+								</div>
 							</div>
-						</div>
+						<?php } ?>
 					</div>
 				<?php } ?>
 			</div>

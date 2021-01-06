@@ -27,7 +27,7 @@ else $backgroundStyle = ""; ?>
       <div class="grid2C topMargin largeGap">
         <?php foreach ($overviews as $overview) { ?>
           <div class="item">
-            <h3 class="darkGreen small"><?=$overview->name()->html() ?></h3>
+            <h3 class="darkGreen small"><a href="<?=$overview->url() ?>"><?=$overview->name()->html() ?></a></h3>
             <span class="darkGreen"><?=$overview->shortDescription()->kirbyText() ?></span>
             <a href="<?=$overview->url() ?>">
               <button class="circledNext topMargin darkGreen circleOnly"></button>

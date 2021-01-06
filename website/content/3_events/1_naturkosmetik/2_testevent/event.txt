@@ -1,0 +1,49 @@
+Name: Testevent
+
+----
+
+Category: Testevent
+
+----
+
+Date: 
+
+----
+
+Time: 
+
+----
+
+Duration: 
+
+----
+
+Location: 
+
+----
+
+Price: 
+
+----
+
+Lecturername1: 
+
+----
+
+Lecturername2: 
+
+----
+
+Lecturerbeschreibung1: 
+
+----
+
+Lecturerbeschreibung2: 
+
+----
+
+Shortdescription: Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten.
+
+----
+
+Description: Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten. Das ist eine Event ohne jegliche konkrete Daten.

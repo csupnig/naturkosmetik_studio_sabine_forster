@@ -18,7 +18,7 @@ if ($content == "newsletter") {
   		} else if ($content == "shop") {
         echo "Mein Online-Shop bietet ein<br/>ausgewähltes Angebot an<br/>hochwertigen Naturprodukten.";
       } else if ($content == "events") {
-        echo "Wollen Sie mehr zu meinen<br/>Seminaren, Workshops und<br/>Vorträgen erfahren?.";
+        echo "Wollen Sie mehr zu meinen<br/>Seminaren, Workshops und Vorträgen<br/>erfahren oder mich buchen?";
       }?>
 	</h3><br/>
   <?php if ($content == "shop") { ?>
