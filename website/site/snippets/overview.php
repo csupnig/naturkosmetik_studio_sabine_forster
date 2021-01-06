@@ -68,13 +68,18 @@ if (count($items) > 0) { ?>
     <div class="grid3C topMargin">
       <?php foreach ($items as $item) {
         $isProduct = $item->template() == "product";
+        $isTreatment = $item->intendedTemplate() == "treatment";
         $isProductCategory = $item->template() == "productcategory";
+        $url = $item->url();
+        if ($isTreatment) {
+          $url = $item->parent()->url()."#".$item->title()->html();
+        }
         ?>
         <div class="item <?= $isProduct ? "product" : "hoverFlip"?>">
-          <a class="noUnderline" href="<?= $item->url() ?>">
+          <a class="noUnderline" href="<?= $url ?>">
             <div class="width100 square relative whiteBackground">
               <?php
-              if (!$isProduct && !$isProductCategory) { ?>
+              if (!$isProduct && !$isProductCategory && !$isTreatment) { ?>
                 <div class="cutout darkGreen">
                   <span class="footnote top right white"><?= $item->name()->html() ?></span>
                 </div>
@@ -88,7 +93,9 @@ if (count($items) > 0) { ?>
               if (!$isProduct) { ?>
                 <div class="text width100 flex square extraSmallPadding relative darkGreen">
                   <h3 class="width75 flexGrow"><?= $item->name()->html() ?></h3>
+                  <?php if (!$isTreatment) { ?>
                   <span class="large alignFlexEnd">(<?= count($item->children()->published()); ?>)</span>
+                  <?php } ?>
                 </div>
               <?php } ?>
             </div>
@@ -106,7 +113,7 @@ if (count($items) > 0) { ?>
             } ?>
             <span class="small flip inlineBlock darkGreen"><?= $item->shortDescription()->html() ?></span>
             <?php if (!$isProduct) { ?>
-              <a class="flip" href="<?= $item->url() ?>"><button class="width100 next large darkGreen">Mehr</button></a>
+              <a class="flip" href="<?= $url ?>"><button class="width100 next large darkGreen">Mehr</button></a>
               <?php
             }
             ?>

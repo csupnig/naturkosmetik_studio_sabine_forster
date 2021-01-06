@@ -41,7 +41,7 @@ else $backgroundStyle = ""; ?>
 					</div>
 					<div class="details width100 smallTopMargin">
 						<span class="small flip width75 inlineBlock darkGreen"><?= $treatment->shortDescription()->html() ?></span>
-						<a class="flip" href="<?= $treatment->url() ?>"><button class="width100 next large darkGreen">Details</button></a>
+						<a class="flip" href="<?= $treatment->parent()->url() ?>#<?= $treatment->title()->html() ?>"><button class="width100 next large darkGreen">Details</button></a>
 					</div>
 				</div>
 			<?php } ?>
@@ -59,7 +59,7 @@ else $backgroundStyle = ""; ?>
 					<div class="width100 darkGreen topBorder"></div>
 					<h3 class="width75 darkGreen smallTopMargin"><?= $event->category()->html().":<br/>".$event->name()->html() ?></h3>
 					<span class="small width75 darkGreen topMargin flexGrow"><?= $event->shortDescription()->kirbyText() ?></span>
-					<div class="width75 doubleColumns">
+					<div class="width75 doubleColumns topMargin">
 						<div class="data darkGreen vSmallPadding">
 							<h4>Zeit</h4>
 							<span class="extraSmall"><?= $event->date()->toDate("d.m.Y").", ".$event->time()->html() ?></span>

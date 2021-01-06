@@ -40,9 +40,9 @@ else $backgroundStyle = ""; ?>
   <?php
   if ($page->footerImage()->isNotEmpty()) $backgroundFooterStyle = "background-image:url(".$page->footerImage()->toFile()->url().")";
   else $backgroundFooterStyle = ""; ?>
-  <section class="width100 centeredText" style="<?= $backgroundFooterStyle ?>">
+  <section class="remark width100 centeredText" style="<?= $backgroundFooterStyle ?>">
     <h3 class="small width33 largeTopPadding white inlineBlock"><?=$page->footerIntro()->kirbyText() ?></h3>
-    <div class="largeBottomPadding"><span class="white inlineBlock width50"><?=$page->footerText()->kirbyText() ?></span></div>
+    <div class="largeBottomPadding topMargin"><span class="white inlineBlock width50"><?=$page->footerText()->kirbyText() ?></span></div>
   </section>
   <?php snippet('callToAction', ['content' => 'newsletter', 'color' => 'darkGreen']); ?>
 	<?php snippet('footer'); ?>

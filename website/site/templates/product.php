@@ -27,31 +27,34 @@ else $backgroundStyle = ""; ?>
           <?php
           $productPrice = floatval(str_replace(',', '.', str_replace('.', '', $page->price()->html())));
           ?>
-          <form class="width100 shopForm largeTopPadding">
-            <div class="grid2C smallBottomMargin">
-              <div class="item darkGreen grid2C amount-input">
-                <div class="item"><span>Menge</span></div>
-                <div class="item controls">
-                  <button class="amount-minus">-</button>
-                  <div class="amount-number centeredText"><span>1</span></div>
-                  <button class="amount-plus">+</button></div>
+          <?php //Only render SnipCart elements if cookies have been accepted
+          if($_COOKIE["cookie-note"] == 1) { ?>
+            <form class="width100 shopForm topPadding">
+              <div class="grid2C smallBottomMargin">
+                <div class="item darkGreen grid2C amount-input">
+                  <div class="item"><span>Menge</span></div>
+                  <div class="item controls">
+                    <button class="amount-minus">-</button>
+                    <div class="amount-number centeredText"><span>1</span></div>
+                    <button class="amount-plus">+</button></div>
+                </div>
+                <div class="item price rightText"><span class="large darkGreen"><?= number_format($productPrice, 2, ",", "") ?> €</span></div>
               </div>
-              <div class="item price rightText"><span class="large darkGreen"><?= number_format($productPrice, 2, ",", "") ?> €</span></div>
-            </div>
-            <button class="rectangle white darkGreenBackground snipcart-add-item width100"
-                    data-item-id="<?= $page->id() ?>"
-                    data-item-name="<?= $page->name()->text() ?>"
-                    data-item-price="<?= number_format($productPrice, 2) ?>"
-                    data-item-url="<?= $page->url() ?>"
-                    data-item-quantity="1"
-                    data-item-description="<?= $page->description()->text() ?>"
-                  <?php if ($image = $page->productImage()->toFile()) { ?>
-                    data-item-image="<?= $image->url() ?>"
-                  <?php } ?>
+              <button class="rectangle white darkGreenBackground snipcart-add-item width100"
+                      data-item-id="<?= $page->id() ?>"
+                      data-item-name="<?= $page->name()->text() ?>"
+                      data-item-price="<?= number_format($productPrice, 2) ?>"
+                      data-item-url="<?= $page->url() ?>"
+                      data-item-quantity="1"
+                      data-item-description="<?= $page->description()->text() ?>"
+                    <?php if ($image = $page->productImage()->toFile()) { ?>
+                      data-item-image="<?= $image->url() ?>"
+                    <?php } ?>
 
-                    data-item-name="$page->name()->text()">Zum Warenkorb hinzufügen</button>
-            <div class="darkGreen smallTopMargin"><span class="extraSmall">Preis inkl. MwSt., zzgl. <a class="uppercase" href="<?= $site->deliveryPage()->url() ?>">Versand</a></span></div>
-          </form>
+                      data-item-name="$page->name()->text()">Zum Warenkorb hinzufügen</button>
+              <div class="darkGreen smallTopMargin"><span class="extraSmall">Preis inkl. MwSt., zzgl. <a class="uppercase" href="<?= $site->deliveryPage()->url() ?>">Versand</a></span></div>
+            </form>
+          <?php } ?>
         </div>
 
     </div>
@@ -75,12 +78,14 @@ else $backgroundStyle = ""; ?>
 
       </div>
       <div class="item smallLeftPadding relative leftBorder darkGreen lightBorder">
-        <h2 class="darkGreen">Anwendung</h2>
-        <div class="width100 darkGreen topMargin">
-              <h3 class="small darkGreen">
-                <?= $page->application()->kirbyText() ?>
-              </h3>
-        </div>
+        <?php if ($page->application()->isNotEmpty()) { ?>
+          <h2 class="darkGreen">Anwendung</h2>
+          <div class=" width100 darkGreen topMargin">
+                <h3 class="extraSmall darkGreen">
+                  <?= $page->application()->kirbyText() ?>
+                </h3>
+          </div>          
+        <?php } ?>
       </div>
     </div>
   </section>

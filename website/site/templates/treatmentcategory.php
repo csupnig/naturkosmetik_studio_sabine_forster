@@ -12,7 +12,7 @@ else $backgroundStyle = ""; ?>
 			<?php } ?>
 			<a href="#treatments"><button class="circle more darkGreen absolute right bottom"></button></a>
 		</div>
-		<div class="floatLeft hPadding">
+		<div class="width45 floatLeft hPadding">
 			<h1 class="small darkGreen"><?= $page->headlineHeadline()->kirbyText() ?></h1>
 		</div>
 	</section>

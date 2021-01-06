@@ -29,3 +29,4 @@
 		</div>
 	</div>
 </footer>
+<?= snippet('cookie'); ?>
