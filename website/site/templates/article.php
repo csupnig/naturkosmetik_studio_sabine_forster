@@ -29,6 +29,9 @@
 
         <div class="absolute bottom extraSmallTopPadding white width100 topBorder">
           <span class="white">Share this article</span>
+          <div>
+          <span class="white extraSmall"><a class="sharelink" data-network="facebook">Facebook</a>, <a class="sharelink" data-network="linkedin">LinkedIn</a> oder <a class="sharelink" data-network="twitter">Twitter</a></span>
+          </div>
         </div>
       </div>
       <div class="item relative">

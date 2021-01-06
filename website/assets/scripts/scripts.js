@@ -14,6 +14,20 @@ $(document).ready(function () {
 
 	/*=================================== Site-specific ===================================*/
 
+  /*Share links*/
+  $(".sharelink").click(function() {
+    var network = $(this).attr('data-network');
+    var link = encodeURI(window.location.href);
+    console.log('NW', network, 'url', window.location.href);
+    if (network == 'facebook') {
+      shareOnFB(link);
+    } else if (network == 'twitter') {
+      shareOntwitter(link);
+    } else if (network == 'linkedin') {
+      shareOnLinkedin(link);
+    }
+  });
+
 	/*Treatments - studio section*/
 	$("section.studios .studio").hover(function() {
 		$(this).find("h2").addClass("alwaysUnderline");
@@ -47,12 +61,12 @@ $(document).ready(function () {
 		/*if (!$(this).hasClass("shop")) {
 			$("header .navigation .secondary.shop").hide();
 		}*/
-		
+
 		//Get height of sub-navigation; use fixed height if none exists
 		if ($(this).find(".tertiary").length) {
 			navigationHeight = $(this).find(".tertiary").outerHeight() + $(document).width()*0.025;
 		} else navigationHeight = "auto";
-		
+
 		//Adjust header height
 		$(this).height(navigationHeight);
 	}, function() {
@@ -86,8 +100,27 @@ $(document).ready(function () {
 		$("header").removeClass(headerBackgroundcolor);
 	});*/
 
-	
 
-	
+
+
 
 });
+
+function shareOnFB(url){
+  var url = "https://www.facebook.com/sharer/sharer.php?u="+url+"";
+  Facebook = window.open(url, 'Facebook', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+  return false;
+}
+
+
+function shareOntwitter(url){
+  var url = 'https://twitter.com/intent/tweet?url='+url+'';
+  TwitterWindow = window.open(url, 'TwitterWindow',width=600,height=300);
+  return false;
+}
+
+function shareOnLinkedin(url){
+  var url = 'https://www.linkedin.com/sharing/share-offsite/?url='+url;
+  Linkedin = window.open(url, 'Linkedin',width=600,height=300);
+  return false;
+}

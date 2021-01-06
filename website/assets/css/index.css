@@ -287,6 +287,7 @@ h2 span.small { text-transform: none; }
 /*Link styles*/
 .alwaysUnderline, .alwaysUnderline a, .hoverUnderline:hover, button.next, button.circledNext { text-decoration:underline !important; }
 .noUnderline, .noUnderline a:link, .noUnderline a:visited, .noUnderline a:hover, .noUnderline a:active, span a:hover, span a:active, h1 a:link, h1:visited, h2 a:link, h2:visited, h3 a:link, h3:visited, button:hover { text-decoration:none !important; }
+a.sharelink {text-decoration: underline; cursor: pointer;}
 
 header .primary > a.darkGreen:hover, /*header .secondary > a.darkGreen:hover,*/ header .tertiary > a.darkGreen:hover, .blog header:hover .primary a.white:hover, .blog header:hover .tertiary a.white:hover { border-bottom:0.08rem solid #1c3f41; }
 header .primary > a.white:hover, /*header .secondary > a.white:hover,*/ header .tertiary > a.white:hover, .shop header:hover .primary a.darkGreen:hover, .shop header:hover .tertiary a.darkGreen:hover { border-bottom:0.08rem solid #fff; }
