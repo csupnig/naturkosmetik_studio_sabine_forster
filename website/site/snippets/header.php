@@ -31,13 +31,15 @@ else $headerColor = "darkGreen"; ?>
         </div>
       <?php } ?>
       <?php //Only render SnipCart elements if cookies have been accepted
-      if($_COOKIE["cookie-note"] == 1) { ?>
-        <div class="primary extra extraSmallLeftPadding floatLeft relative">
-          <button class="snipcart-checkout <?= $headerColor ?>">
-            <span class="snipcart-items-count"></span>
-          </button>
-        </div><br/>
-      <?php } ?>
+      if (isset($_COOKIE["cookie-note"])) {
+        if($_COOKIE["cookie-note"] == 1) { ?>
+          <div class="primary extra extraSmallLeftPadding floatLeft relative">
+            <button class="snipcart-checkout <?= $headerColor ?>">
+              <span class="snipcart-items-count"></span>
+            </button>
+          </div><br/>
+        <?php } 
+        } ?>
       <?php /* <div class="subNavigation shop floatRight">
         <?php foreach ($site->find("shop")->children()->filterBy("intendedTemplate", "productcategory")->listed() as $item) { ?>
           <div class="secondary shop extraSmallLeftPadding floatLeft relative">
