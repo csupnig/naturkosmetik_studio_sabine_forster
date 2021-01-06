@@ -77,13 +77,13 @@ columns:
             width: 1/2
             maxlength: 23
 
-          lecturerBeschreibung1:
+          lecturerDescription1:
             label: Vortragende(r) 1 - Beschreibung (Optional, max. 40 Z.)
             type: text
             width: 1/2
             maxlength: 40
 
-          lecturerBeschreibung2:
+          lecturerDescription2:
             label: Vortragende(r) 2 - Beschreibung (Optional, max. 40 Z.)
             type: text
             width: 1/2
