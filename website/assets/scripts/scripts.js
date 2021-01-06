@@ -94,16 +94,16 @@ $(document).ready(function () {
     }
   });*/
 
-  //Show non-nested shop-subnavigation when primary shop button is hovered
-  /*$("header .navigation .primary.shop").mouseenter(function() {
-    //$("header .darkGreen").removeClass("darkGreen").addClass("white");
-    $("header .navigation .secondary.shop").show();
-  });
-  $("header .navigation .subNavigation.shop, header .navigation").mouseleave(function() {
-    $("header .navigation .secondary.shop").hide();
+	//Show non-nested shop-subnavigation when primary shop button is hovered
+	/*$("header .navigation .primary.shop").mouseenter(function() {
+		//$("header .darkGreen").removeClass("darkGreen").addClass("white");
+		$("header .navigation .secondary.shop").show();
+	});
+	$("header .navigation .subNavigation.shop, header .navigation").mouseleave(function() {
+		$("header .navigation .secondary.shop").hide();
 
-    //Adjust colors
-    if (headerBackgroundcolor == "darkGreenBackground") $("header .white").addClass("darkGreen").removeClass("white");
-    $("header").removeClass(headerBackgroundcolor);
-  });*/
+		//Adjust colors
+		if (headerBackgroundcolor == "darkGreenBackground") $("header .white").addClass("darkGreen").removeClass("white");
+		$("header").removeClass(headerBackgroundcolor);
+	});*/
 });

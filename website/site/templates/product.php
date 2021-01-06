@@ -28,7 +28,7 @@ else $backgroundStyle = ""; ?>
           $productPrice = floatval(str_replace(',', '.', str_replace('.', '', $page->price()->html())));
           ?>
           <?php //Only render SnipCart elements if cookies have been accepted
-          if(true || $_COOKIE["cookie-note"] == 1) { ?>
+          if(trie || $_COOKIE["cookie-note"] == 1) { ?>
             <form class="width100 shopForm topPadding">
               <div class="grid2C smallBottomMargin">
                 <div class="item darkGreen grid2C amount-input">
@@ -84,7 +84,7 @@ else $backgroundStyle = ""; ?>
                 <h3 class="extraSmall darkGreen">
                   <?= $page->application()->kirbyText() ?>
                 </h3>
-          </div>          
+          </div>
         <?php } ?>
       </div>
     </div>

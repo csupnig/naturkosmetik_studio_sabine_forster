@@ -27,7 +27,7 @@ columns:
             label: Marke
             type: select
             options: query
-            query: 
+            query:
               fetch: site.find("brands").children().filterBy("intendedTemplate", "brand")
               value: "{{ page.title }}"
               text: "{{ page.name }}"
@@ -68,12 +68,12 @@ columns:
             type: textarea
             maxlength: 100
             required: true
-          
+
           description:
             label: Beschreibung
             type: textarea
             required: true
-          
+
           ingredients:
             label: Inhaltsstoffe (optional)
             type: textarea
