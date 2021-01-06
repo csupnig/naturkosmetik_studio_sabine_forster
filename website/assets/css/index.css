@@ -294,6 +294,10 @@ a.sharelink {text-decoration: underline; cursor: pointer;}
 header .primary > a.darkGreen:hover, /*header .secondary > a.darkGreen:hover,*/ header .tertiary > a.darkGreen:hover, .blog header:hover .primary a.white:hover, .blog header:hover .tertiary a.white:hover { border-bottom:0.08rem solid #1c3f41; }
 header .primary > a.white:hover, /*header .secondary > a.white:hover,*/ header .tertiary > a.white:hover, .shop header:hover .primary a.darkGreen:hover, .shop header:hover .tertiary a.darkGreen:hover { border-bottom:0.08rem solid #fff; }
 
+.shopForm .shop-control { display: none; }
+.shopForm.cookie-accepted .shop-control { display: block; }
+.shopForm.cookie-accepted .cookie-notice { display: none; }
+
 /*=================================== Mobile Styles ===================================*/
 
 @media all and (max-width:600px) {
@@ -353,7 +357,7 @@ header .primary > a.white:hover, /*header .secondary > a.white:hover,*/ header .
 	.bottomBorder.white { border-bottom:0.16rem solid #fff; }
 	.leftBorder.darkGreen { border-left:none; }
 	.strongTopBorder.darkGreen { border-top:0.32rem solid #1c3f41 !important; }
-	.strongTopBorder.white { border-top:0.32rem solid #fff; }	
+	.strongTopBorder.white { border-top:0.32rem solid #fff; }
 
 	/*Site-specific framework: Buttons & icons*/
 	button.circle { width:26rem; height:26rem; background-repeat:no-repeat; background-size:cover; border-radius:0; }
@@ -423,7 +427,7 @@ header .primary > a.white:hover, /*header .secondary > a.white:hover,*/ header .
 	.shop header.darkGreen:hover { background-color:transparent !important; }
 	.blog header:hover .white.bottomBorder { border-bottom:none !important; }
 	.shop header:hover .darkGreen.bottomBorder { border-bottom:none !important; }
-	
+
 	footer { height:auto; }
 	footer .floatRight { margin:6rem 0; float:left; }
 	footer .width50 { width:100%; }

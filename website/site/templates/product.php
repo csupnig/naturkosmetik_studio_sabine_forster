@@ -27,34 +27,41 @@ else $backgroundStyle = ""; ?>
           <?php
           $productPrice = floatval(str_replace(',', '.', str_replace('.', '', $page->price()->html())));
           ?>
-          <?php //Only render SnipCart elements if cookies have been accepted
-          if(true || $_COOKIE["cookie-note"] == 1) { ?>
-            <form class="width100 shopForm topPadding">
-              <div class="grid2C smallBottomMargin">
-                <div class="item darkGreen grid2C amount-input">
-                  <div class="item"><span>Menge</span></div>
-                  <div class="item controls">
-                    <button class="amount-minus">-</button>
-                    <div class="amount-number centeredText"><span>1</span></div>
-                    <button class="amount-plus">+</button></div>
-                </div>
-                <div class="item price rightText"><span class="large darkGreen"><?= number_format($productPrice, 2, ",", "") ?> €</span></div>
-              </div>
-              <button class="rectangle white darkGreenBackground snipcart-add-item width100"
-                      data-item-id="<?= "ID".preg_replace('/[^A-Za-z0-9\-]/', '_', $page->id()) ?>"
-                      data-item-name="<?= $page->name()->text() ?>"
-                      data-item-price="<?= number_format($productPrice, 2) ?>"
-                      data-item-url="<?= $page->url() ?>"
-                      data-item-quantity="1"
-                      data-item-description="<?= $page->description()->text() ?>"
-                    <?php if ($image = $page->productImage()->toFile()) { ?>
-                      data-item-image="<?= $image->url() ?>"
-                    <?php } ?>
 
-                      data-item-name="$page->name()->text()">Zum Warenkorb hinzufügen</button>
-              <div class="darkGreen smallTopMargin"><span class="extraSmall">Preis inkl. MwSt., zzgl. <a class="uppercase" href="<?= $site->deliveryPage()->url() ?>">Versand</a></span></div>
+
+            <form class="width100 shopForm topPadding <?= isset($_COOKIE["cookie-note"]) && $_COOKIE["cookie-note"] == 1 ? 'cookie-accepted' : ''?>">
+              <div class="shop-control">
+                <div class="grid2C smallBottomMargin">
+                  <div class="item darkGreen grid2C amount-input">
+                    <div class="item"><span>Menge</span></div>
+                    <div class="item controls">
+                      <button class="amount-minus">-</button>
+                      <div class="amount-number centeredText"><span>1</span></div>
+                      <button class="amount-plus">+</button></div>
+                  </div>
+                  <div class="item price rightText"><span class="large darkGreen"><?= number_format($productPrice, 2, ",", "") ?> €</span></div>
+                </div>
+                <button class="rectangle white darkGreenBackground snipcart-add-item width100"
+                        data-item-id="<?= "ID".preg_replace('/[^A-Za-z0-9\-]/', '_', $page->id()) ?>"
+                        data-item-name="<?= $page->name()->text() ?>"
+                        data-item-price="<?= number_format($productPrice, 2) ?>"
+                        data-item-url="<?= $page->url() ?>"
+                        data-item-quantity="1"
+                        data-item-description="<?= $page->description()->text() ?>"
+                      <?php if ($image = $page->productImage()->toFile()) { ?>
+                        data-item-image="<?= $image->url() ?>"
+                      <?php } ?>
+
+                        data-item-name="$page->name()->text()">Zum Warenkorb hinzufügen</button>
+                <div class="darkGreen smallTopMargin"><span class="extraSmall">Preis inkl. MwSt., zzgl. <a class="uppercase" href="<?= $site->deliveryPage()->url() ?>">Versand</a></span></div>
+              </div>
+              <div class="cookie-notice cookie_container">
+                <span class="large">Diese Seite verwendet Cookies</span>
+                <span class="cookie_message smallTopMargin"><p>Ohne Ihre Zustimmung ist keine Nutzung des Onlineshops möglich. Mehr Informationen finden Sie in unseren Cookie-Richtlinien.</p></span>
+                <button class="cookie_btn cookie_btn_accept_all" onclick="closeCookie()"><span class="small alwaysUnderline">Cookies akzeptieren</span></button>
+              </div>
             </form>
-          <?php } ?>
+
         </div>
 
     </div>
