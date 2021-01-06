@@ -22,7 +22,7 @@
 
     <!--Snipcart-->
     <?php //Only render SnipCart elements if cookies have been accepted
-    if (isset($_COOKIE)) {
+    if (isset($_COOKIE["cookie-note"])) {
         if($_COOKIE["cookie-note"] == 1) { ?>
             <link rel="preconnect" href="https://app.snipcart.com">
             <link rel="preconnect" href="https://cdn.snipcart.com">
