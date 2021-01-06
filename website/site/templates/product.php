@@ -28,7 +28,7 @@ else $backgroundStyle = ""; ?>
           $productPrice = floatval(str_replace(',', '.', str_replace('.', '', $page->price()->html())));
           ?>
           <?php //Only render SnipCart elements if cookies have been accepted
-          if($_COOKIE["cookie-note"] == 1) { ?>
+          if(true || $_COOKIE["cookie-note"] == 1) { ?>
             <form class="width100 shopForm topPadding">
               <div class="grid2C smallBottomMargin">
                 <div class="item darkGreen grid2C amount-input">
@@ -41,7 +41,7 @@ else $backgroundStyle = ""; ?>
                 <div class="item price rightText"><span class="large darkGreen"><?= number_format($productPrice, 2, ",", "") ?> €</span></div>
               </div>
               <button class="rectangle white darkGreenBackground snipcart-add-item width100"
-                      data-item-id="<?= $page->id() ?>"
+                      data-item-id="<?= "ID".preg_replace('/[^A-Za-z0-9\-]/', '_', $page->id()) ?>"
                       data-item-name="<?= $page->name()->text() ?>"
                       data-item-price="<?= number_format($productPrice, 2) ?>"
                       data-item-url="<?= $page->url() ?>"
