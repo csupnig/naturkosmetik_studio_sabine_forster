@@ -27,7 +27,7 @@ if ($content == "newsletter") {
     if ($site->termsConditionsFile()->isNotempty()) { ?>
       <a href="<?= $site->termsConditionsFile()->toFile()->url() ?>">
     <?php } else if ($site->termsConditionsPage()->isNotEmpty()) { ?>
-      <a href="<?= $site->termsConditionsPage()->toPage()->url() ?>">
+      <a href="<?= $site->termsConditionsPage()->toPage()->url() ?>#stornobedingungen">
     <?php }
   } else if (($content == "book") || ($content == "question") || ($content == "events")) { ?>
     <a href="mailto:<?= $site->email()->html() ?>" target="_blank">
