@@ -9,7 +9,7 @@ else $backgroundStyle = ""; ?>
 			<div class="item hPadding vFlex">
 				<h3 class="darkGreen smallTopMargin"><?=$page->introHeadline()->kirbyText() ?></h3>
 				<span class="small darkGreen topMargin flexGrow"><?=$page->introText()->kirbyText() ?></span>
-				<a href="#contact"><button class="width100 next small darkGreen topMargin">Hallo sagen</button></a>
+				<a href="mailto:<?= $site->email()->html() ?>"><button class="width100 next small darkGreen topMargin">Hallo sagen</button></a>
 			</div>
 			<div class="item">
 				<?php if ($image = $page->introImage()->toFile()) { ?>
@@ -18,8 +18,8 @@ else $backgroundStyle = ""; ?>
 			</div>
 		</div>
 	</section>
-	<?php snippet('callToAction', ["content" => "newsletter", 'color' => 'darkGreen']); ?>
-	<section class="education darkGreen bottomPadding">
+	<?php //snippet('callToAction', ["content" => "newsletter", 'color' => 'darkGreen']); ?>
+	<section class="education darkGreen topPadding bottomPadding">
 		<h2 class="hPadding">Beruflicher<br/>Werdegang</h2>
 		<div class="grid2C topMargin">
 			<div class="item hPadding">
