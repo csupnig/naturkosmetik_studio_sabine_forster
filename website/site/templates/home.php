@@ -118,7 +118,10 @@ else $backgroundStyle = ""; ?>
 			</div>
 		</section>
 	<?php } ?>
-	<?php $articles = $site->find("articles")->children()->filterBy("intendedTemplate", "article")->published()->limit(3);
+	<?php
+  $articlesPage = $site->find("articles");
+
+  $articles = $articlesPage ? $articlesPage->children()->filterBy("intendedTemplate", "article")->published()->limit(3) : [];
 	if (count($articles) > 0) { ?>
 		<section class="articles width100 topMargin hPadding">
 			<h2 class="darkGreen">Aktuelle<br/>Artikel</h2>
