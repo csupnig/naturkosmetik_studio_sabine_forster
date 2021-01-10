@@ -12,9 +12,9 @@ if ($content == "newsletter") {
   		} else if ($content == "cancellation") {
   			echo "Sie sind verhindert?<br/> Mehr Informationen zu den Stornobedinungen<br/>finden Sie in den AGBS";
 		} else if ($content == "question") {
-  			echo "Haben Sie noch Fragen?<br/>Ich berate Sie gerne";
+  			echo "Haben Sie noch Fragen?<br/>Ich berate Sie gerne per E-Mail oder telefonisch";
   		} else if ($content == "book") {
-  			echo "Möchten Sie einen Termin buchen? <br/>Bitte kontaktieren Sie mich per Email.";
+  			echo "Möchten Sie einen Termin buchen? <br/>Bitte kontaktieren Sie mich per Email oder rufen Sie mich an.";
   		} else if ($content == "shop") {
         echo "Mein Online-Shop bietet ein<br/>ausgewähltes Angebot an<br/>hochwertigen Naturprodukten.";
       } else if ($content == "events") {
