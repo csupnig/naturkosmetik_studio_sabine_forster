@@ -7,9 +7,9 @@
 		</div>
 		<div class="floatRight noUnderline">
 			<?php if ($site->termsConditionsFile()->isNotempty()) { ?>
-				<span class="extraSmall"><a href="<?= $site->termsConditionsFile()->toFile()->url() ?>">Nutzungsbedinungen</a></span><br/>
+				<span class="extraSmall"><a href="<?= $site->termsConditionsFile()->toFile()->url() ?>">AGBs</a></span><br/>
 			<?php } else if ($site->termsConditionsPage()->isNotEmpty()) { ?>
-				<span class="extraSmall"><a href="<?= $site->termsConditionsPage()->toPage()->url() ?>">Nutzungsbedinungen</a></span><br/>
+				<span class="extraSmall"><a href="<?= $site->termsConditionsPage()->toPage()->url() ?>">AGBs</a></span><br/>
 			<?php } 
 			$aboutPage = $site->find("about"); ?>
 			<span class="extraSmall"><a href="<?= $aboutPage->url() ?>"><?= $aboutPage->name()->html() ?></a></span><br/>
