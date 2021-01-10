@@ -145,7 +145,6 @@ columns:
             type: pages
             query: site.find("events").index.filterBy("intendedTemplate", "event")
             multiple: false
-            required: true
 
           eventsImage:
             label: Veranstaltungsbild

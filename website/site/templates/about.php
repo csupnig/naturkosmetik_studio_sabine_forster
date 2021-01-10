@@ -46,7 +46,7 @@ else $backgroundStyle = ""; ?>
 			</div>
 		</section>		
 	<?php } ?>
-	<section id="#contact" class="contact vPadding darkGreen">
+	<section id="contact" class="contact vPadding darkGreen">
 		<div class="padding">
 			<h2>Kontakt<br/>Informationen</h2>
 			<h3 class="topMargin"><a href="tel:<?= $site->phone()->html() ?>" target="_blank"><?= $site->phone()->html() ?></a></h3><br/>

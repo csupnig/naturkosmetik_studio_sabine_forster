@@ -23,9 +23,8 @@
 			<span><a href="mailto:<?= $site->email()->html() ?>" target="_blank"><?= $site->email()->html() ?></a></span><br/>
 		</div>
 		<div class="floatRight">
-			<?php $treatmentsPage = $site->children()->find("treatments")->toPage(); ?>
-			<span><a href="<?= $treatmentsPage->url() ?>#studios">Studio Linz</a></span><br/>
-			<span><a href="<?= $treatmentsPage->url() ?>#studios">Studio Lichtenberg</a></span><br/>
+			<span><a href="<?= $site->find("treatments")->url() ?>#studios">Studio Linz</a></span><br/>
+			<span><a href="<?= $site->find("treatments")->url() ?>#studios">Studio Lichtenberg</a></span><br/>
 		</div>
 	</div>
 </footer>
